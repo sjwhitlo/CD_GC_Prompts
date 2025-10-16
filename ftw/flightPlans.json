@@ -12,7 +12,6 @@
     { "destination": "KRVS", "destinationName": "Riverside",         "minAlt": 5, "maxAlt": 60, "route": "KFTW NANDR3 EAKER TUL KRVS" },
     { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "+TEX5 EAKER MLC+<br>KFTW MLC KSAT" },
     { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU QERVO1<br>KSAT" },
-    { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU QERVO1<br>KSAT" },
     { "destination": "KSDL", "destinationName": "Scottsdale",        "minAlt": 5, "maxAlt": 60, "route": "KFTW BOTCH1 CIKAN EWM SSO SUNSS8 KSDL" },
     { "destination": "KSGR", "destinationName": "Sugarland",         "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR SNDAY1<br>KSGR" },
     { "destination": "KSJT", "destinationName": "San Angelo",        "minAlt": 5, "maxAlt": 60, "route": "+KING5 MQP KSJT+<br>KFTW KSJT" },
