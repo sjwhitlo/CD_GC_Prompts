@@ -1,7 +1,17 @@
 [
-  {"arrival":[]},
-  {"departure":[]},
-  {"flightFollowing":[]},
-  {"clearance":[]},
-  {"reposition":[]}
+  {
+    "arrival": []
+  },
+  {
+    "departure": []
+  },
+  {
+    "flightFollowing": []
+  },
+  {
+    "clearance": []
+  },
+  {
+    "reposition": []
+  }
 ]
