@@ -6,10 +6,13 @@
     },
     "runways": {
       "available": [
-        16,
-        34
+        {
+          "name": "16",
+          "heading": 168.9,
+          "reciprocal": "34"
+        }
       ],
-      "calm_wind": 16
+      "calm_wind": "16"
     }
   }
 ]
