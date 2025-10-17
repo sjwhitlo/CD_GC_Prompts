@@ -1,0 +1,15 @@
+[
+  {
+    "positions": {
+      "clearance": "Meacham Clearance",
+      "ground": "Meacham Ground"
+    },
+    "runways": {
+      "available": [
+        16,
+        34
+      ],
+      "calm_wind": 16
+    }
+  }
+]
