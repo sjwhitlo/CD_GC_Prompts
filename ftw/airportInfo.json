@@ -7,7 +7,7 @@
     "runways": {
       "available": [
         {
-          "name": "16",
+          "primary": "16",
           "heading": 168.9,
           "reciprocal": "34"
         }
