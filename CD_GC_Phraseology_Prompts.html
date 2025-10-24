@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* COLOR / MODES */
+        :root {
+            --background: black;
+            --flightProgressStripBackground: #F7FADE;
+            --flightProgressStripForeground: black;
+            --settingsForeground: lightgray;
+            --settingsText: white;
+            --settingsBackground: darkslategray;
+            --siaColorSplash: goldenrod;
+            --stars: limegreen;
+            --starsError: red;
+            --starsMap: yellow;
+            --buttonText: white;
+            --buttonRed: firebrick;
+            --buttonGreen: seagreen;
+            --buttonBlue: steelblue;
+        }
+
+        .default {
+            --background: black;
+            --flightProgressStripBackground: #F7FADE;
+            --flightProgressStripForeground: black;
+            --settingsForeground: lightgray;
+            --settingsText: white;
+            --settingsBackground: darkslategray;
+            --siaColorSplash: goldenrod;
+            --stars: limegreen;
+            --starsError: red;
+            --starsMap: yellow;
+            --buttonText: white;
+            --buttonRed: firebrick;
+            --buttonGreen: seagreen;
+            --buttonBlue: steelblue;
+        }
+
+        .matrix-mode {
+            --background: black;
+            --flightProgressStripBackground: black;
+            --flightProgressStripForeground: limegreen;
+            --settingsForeground: limegreen;
+            --settingsText: limegreen;
+            --settingsBackground: black;
+            --siaColorSplash: limegreen;
+            --stars: limegreen;
+            --starsError: red;
+            --starsMap: limegreen;
+            --buttonText: black;
+            --buttonRed: limegreen;
+            --buttonGreen: limegreen;
+            --buttonBlue: limegreen;
+        }
+
+        .redlight-mode {
+            --background: black;
+            --flightProgressStripBackground: black;
+            --flightProgressStripForeground: firebrick;
+            --settingsForeground: firebrick;
+            --settingsText: firebrick;
+            --settingsBackground: black;
+            --siaColorSplash: firebrick;
+            --stars: firebrick;
+            --starsError: firebrick;
+            --starsMap: firebrick;
+            --buttonText: black;
+            --buttonRed: firebrick;
+            --buttonGreen: firebrick;
+            --buttonBlue: firebrick;
+        }
+
+        body {
+            background: var(--background);
+            color: fuschia;
+        }
+
+        h1 {
+            font-family: arial;
+            color: var(--settingsForeground);
+            text-align: center;
+        }
+
+        #settingsArea {
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+            font-family: arial;
+            color: var(--settingsText);
+        }
+
+        fieldset {
+            border: 2px solid var(--settingsForeground);
+            background: var(--settingsBackground);
+            border-radius: 10px;
+            text-wrap: nowrap;
+/*            backdrop-filter: blur(10px); /* Apply blur to content behind */*/
+        }
+
+        legend {
+            background-color: var(--settingsForeground);
+            color: var(--background);
+            font-weight: bold;
+            border-radius: 6px;
+            padding: 3px 6px;
+        }
+
+        fieldset, .flightProgressStrip, #buttonContainer button {
+            box-shadow: 0px 0px 0px 3px var(--background);
+        }
+
+        .listDisplay {
+            width: 300px;
+            background: var(--background);
+            color: var(--settingsForeground);
+            hr {
+                border-color: var(--settingsForeground);
+                border-style: solid;
+            }
+        }
+
+        .siaColorSplash {
+            color: var(--siaColorSplash);
+        }
+
+        #currentMETAR {
+            min-width: 350px;
+            text-wrap: wrap;
+        }
+
+        #buttonContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        button {
+            border: none;
+            color: var(--buttonText);
+            width: 120px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .buttonNew {
+            background-color: var(--buttonGreen);
+        }
+
+        .buttonRepeat {
+            background-color: var(--buttonBlue);
+        }
+
+        .buttonRepeatInitial {
+            background-color: var(--buttonRed);
+        }
+
+        .buttonMETAR {
+            background-color: var(--siaColorSplash);
+        }
+
+        .buttonSTARS {
+            border: 1px solid var(--stars);
+            color: var(--stars);
+            background-color: var(--background);
+        }
+
+        .parentCheckbox {
+        }
+
+        .childCheckbox {
+            margin-left: 20px;
+        }
+
+        .flightProgressStrip {
+            height: 1in;
+            width: 8in;
+            display: grid;
+            grid-template-columns: 42.6fr 16fr 26.5fr 78.2fr 11fr 11fr 17.2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "box1 box5 box8 box9 box10 box11 box12"
+                "box3 box6 box8 box9 box13 box14 box15"
+                "box4 box7 box8 box9 box16 box17 box18";
+            vertical-align: top;
+            text-align: left;
+            text-wrap: wrap;
+            font-family: consolas;
+            font-size: 19px;
+            color: var(--flightProgressStripForeground);
+            font-weight: bold;
+            background: var(--flightProgressStripBackground);
+            border-collapse: collapse;
+            border: 0.5px solid var(--flightProgressStripForeground);
+
+            .fpsItem {
+                border-color: var(--flightProgressStripForeground);
+                border-width: 0.5px;
+                border-style: solid;
+                padding-top: 5px;
+                padding-left: 5px;
+            }
+
+            #fps1 {
+                grid-area: box1;
+                border-style: solid solid none solid;
+                padding-left: 20px;
+            }
+
+            #fps3 {
+                grid-area: box3;
+                border-style: none solid none solid;
+                padding-left: 20px;
+            }
+
+            #fps4 {
+                grid-area: box4;
+                border-style: none solid solid solid;
+                padding-left: 20px;
+            }
+
+            #fps5 {
+                grid-area: box5;
+                padding-left: 1px;
+            }
+
+            #fps6 {
+                grid-area: box6;
+                padding-left: 1px;
+            }
+
+            #fps7 {
+                grid-area: box7;
+                padding-left: 1px;
+                overflow-wrap: nowrap;
+            }
+
+            #fps8 {
+                grid-area: box8;
+            }
+
+            #fps9 {
+                grid-area: box9;
+            }
+
+            #fps10 {
+                grid-area: box10;
+            }
+
+            #fps11 {
+                grid-area: box11;
+            }
+
+            #fps12 {
+                grid-area: box12;
+            }
+
+            #fps13 {
+                grid-area: box13;
+            }
+
+            #fps14 {
+                grid-area: box14;
+            }
+
+            #fps15 {
+                grid-area: box15;
+            }
+
+            #fps16 {
+                grid-area: box16;
+                text-align: center;
+            }
+
+            #fps17 {
+                grid-area: box17;
+            }
+
+            #fps18 {
+                grid-area: box18;
+            }
+        }
+
+        .stars {
+            text-transform: uppercase;
+            display: none;
+            vertical-align: text-top;
+            outline: none; 
+            border: 1px solid var(--stars);
+            resize: none;
+            background: var(--background);
+            color: var(--stars);
+            font-family: consolas;
+            color: var(--stars);
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .starsError {
+            display: none;
+            font-family: consolas;
+            color:var(--starsError);
+            font-size:16px;
+            font-weight:bold;
+        }
+
+        #starsKeyboard {
+            width: 500px;
+            background: black;
+
+            .standardRow {
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-column-gap: 2px;
+                margin: 2px;
+            }
+            .nonStandardRow {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr 6fr 1.5fr;
+                grid-column-gap: 2px;
+                margin: 2px;
+                margin-top: 12px;
+            }
+
+            button {
+                width: 100%;
+                height: 50px;
+                font-family: arial;
+                font-size: 11px;
+                letter-spacing: -0.5px;
+                line-height: 1em;
+                font-weight: bold;
+                text-align: center;
+                border-style: 1px solid black;
+                border-radius: 5px;
+                align-items: center;
+                box-shadow: inset 0px 0px 1.5px 5px rgba(0,0,0,0.25);
+            }
+            button:active {
+                transform: translateY(1px);
+            }
+
+            .green {
+                background: darkgreen;
+                color: whitesmoke;
+            }
+            .red {
+                background: firebrick;
+                color: whitesmoke;
+            }
+            .blue {
+                background: deepskyblue;
+                color: black;
+            }
+            .white {
+                background: whitesmoke;
+                color: black;
+            }
+            .yellow {
+                background: gold;
+                color: black;
+            }
+        }
+
+        #txtStarsEntry {
+            padding: 2px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #aircraftDisplay {
+            max-height: 80vh;
+            overflow: scroll;
+        }
+    </style>
+    
+    <head>
+        <meta charset="UTF-8">
+            <title>(BETA) Ground Control Check Ins</title>
+    </head>
+    
+    <body id="body">
+        <h1 id="headerText">Meacham Phraseology Prompts</h1>
+        <table>
+            <tr>
+                <td style="vertical-align:top;">
+                    <div id="settingsArea">
+                        <fieldset>
+                            <legend>Settings</legend>
+                            <label for="facilitySelector">Facility: </label>
+                            <select name="facilityPicker" id="facilitySelection" onchange="setFacility(value)">
+                                <option value="ads">ADS</option>
+                                <option value="afw">AFW</option>
+                                <option value="dfw">DFW</option>
+                                <option value="dal">DAL</option>
+                                <option selected value="ftw">FTW</option>
+                            </select>
+                            <br>
+                            <label for="themeSelection">Theme: </label>
+                            <select name="themePicker" id="themeSelection" onchange="setTheme(value)">
+                                <option selected value="default">Default</option>
+                                <option value="matrix-mode">The Matrix</option>
+                                <option value="redlight-mode">Red Light</option>
+                            </select>
+                            <br>
+                            <input type="checkbox" id="voice" title="Toggle audible prompts" checked>Voice Output</input>
+                            <br>
+                            <label for="speechRate">Speech Rate</label>
+                            <select id="speechRate">
+                                <option value=0.25>0.25x</option>
+                                <option value=0.5>0.5x</option>
+                                <option value=0.75>0.75x</option>
+                                <option selected value=1>1x</option>
+                                <option value=1.25>1.25x</option>
+                                <option value=1.5>1.5x</option>
+                                <option value=1.75>1.75x</option>
+                                <option value=2>2x</option>
+                            </select>
+                            <br>
+                            <input type="checkbox" id="listenForATIS" title="All aircraft have the correct AITS" checked>Verify Correct ATIS</input>
+                            <br>
+                            <label for="truncateCallsigns">Initial Call Truncation</label>
+                            <select id="truncateCallsigns">
+                                <option selected value="none" title="Use full callsign on initial call. ie: N2233W">None</option>
+                                <option value="first3" title="Use first three characters on initial call. ie: N223">First 3</option>
+                                <option value="last3" title="Use last three characters on initial call. ie: N33W">Last 3</option>
+                                <option value="rand3" title="Use random three characters on initial call. ie: N233">Random 3</option>
+                            </select>
+                            <br>
+                            <input type="checkbox" id="checkKeyboardEntries" title="Verify correct STARS input from keyboard" unchecked>Check Keyboard Entries</input>
+                            <br>
+                            <input type="checkbox" id="consoleOutput" title="Show console logs" unchecked>Debug Mode</input>
+                        </fieldset>
+
+                        <fieldset title="Only allow calls if checked">
+                            <legend>Check Ins</legend>
+                            <input type="checkbox" id="chkbxCallsignPractice" name="chkbxCallsignPractice" value="callsignPractice" class="parentCheckbox" unchecked>
+                            <label for="chkbxCallsignPractice"> Callsign Practice</label><br>
+                            
+                            <input type="checkbox" id="chkbxClearanceDelivery" name="chkbxClearanceDelivery" value="clearanceDelivery" class="parentCheckbox" onclick="changeCheckInFocus('cd')" checked>
+                            <label for="chkbxClearanceDelivery"> Clearance Delivery</label><br>
+                            <input type="checkbox" id="chkbxClearance" name="chkbxClearance" value="clearance" class="childCheckbox" checked>
+                            <label for="chkbxClearance"> Clearance</label><br>
+                            <input type="checkbox" id="chkbxFlightFollowing" name="chkbxFlightFollowing" value="flightFollowing" class="childCheckbox" checked>
+                            <label for="chkbxFlightFollowing"> Flight Following</label><br>
+
+                            <input type="checkbox" id="chkbxGroundControl" name="chkbxGroundControl" value="groundControl" class="parentCheckbox" onclick="changeCheckInFocus('gc')" checked>
+                            <label for="chkbxGroundControl"> Ground Control</label><br>
+                            <input type="checkbox" id="chkbxArrival" name="chkbxArrival" value="arrival" class="childCheckbox" checked>
+                            <label for="chkbxArrival"> Arrival</label><br>
+                            <input type="checkbox" id="chkbxDeparture" name="chkbxDeparture" value="departure" class="childCheckbox" checked>
+                            <label for="chkbxDeparture"> Departure</label><br>
+                            <input type="checkbox" id="chkbxReposition" name="chkbxReposition" value="reposition" class="childCheckbox" checked>
+                            <label for="chkbxReposition"> Reposition</label><br>
+                            <input type="checkbox" id="chkbxVehicle" name="chkbxVehicle" value="vehicle" class="childCheckbox" unchecked disabled>
+                            <label for="chkbxVehicle"> Vehicles</label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>SIA</legend>
+                            <table>
+                                <td style="width:150px; text-align:center;">
+                                    <strong><div id="currentATIS" title="The current AITS code" class="siaColorSplash" style="font-size:60px;"></div></strong>
+                                    <strong><div id="currentRunway" title="The advertised runway in use" style="font-size:60px;"></div></strong>
+                                </td>
+                                <td style="width:500px; text-align:center; vertical-align:top;">
+                                    <div id=currentTime title="UTC time now" class="siaColorSplash" style="font-size:45px;font-family:consolas;">00:00:00</div>
+                                    <div style="text-align:left;">
+                                    <p id="currentMETAR" title="The current weather conditions" style="font-family:consolas"></p>
+                                    </div>
+                                    <button id="newMETAR" name="newMETAR" title="Generate new weather and ATIS code" class="buttonMETAR" onclick="getNewMETAR()">New METAR</button>
+                                </td>
+                            </table>
+                        </fieldset>
+                    </div>
+
+                    <br>
+
+                    <div id="buttonContainer">
+                        <button id="newCheckIn" name="newCheckIn" class="item buttonNew" onclick="newCheckIn()">New Check In</button>
+                        <button id="repeatInitial" name="repeatInitial" class="item buttonRepeatInitial" onclick="repeatInitial()">Repeat Initial</button>
+                        <button id="sayAgain" name="sayAgain" class="item buttonRepeat" onclick="sayAgain()">Say Again</button>
+                        <button id="sayCallsign" name="sayCallsign" class="item buttonRepeat" onclick="sayCallsign()">Say Callsign</button>
+                        <button id="sayIntent" name="sayIntent" class="item buttonRepeat" onclick="sayIntent()">Say Intentions</button>
+                        <button id="sayLocation" name="sayLocation" class="item buttonRepeat" onclick="sayLocation()">Say Location</button>
+                        <button id="sayParking" name="sayParking" class="item buttonRepeat" onclick="sayParking()">Say Parking</button>
+                        <button id="btnStarsEntry"  class="item buttonSTARS" onclick="noStarsEntryFlightFollowing();" style="display:none;">Show Flight Following</button>
+                    </div>       
+
+                    <br>
+
+                    <div class="flightProgressStrip">
+                        <div id="fps1" class="fpsItem"></div>
+                        <div id="fps3" class="fpsItem"></div>
+                        <div id="fps4" class="fpsItem"></div>
+                        <div id="fps5" class="fpsItem"></div>
+                        <div id="fps6" class="fpsItem"></div>
+                        <div id="fps7" class="fpsItem"></div>
+                        <div id="fps8" class="fpsItem"></div>
+                        <div id="fps9" class="fpsItem"></div>
+                        <div id="fps10" class="fpsItem"></div>
+                        <div id="fps11" class="fpsItem"></div>
+                        <div id="fps12" class="fpsItem"></div>
+                        <div id="fps13" class="fpsItem"></div>
+                        <div id="fps14" class="fpsItem"></div>
+                        <div id="fps15" class="fpsItem"></div>
+                        <div id="fps16" class="fpsItem" onclick="completeStripMarking('b16')"></div>
+                        <div id="fps17" class="fpsItem"></div>
+                        <div id="fps18" class="fpsItem"></div>
+                    </div>
+
+                    <br>
+                    <div id="txtStarsEntry" class="stars" style="display:none;"></div>
+                    <textarea name="starsEntry" id="starsEntry" class="stars" onkeydown="if (event.key == 'Enter'){ checkFlightFollowing(); }" rows="5" cols="4" style="align:right;"></textarea>
+                    <div id="starsError" class="starsError">Error, try again</div>
+                </td>
+                <td style="vertical-align:top; font-family:consolas;">
+                    <fieldset id="localCheatsheet" class="listDisplay">
+                        <legend>Local Callsigns</legend>
+                        <label for="sortLocalBy">Sort by:</label>
+                        <select id="sortLocalBy" onchange="updateLocalAircraft(value)">
+                            <option value="callsign">Callsign</option>
+                            <option value="last3">Last 3 Callsign</option>
+                            <option value="type">Type</option>
+                            <option value="company">Company</option>
+                        </select>
+                        <hr>
+                        <div id="localAircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
+                    </fieldset>
+                    <fieldset id="activityLog" class="listDisplay">
+                        <legend>Activity Log</legend>
+                        <label for="displayData">Display:</label>
+                        <select id="displayData" onchange="updateDisplay()">
+                            <option value="none">None</option>
+                            <option value="forward" selected>Forward</option>
+                            <option value="reverse">Reverse</option>
+                            <option value="current">Current</option>
+                            <option value="previous">Previous</option>
+                        </select> 
+                        <hr>
+                        <div id="aircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <div id="starsKeyboard">
+            <div class="standardRow">
+                <button id="" class="green" onclick="starsKeyboard('')"></button>
+                <button id="" class="green" onclick="starsKeyboard('')">CNTR</button>
+                <button id="" class="green" onclick="starsKeyboard('')">MAPS</button>
+                <button id="" class="green" onclick="starsKeyboard('')">WX</button>
+                <button id="" class="white" onclick="starsKeyboard('')">CORE</button>
+                <button id="" class="white" onclick="starsKeyboard('')">SIGN<br>ON</button>
+                <button id="" class="green" onclick="starsKeyboard('')">BRITE</button>
+                <button id="" class="green" onclick="starsKeyboard('')">LDR</button>
+                <button id="" class="green" onclick="starsKeyboard('')">CHAR<br>SIZE</button>
+                <button id="" class="green" onclick="starsKeyboard('')">SHIFT</button>
+            </div>
+
+            <div class="standardRow">
+                <button id="" class="green" onclick="starsKeyboard('')">DCB</button>
+                <button id="" class="green" onclick="starsKeyboard('')">RNG<br>RING</button>
+                <button id="" class="green" onclick="starsKeyboard('')">RANGE</button>
+                <button id="" class="green" onclick="starsKeyboard('')"></button>
+                <button id="" class="white" onclick="starsKeyboard('')">PREF<br>SET</button>
+                <button id="" class="white" onclick="starsKeyboard('')"></button>
+                <button id="" class="green" onclick="starsKeyboard('')"></button>
+                <button id="" class="green" onclick="starsKeyboard('')"></button>
+                <button id="" class="green" onclick="starsKeyboard('')">SITE</button>
+                <button id="" class="green" onclick="starsKeyboard('')">MODE</button>
+            </div>
+                
+            <div class="nonStandardRow">
+                <button id="clear" class="yellow" onclick="starsKeyboard('clear')">CLEAR</button>
+                <button id="bkspc" class="yellow" onclick="starsKeyboard('bkspc')">BACK<br>SPACE</button>
+                <button id="space" class="yellow" onclick="starsKeyboard('space')">SPACE</button>
+                <button id="enter" class="red" onclick="starsKeyboard('enter')">ENTER</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="" class="green" onclick="starsKeyboard('')">INIT<br>CTL</button>
+                <button id="" class="green" onclick="starsKeyboard('')">TRK<br>RPOS</button>
+                <button id="" class="green" onclick="starsKeyboard('')">TRK<br>SUSP</button>
+                <button id="" class="green" onclick="starsKeyboard('')">TERM<br>CNTL</button>
+                <button id="" class="green" onclick="starsKeyboard('')">HND<br>OFF</button>
+                <button id="" class="green" onclick="starsKeyboard('')">FLT<br>DATA</button>
+                <button id="" class="green" onclick="starsKeyboard('')">MULTI<br>FUNC</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F8</button>
+                <button id="" class="white" onclick="starsKeyboard('Δ')">Δ</button>
+                <button id="" class="white" onclick="starsKeyboard('·')">·</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="" class="green" onclick="starsKeyboard('')">F9</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F10</button>
+                <button id="" class="green" onclick="starsKeyboard('')">CA</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F12</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F13</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F14</button>
+                <button id="" class="green" onclick="starsKeyboard('')">TGT<br>GEN</button>
+                <button id="" class="green" onclick="starsKeyboard('')">F16</button>
+                <button id="" class="white" onclick="starsKeyboard('+')">IFR<br>+</button>
+                <button id="" class="white" onclick="starsKeyboard('/')">VFR<br>/</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="a" class="white" onclick="starsKeyboard('A')">A</button>
+                <button id="b" class="white" onclick="starsKeyboard('B')">BCN<br>B</button>
+                <button id="c" class="white" onclick="starsKeyboard('C')">CFG<br>C</button>
+                <button id="d" class="white" onclick="starsKeyboard('D')">DIS<br>D</button>
+                <button id="e" class="white" onclick="starsKeyboard('E')">EMG<br>E</button>
+                <button id="f" class="white" onclick="starsKeyboard('F')">FIL<br>F</button>
+                <button id="g" class="white" onclick="starsKeyboard('G')">G</button>
+                <button id="1" class="blue" onclick="starsKeyboard('1')">&#8598<br>1</button>
+                <button id="2" class="blue" onclick="starsKeyboard('2')">&#8593<br>2</button>
+                <button id="3" class="blue" onclick="starsKeyboard('3')">&#8599<br>3</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="" class="white" onclick="starsKeyboard('H')">H</button>
+                <button id="" class="white" onclick="starsKeyboard('I')">I</button>
+                <button id="" class="white" onclick="starsKeyboard('J')">J</button>
+                <button id="" class="white" onclick="starsKeyboard('K')">K</button>
+                <button id="" class="white" onclick="starsKeyboard('L')">LDR<br>L</button>
+                <button id="" class="white" onclick="starsKeyboard('M')">MOD<br>M</button>
+                <button id="" class="white" onclick="starsKeyboard('N')">N</button>
+                <button id="" class="blue" onclick="starsKeyboard('4')">4<br>&#8592</button>
+                <button id="" class="blue" onclick="starsKeyboard('5')">5</button>
+                <button id="" class="blue" onclick="starsKeyboard('6')">6<br>&#8594</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="" class="white" onclick="starsKeyboard('O')">OFF<br>O</button>
+                <button id="" class="white" onclick="starsKeyboard('P')">PRE<br>P</button>
+                <button id="" class="white" onclick="starsKeyboard('Q')">Q</button>
+                <button id="" class="white" onclick="starsKeyboard('R')">R</button>
+                <button id="" class="white" onclick="starsKeyboard('S')">SYS<br>S</button>
+                <button id="" class="white" onclick="starsKeyboard('T')">TAB<br>T</button>
+                <button id="" class="white" onclick="starsKeyboard('U')">U</button>
+                <button id="" class="blue" onclick="starsKeyboard('7')">7<br>&#8601</button>
+                <button id="" class="blue" onclick="starsKeyboard('8')">8<br>&#8595</button>
+                <button id="" class="blue" onclick="starsKeyboard('9')">9<br>&#8600</button>
+            </div>
+                
+            <div class="standardRow">
+                <button id="" class="white" onclick="starsKeyboard('V')">V</button>
+                <button id="" class="white" onclick="starsKeyboard('W')">W</button>
+                <button id="" class="white" onclick="starsKeyboard('X')">X</button>
+                <button id="" class="white" onclick="starsKeyboard('Y')">Y</button>
+                <button id="" class="white" onclick="starsKeyboard('Z')">Z</button>
+                <button id="" class="white" onclick="starsKeyboard('*')">*</button>
+                <button id="" class="white" onclick="starsKeyboard('')">MIN</button>
+                <button id="" class="white" onclick="starsKeyboard()"></button>
+                <button id="" class="blue" onclick="starsKeyboard('0')">0</button>
+                <button id="" class="white" onclick="starsKeyboard()"></button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+        const headerSuffix = "Phraseology Prompts";
+        const airportInfoUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/airportInfo.json';
+        const aircraftUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/aircraft.json';
+        const airportsUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/flightFollowingAirports.json';
+        const flightPlansUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/flightPlans.json';
+        const metarsUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/metars.json';
+
+        let airportInfo = {
+            "info": {
+                "icao": "KDMO",
+                "faa": "DMO",
+                "name": "Demonstration Airport",
+                "name_short": "Demo"
+            },
+            "positions": {
+                "clearance": "Clearance",
+                "ground": "Ground"
+            },
+            "runways": {
+                "available": [
+                    {
+                        "primary": "18",
+                        "heading": 180,
+                        "reciprocal": "36"
+                    }
+                ],
+                "calm_wind": "18"
+            },
+            "taxiways": {
+                "18": ["A", "B", "C", "D", "E", "F"],
+                "36": ["A", "B", "C", "D", "E", "F"]
+            }
+        };
+
+        let metarList = [ 
+                "00000KT 10SM CLR 19/14 A3015 RMK AO2 SLP203 T01940139 $",
+                "00000KT 10SM CLR 29/22 A3003 RMK AO2 SLP159 T02890217 10289 20228 58007 $",
+                "01004KT 10SM CLR 22/17 A3011 RMK AO2 SLP189 T02170167 53016 $",
+                "01006KT 10SM -RA BKN008 BKN120 21/19 A3001 RMK AO2 P0000 T02110194 $",
+                "01008KT 10SM CLR 25/16 A3006 RMK AO2 SLP172 T02500156 10267 20200 55005 $"
+            ];
+
+        const checkInTypes = [ 'arrival', 'departure', 'flightFollowing', 'reposition', 'clearance', 'callsign' ];
+
+        // parking == where they stay for the night
+        // reposition == where they park temporarily before parking for the night
+        let aircraft = [
+            {"type": "C152", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Aerobat",  "registration": "152TM", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "553RA", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "733WG", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": "Modern", "reposition": "MOD", "flightSchool": "Flying Club",       "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "1041Q", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "3744L", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "5437J", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "5437J", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "7296Q", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "7487G", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "46550", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "63332", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": "Modern", "reposition": "MOD", "flightSchool": "Flying Club",       "ifr": false },
+            {"type": "C177", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cardinal", "registration": "2083Q", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "154FT", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "1914H", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2135B", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2202W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2233W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2236W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "5120S", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "6281C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8097H", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8135G", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8137U", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8405B", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9062K", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9358C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9717C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "42998", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "42998", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "43408", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "47615", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "81981", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "82075", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "44AE",  "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "777JR", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "969WA", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "977LB", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
+            {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "8691E", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false }
+        ];
+
+        let airports = [
+            {"airportFAA": "WEA", "airportICAO": "KWEA", "airportName": "Parker County"},
+            {"airportFAA": "TKI", "airportICAO": "KTKI", "airportName": "Mckinney"},
+            {"airportFAA": "ADS", "airportICAO": "KADS", "airportName": "Addison"},
+            {"airportFAA": "DTO", "airportICAO": "KDTO", "airportName": "Denton"},
+            {"airportFAA": "RBD", "airportICAO": "KRBD", "airportName": "Dallas Executive"},
+            {"airportFAA": "DAL", "airportICAO": "KDAL", "airportName": "Dallas Love"},
+            {"airportFAA": "GPM", "airportICAO": "KGPM", "airportName": "Grand Prairie "},
+            {"airportFAA": "GKY", "airportICAO": "KGKY", "airportName": "Arlington"},
+            {"airportFAA": "HQZ", "airportICAO": "KHQZ", "airportName": "Mesquite"},
+            {"airportFAA": "LNC", "airportICAO": "KLNC", "airportName": "Lancaster"},
+            {"airportFAA": "FWS", "airportICAO": "KFWS", "airportName": "Spinks"},
+            {"airportFAA": "MWL", "airportICAO": "KMWL", "airportName": "Mineral Wells"},
+            {"airportFAA": "SEP", "airportICAO": "KSEP", "airportName": "Stephenville"},
+            {"airportFAA": "CPT", "airportICAO": "KCPT", "airportName": "Cleburne"},
+            {"airportFAA": "CRS", "airportICAO": "KCRS", "airportName": "Corsicana"},
+            {"airportFAA": "GVT", "airportICAO": "KGVT", "airportName": "Majors Field"},
+            {"airportFAA": "GLE", "airportICAO": "KGLE", "airportName": "Gainesville Municipal"},
+            {"airportFAA": "GDJ", "airportICAO": "KGDJ", "airportName": "Granbury"},
+            {"airportFAA": "LUD", "airportICAO": "KLUD", "airportName": "Decatur"},
+            {"airportFAA": "0F2", "airportICAO": "0F2",  "airportName": "Bowie Municipal"},
+            {"airportFAA": "TYR", "airportICAO": "KTYR", "airportName": "Tyler"},
+            {"airportFAA": "PRX", "airportICAO": "KPRX", "airportName": "Cox Field"}
+        ];
+
+        let ifrFlightPlans = [
+            { "destination": "KAUS", "destinationName": "Austin",            "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU SEWZY6 KAUS" },
+            { "destination": "KCFD", "destinationName": "Bryan",             "minAlt": 5, "maxAlt": 60, "route": "KFTW TTT JASPA KCFD" },
+            { "destination": "KCLL", "destinationName": "College Station",   "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 CLL KCLL" },
+            { "destination": "KEDC", "destinationName": "Austin Executive",  "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU BLEWE5 KEDC" },
+            { "destination": "KHOU", "destinationName": "Houston Hobby",     "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR KIDDZ5<br>KHOU" },
+            { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "+TEX5 EAKER MLC+<br>KFTW MLC KSAT" },
+            { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU QERVO1<br>KSAT" },
+            { "destination": "KSGR", "destinationName": "Sugarland",         "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR SNDAY1<br>KSGR" },
+            { "destination": "KSJT", "destinationName": "San Angelo",        "minAlt": 5, "maxAlt": 60, "route": "+KING5 MQP KSJT+<br>KFTW KSJT" },
+            { "destination": "KTME", "destinationName": "Houston Executive", "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR SNDAY1<br>KTME" },
+            { "destination": "KTYR", "destinationName": "Tyler",             "minAlt": 5, "maxAlt": 60, "route": "KFTW GARL6 TYR KTYR" }
+        ]; 
+ 
+        const taxiwayList = [ "A1",
+                           "A2",
+                           "D",
+                           "C",
+                           "A6" ];
+
+        const atisOptions = [ "+", "WX", "previous", "-" ];
+        
+        const informationList = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
+        var information = "";
+        var runwayInUse = "";
+        var lastFocusElement = "";
+        var metar = "";
+
+        var checkInList = [];
+
+        class CallIn {
+            constructor( aircraft ) {
+                this.aircraft = aircraft;
+                this.squawk = '' + Math.floor( Math.random() * 6 ) + Math.floor( Math.random() * 7 ) + Math.floor( Math.random() * 7 ) + Math.floor( Math.random() * 7 );
+            }
+
+            airCarrier() {
+                let flightNum = this.aircraft.registration.split('').reverse().join('');
+                flightNum = flightNum.replace(/(.{2})/g, '$1 ');
+                flightNum = flightNum.split('').reverse().join('');
+                consoleDebug( `group form: ${flightNum}` );
+                return ( this.aircraft.medevac ? "Medevac " : '' ) + this.aircraft.callsignSpoken + " " + flightNum;
+            }
+
+            getAcftIdForOutput() {
+                let output = this.aircraft.medevac ? "L" : " ";
+                if ( this.aircraft.callsign != null ) {
+                    output += this.aircraft.callsign + this.aircraft.registration;
+                } else {
+                    output += "N" + this.aircraft.registration;
+                }
+                return output.padEnd( 8, " " );
+            }
+
+            getAcftIdForInput() {
+                if ( this.aircraft.callsign != null ) {
+                    return this.aircraft.callsign + this.aircraft.registration;
+                } else {
+                    return this.aircraft.registration;
+                }
+            }
+
+            requestCallsign() {
+                if ( this.aircraft.callsign != null ) {
+                    return this.airCarrier();
+                } else {
+                    let spokenID = ( this.aircraft.medevac ? "Medevac" : this.aircraft.name );
+                    if ( document.getElementById( 'truncateCallsigns' ).value === "none" ) {
+                        spokenID += " " + alphanumerics( this.aircraft.registration );
+                    } else if ( document.getElementById( 'truncateCallsigns' ).value === "first3" ) {
+                        spokenID += " " + alphanumerics( this.aircraft.registration.slice(0, 3) );
+                    } else if ( document.getElementById( 'truncateCallsigns' ).value === "last3" ) {
+                        spokenID += " " + alphanumerics( this.aircraft.registration.slice(-3) );
+                    } else if ( document.getElementById( 'truncateCallsigns' ).value === "rand3" ) {
+                        let length = this.aircraft.registration.length - 3;
+                        let randStart = Math.floor( Math.random() * length );
+                        spokenID += " " + alphanumerics( this.aircraft.registration.slice(randStart, randStart+3) );
+                    }
+                    consoleDebug( spokenID );
+                    return spokenID;
+                }
+            }
+
+            shortCallsign() {
+                if ( this.aircraft.callsign != null ) {
+                    return this.airCarrier();
+                } else {
+                    let spokenID = ( this.aircraft.medevac ? "Medevac" : this.aircraft.name );
+                    spokenID += " " + alphanumerics( this.aircraft.registration.slice(-3) );
+                    return spokenID;
+                }
+            }
+
+            getSquawk() {
+                return this.squawk;
+            }
+        }
+
+        class Arrival extends CallIn {
+            constructor( aircraft, location ) {
+                super( aircraft );
+                this.location = location;
+                this.parkingName = ( !this.aircraft.repositionName ? this.aircraft.parkingName : this.aircraft.repositionName );
+                this.parking = ( !this.aircraft.reposition ? this.aircraft.parking : this.aircraft.reposition );
+                this.intent = "taxi to";
+            }
+            
+            initialCall() {
+                let locationVerb = [ 
+                    "",
+                    alphanumerics( this.location ),
+                    this.parkingName,
+                    `off at ${alphanumerics( this.location )}`,
+                    `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )}`,
+                    `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} request taxi`,
+                    `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.parkingName}`,
+                    `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.intent} ${this.parkingName}`
+                    `clearing at ${alphanumerics( this.location )}`,
+                    `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )}`,
+                    `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} request taxi`,
+                    `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.parkingName}`,
+                    `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.intent} ${this.parkingName}`
+                ];
+                let random = Math.floor( Math.random() * locationVerb.length );
+
+                return condenseWhiteSpace( `${airportInfo.positions.ground}, ${this.requestCallsign()} ${locationVerb[random]}` );
+            }
+
+            requestAgain() {
+                return `${this.requestCallsign()} at ${alphanumerics( this.location )} ${this.intent} ${this.parkingName}`;
+            }
+
+            requestParking() {
+                return `${this.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestPosition() {
+                return `${alphanumerics( this.location )}, ${this.shortCallsign()}`;
+            }
+
+            requestIntent() {
+                return `${this.intent} ${this.requestParking()}`;
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} ARR  ${this.location.padStart(3," ")} → ${this.parking.padStart(3," ")}`;
+            }
+        }
+
+        class Departure extends CallIn {
+            constructor( aircraft, atis ) {
+                super( aircraft );
+                this.atis = atis;
+                this.intent = "request taxi to the active";
+            }
+            
+            initialCall() {
+                consoleDebug( `this aircraft has ATIS code: ${this.atis}`);
+                return `${airportInfo.positions.ground}, ${this.requestCallsign()} at ${this.aircraft.parkingName} ${this.intent} ${atisToText( this.atis )}`;
+            }
+
+            requestAgain() {
+                return `${this.requestCallsign()} at ${this.aircraft.parkingName} ${this.intent}`;
+            }
+
+            requestParking() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestPosition() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestIntent() {
+                return `${this.intent}, ${this.shortCallsign()}`;
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} DEP  ${this.aircraft.parking.padStart(3," ")} → RWY ${runwayInUse} ${this.atis}`;
+            }
+        }
+
+        class FlightFollowing extends CallIn {
+            constructor( aircraft, destination, altitude ) {
+                super( aircraft );
+                this.destination = destination;
+                this.altitude = altitude;
+                this.intent = "request flight following to";
+            }
+            
+            initialCall() {
+                return `${airportInfo.positions.clearance}, ${this.requestCallsign()} ${this.intent} ${this.destination.airportName} at ${this.altitude * 100}`;
+            }
+
+            requestAgain() {
+                return `${this.requestCallsign()} ${this.intent} ${alphanumerics( this.destination.airportICAO )} at ${this.altitude * 100}`;
+            }
+
+            requestParking() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestPosition() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestIntent() {
+                return `${this.intent} ${alphanumerics( this.destination.airportICAO )} ${this.shortCallsign()}`;
+            }
+
+            flightFollowingInput() {
+                return `${this.getAcftIdForInput()} ${this.destination.airportFAA} ${this.aircraft.type} ${this.altitude} ${runwayInUse == 16 ? "1D" : "1M"}`;
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} FF   ${this.destination.airportFAA} @ ${this.altitude}`;
+            }
+        }
+
+        class Reposition extends CallIn {
+            constructor( aircraft ) {
+                super( aircraft );
+                this.intent = "request reposition to";
+            }
+            
+            initialCall() {
+                return `${airportInfo.positions.ground}, ${this.requestCallsign()} at ${this.aircraft.repositionName} ${this.intent} ${this.aircraft.parkingName}`;
+            }
+
+            requestAgain() {
+                return `${this.requestCallsign()} at ${this.aircraft.repositionName} ${this.intent} ${this.aircraft.parkingName}`;
+            }
+
+            requestParking() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestPosition() {
+                return `${this.aircraft.repositionName}, ${this.shortCallsign()}`;
+            }
+
+            requestIntent() {
+                return `${this.intent} ${this.requestParking()}`;
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} RPOS ${this.aircraft.reposition.padStart(3," ")} → ${this.aircraft.parking.padStart(3," ")}`;
+            }
+        }
+
+        class Clearance extends CallIn {
+            constructor( aircraft, route ) {
+                super( aircraft );
+                this.route = route;
+                this.altitude = ( Math.floor( Math.random() * ( this.route.maxAlt - this.route.minAlt ) ) + this.route.minAlt ) + "0";
+                this.intent = "request clearance to";
+                this.cid = '' + Math.floor( Math.random() * 9 ) + Math.floor( Math.random() * 9 ) + Math.floor( Math.random() * 9 );
+                var date = new Date();
+                
+                let startTime = new Date();
+                startTime.setHours(startTime.getHours() - 3);
+                let endTime = new Date();
+                endTime.setMinutes(endTime.getMinutes() + 30);
+                consoleDebug( `now: ${String(date.getUTCHours()).padStart(2,"0")}:${String(date.getUTCMinutes()).padStart(2,"0")}\nstart: ${String(startTime.getUTCHours()).padStart(2,"0")}:${String(startTime.getUTCMinutes()).padStart(2,"0")}\nend: ${String(endTime.getUTCHours()).padStart(2,"0")}:${String(endTime.getUTCMinutes()).padStart(2,"0")}` );
+
+                // Convert start and end times to milliseconds since epoch
+                const startMillis = startTime.getTime();
+                const endMillis = endTime.getTime();
+
+                // Generate a random number of milliseconds within the range
+                const randomMillis = Math.random() * (endMillis - startMillis) + startMillis;
+
+                // this.depTime = "P" + String(date.getUTCHours()).padStart(2,"0") + String(date.getUTCMinutes()).padStart(2,"0")
+                date = new Date(randomMillis);
+                this.depTime = "P" + String(date.getUTCHours()).padStart(2,"0") + String(date.getUTCMinutes()).padStart(2,"0");
+            }
+            
+            initialCall() {
+                return `${airportInfo.positions.clearance}, ${this.requestCallsign()} at ${this.aircraft.parkingName} ${this.intent} ${this.route.destinationName}`;
+            }
+
+            requestAgain() {
+                return `${this.requestCallsign()} at ${this.aircraft.parkingName} ${this.intent} ${this.route.destinationName}`;
+            }
+
+            requestParking() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestPosition() {
+                return `${this.aircraft.parkingName}, ${this.shortCallsign()}`;
+            }
+
+            requestIntent() {
+                return `${this.intent} ${this.route.destinationName}, ${this.shortCallsign()}`;
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} CLNC ${this.route.destination}`;
+            }
+        }
+
+        class Callsign extends CallIn {
+            constructor( aircraft ) {
+                super( aircraft );
+            }
+            
+            initialCall() {
+                return `${airportInfo.positions.ground}, ${this.requestCallsign()}`;
+            }
+
+            requestAgain() {
+                return this.requestCallsign();
+            }
+
+            requestParking() {
+                return this.shortCallsign();
+            }
+
+            requestPosition() {
+                return this.shortCallsign();
+            }
+
+            requestIntent() {
+                return this.shortCallsign();
+            }
+
+            toString() {
+                return `${this.aircraft.type} ${this.getAcftIdForOutput()} ${this.aircraft.flightSchool}`;
+            }
+        }
+
+        async function fetchAirportInfo() {
+            const response = await fetch( airportInfoUrl );
+            return await response.json();
+        }
+
+        async function fetchAircraft() {
+            const response = await fetch( aircraftUrl );
+            let tempList = await response.json();
+            return tempList.filter( acft => acft.parking != null );
+        }
+
+        async function fetchAirports() {
+            const response = await fetch( airportsUrl );
+            return await response.json();
+        }
+
+        async function fetchFlightPlans() {
+            const response = await fetch( flightPlansUrl );
+            return await response.json();
+        }
+
+        async function fetchMetars() {
+            const response = await fetch( metarsUrl );
+            return await response.json();
+        }
+
+        async function loadData() {
+            airportInfo = await fetchAirportInfo();
+            aircraft = await fetchAircraft();
+            airports = await fetchAirports();
+            ifrFlightPlans = await fetchFlightPlans();
+            metarList = await fetchMetars();
+
+            updateHeader();
+            updateLocalAircraft();
+        }
+
+        function updateHeader() {
+            document.getElementById("headerText").innerHTML = `${airportInfo.info.name_short} ${headerSuffix}`;
+        }
+
+        function updateLocalAircraft( sortBy ) {
+            let toReturn = "";
+            let localList = aircraft.filter( acft => acft.flightSchool != null );
+            // sort by callsign and school
+            switch ( sortBy ) {
+                case "callsign":
+                    localList.sort((a, b) => {
+                        const nameA = a.registration.toUpperCase();
+                        const nameB = b.registration.toUpperCase();
+                        return ( nameA < nameB ? -1 : 1 );
+                    });
+                    break;
+                case "last3":
+                    localList.sort((a, b) => {
+                        const nameA = a.registration.slice(-3).toUpperCase();
+                        const nameB = b.registration.slice(-3).toUpperCase();
+                        return ( nameA < nameB ? -1 : 1 );
+                    });
+                    break;
+                case "type":
+                    localList.sort((a, b) => {
+                        const nameA = a.type.toUpperCase();
+                        const nameB = b.type.toUpperCase();
+                        return ( nameA < nameB ? -1 : 1 );
+                    });
+                    break;
+                case "company":
+                    localList.sort((a, b) => {
+                        const nameA = a.flightSchool.toUpperCase();
+                        const nameB = b.flightSchool.toUpperCase();
+                        return ( nameA < nameB ? -1 : 1 );
+                    });
+                    break;
+            }
+            localList.forEach( ( acft ) => {
+                toReturn += `${acft.type} N${acft.registration.padEnd(5," ")} ${acft.flightSchool}\n`
+            });
+
+            document.getElementById("localAircraftDisplay").innerHTML = toReturn;
+        }
+
+        async function main() {
+            await loadData();
+
+            updateTime(); // Display time immediately on page load
+            setInterval(updateTime, 1000);
+            setTheme( document.getElementById("themeSelection").value );
+            updateDisplay();
+            
+            getNewMETAR();
+        }
+
+        function getMETAR() {
+            var date = new Date();
+            if ( String(date.getUTCMinutes()) < 52 ) {
+                date = new Date( Date.now() - 1000 * 60 * date.getUTCMinutes() );
+            }
+            var obsDay = String(date.getUTCDate()).padStart(2,"0");
+            var obsHour = String(date.getUTCHours()).padStart(2,"0");
+            var obsMin = "53";
+            let observationTime = obsDay + obsHour + obsMin + "Z";
+
+            metar = `${airportInfo.info.icao} ${observationTime} ${metarList[ Math.floor( Math.random() * metarList.length ) ]}`;
+        }
+
+        function getNewMETAR() {
+            getMETAR();
+            document.getElementById("currentMETAR").innerHTML = metar;
+
+            getRunways();
+            document.getElementById("currentRunway").innerHTML = runwayInUse;
+
+            if ( information === "" ) {
+                information = informationList[ Math.floor( Math.random() * informationList.length ) ];
+            } else {
+                information = informationList[ ( informationList.indexOf( information ) + 1 ) % informationList.length ];
+            }
+            document.getElementById("currentATIS").innerHTML = information;
+        }
+
+        function getRunways() {
+            var metarComponents = metar.split( " " );
+            for (let i = 0; i < metarComponents.length; i++) {
+                if ( metarComponents[i].includes( "KT" ) ) {
+                    var windDir = metarComponents[i].substring(0,3);
+                    // if wind calm or less than 90º -> calm wind. Else reciprocal.
+                    if ( windDir === "000" ) {
+                        runwayInUse = airportInfo.runways.calm_wind;
+                    } else if ( windDir === "VRB" ) {
+                        runwayInUse = airportInfo.runways.calm_wind;
+                    } else {
+                        let minDiff = 360;
+                        let minIndex = -1;
+                        let minIsPrimary = true;
+                        for (let j = 0; j < airportInfo.runways.available.length; j++ ) {
+                            console.log( windDir, airportInfo.runways.available[j].heading, airportInfo.runways.available[j].heading + 180 );
+                            let primaryDiff = Math.abs( windDir - airportInfo.runways.available[j].heading );
+                            let reciprocalDiff = Math.abs( ( windDir - airportInfo.runways.available[j].heading + 180 ) - 360 );
+                            console.log( { primaryDiff, reciprocalDiff } );
+                            if ( primaryDiff < minDiff || reciprocalDiff < minDiff) {
+                                if ( primaryDiff < reciprocalDiff ) {
+                                    minDiff = primaryDiff;
+                                    minIndex = j;
+                                    minIsPrimary = true;
+                                } else {
+                                    minDiff = reciprocalDiff;
+                                    minIndex = j;
+                                    minIsPrimary = false;
+                                }
+                            }
+                            console.log( {minDiff, minIndex, minIsPrimary } );
+                            console.log( Math.abs( windDir - 160 ) <= 90 ? 16 : 34 );
+                        }
+                        runwayInUse = ( minIsPrimary ? airportInfo.runways.available[ minIndex ].primary : airportInfo.runways.available[ minIndex ].reciprocal);
+                    }
+                    // runwayInUse = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 ); 
+                }
+            }
+        }
+
+        function alphanumerics( characters ) {
+            let converted = "";
+            for (let i = 0; i < characters.toString().length; i++) {
+                switch (characters.toString().charAt(i)) {
+                    case "A":
+                        converted += "Alpha ";
+                        break;
+                    case "B":
+                        converted += "Bravo ";
+                        break;
+                    case "C":
+                        converted += "Charlie ";
+                        break;
+                    case "D":
+                        converted += "Delta ";
+                        break;
+                    case "E":
+                        converted += "Echo ";
+                        break;
+                    case "F":
+                        converted += "Foxtrot ";
+                        break;
+                    case "G":
+                        converted += "Golf ";
+                        break;
+                    case "H":
+                        converted += "Hotel ";
+                        break;
+                    case "I":
+                        converted += "India ";
+                        break;
+                    case "J":
+                        converted += "Juliet ";
+                        break;
+                    case "K":
+                        converted += "Kilo ";
+                        break;
+                    case "L":
+                        converted += "Lima ";
+                        break;
+                    case "M":
+                        converted += "Mike ";
+                        break;
+                    case "N":
+                        converted += "November ";
+                        break;
+                    case "O":
+                        converted += "Oscar ";
+                        break;
+                    case "P":
+                        converted += "Papa ";
+                        break;
+                    case "Q":
+                        converted += "Quebec ";
+                        break;
+                    case "R":
+                        converted += "Romeo ";
+                        break;
+                    case "S":
+                        converted += "Sierra ";
+                        break;
+                    case "T":
+                        converted += "Tango ";
+                        break;
+                    case "U":
+                        converted += "Uniform ";
+                        break;
+                    case "V":
+                        converted += "Victor ";
+                        break;
+                    case "W":
+                        converted += "Whiskey ";
+                        break;
+                    case "X":
+                        converted += "X-Ray ";
+                        break;
+                    case "Y":
+                        converted += "Yankee ";
+                        break;
+                    case "Z":
+                        converted += "Zulu ";
+                        break;
+                    case "0":
+                        converted += "Zero ";
+                        break;
+                    case "1":
+                        converted += "One ";
+                        break;
+                    case "2":
+                        converted += "Two ";
+                        break;
+                    case "3":
+                        converted += "Three ";
+                        break;
+                    case "4":
+                        converted += "Four ";
+                        break;
+                    case "5":
+                        converted += "Five ";
+                        break;
+                    case "6":
+                        converted += "Six ";
+                        break;
+                    case "7":
+                        converted += "Seven ";
+                        break;
+                    case "8":
+                        converted += "Eight ";
+                        break;
+                    case "9":
+                        converted += "Niner ";
+                        break;
+                }
+            }
+            return converted.trim();
+        }
+
+        function newCheckIn() {
+            clearFlightProgressStrip();
+            document.getElementById("btnStarsEntry").style.display = "none";
+            document.getElementById("txtStarsEntry").style.display = "none";
+            document.getElementById("starsEntry").style.display = "none";
+            document.getElementById("starsError").style.display = "none";
+
+            let selectedCheckInTypes = [];
+            if ( document.getElementById("chkbxCallsignPractice").checked ) {
+                selectedCheckInTypes.push( 'callsign' );
+            }
+            if ( document.getElementById("chkbxClearance").checked ) {
+                selectedCheckInTypes.push( 'clearance' );
+            }
+            if ( document.getElementById("chkbxArrival").checked ) {
+                selectedCheckInTypes.push( 'arrival' );
+            }
+            if ( document.getElementById("chkbxDeparture").checked ) {
+                selectedCheckInTypes.push( 'departure' );
+            }
+            if ( document.getElementById("chkbxFlightFollowing").checked ) {
+                selectedCheckInTypes.push( 'flightFollowing' );
+            }
+            if ( document.getElementById("chkbxReposition").checked ) {
+                selectedCheckInTypes.push( 'reposition' );
+            }
+            
+            let checkInType = selectedCheckInTypes[ Math.floor( Math.random() * selectedCheckInTypes.length ) ];
+
+            if ( checkInType === checkInTypes[0] ) {
+                // Arrival
+                let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
+                let availableTaxiways = airportInfo.taxiways.runwayInUse;
+                console.log( availableTaxiways );
+                let currentTaxiway = taxiwayList[ Math.floor( Math.random() * taxiwayList.length ) ];
+                checkInList.push( new Arrival( currentAircraft, currentTaxiway ) );
+            } else if ( checkInType === checkInTypes[1] ) {
+                // Departure
+                let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
+                checkInList.push( new Departure( currentAircraft, getATIS() ) );
+            } else if ( checkInType === checkInTypes[2] ) {
+                // Flight Following
+                // FTW GC, ACFT, FF to LOC at ALT
+                let ffAircraft = aircraft.filter( acft => !acft.ifr );
+                let currentAircraft = ffAircraft[ Math.floor( Math.random() * ffAircraft.length ) ];
+                let currentDestination = airports[ Math.floor( Math.random() * airports.length ) ];
+                let currentAltitude = "" + ( Math.floor( Math.random() * 13 ) + 3 ) + "5";
+                currentAltitude = currentAltitude.padStart(3,"0");
+                checkInList.push( new FlightFollowing( currentAircraft, currentDestination, currentAltitude ) );
+
+                consoleDebug( checkInList.at(-1).flightFollowingInput() );
+                
+                if ( document.getElementById("checkKeyboardEntries").checked ) {   
+                    setFocusToSTARSEntry();
+                } else {
+                    showSTARSEntryButton();
+                }
+
+                // after successful input: set focus to previous
+
+                // bonus if next call is FF acft to taxi
+            } else if ( checkInType === checkInTypes[3] ) {
+                // Reposition
+                let repositionAircraft = aircraft.filter( acft => acft.repositionName != null );
+                checkInList.push( new Reposition( repositionAircraft[ Math.floor( Math.random() * repositionAircraft.length ) ] ) );
+            } else if ( checkInType === checkInTypes[4] ) {
+                // Clearance
+                let ifrCapableAircraft = aircraft.filter( acft => acft.ifr );
+                let currentAircraft = ifrCapableAircraft[ Math.floor( Math.random() * ifrCapableAircraft.length ) ];
+                let currentFlightPlan = ifrFlightPlans[ Math.floor( Math.random() * ifrFlightPlans.length ) ];
+                checkInList.push( new Clearance( currentAircraft, currentFlightPlan ) );
+                fillIFRFlightProgressStrip( checkInList.at(-1) );
+            } else if ( checkInType === checkInTypes[5] ) {
+                // Callsign
+                let localAircraft = aircraft.filter( acft => acft.flightSchool != null );
+                let currentAircraft = localAircraft[ Math.floor( Math.random() * localAircraft.length ) ];
+                checkInList.push( new Callsign( currentAircraft ) );
+            }
+
+            consoleDebug( condenseWhiteSpace( checkInList.at(-1).toString() ) );
+            
+            speakText( checkInList.at(-1).initialCall() );
+
+            updateDisplay();
+        }
+
+        function repeatInitial() {
+            speakText( checkInList.at(-1).initialCall() );
+        }
+
+        function sayAgain() {
+            speakText( checkInList.at(-1).requestAgain() );
+        }
+
+        function sayCallsign() {
+            speakText( checkInList.at(-1).requestCallsign() );
+        }
+
+        function sayIntent() {
+            speakText( checkInList.at(-1).requestIntent() );
+        }
+        
+        function sayLocation() {
+            speakText( checkInList.at(-1).requestLocation() );
+        }
+        
+        function sayParking() {
+            speakText( checkInList.at(-1).requestParking() );
+        }
+
+        function speakText( text ) {
+            consoleDebug( text );
+            if ( document.getElementById("voice").checked ) {
+                let tts = new SpeechSynthesisUtterance(text);
+                const synth = window.speechSynthesis;
+                tts.voice = synth.getVoices()[0];
+                tts.rate = document.getElementById("speechRate").value;
+                tts.pitch = 1;
+                synth.speak(tts);
+            }
+        }
+
+        function changeCheckInFocus( whichType ) {
+            consoleDebug( `changeCheckInFocus() received: ${whichType}`);
+            if ( whichType === 'cd' ) {
+                let state = ( document.getElementById('chkbxClearanceDelivery').checked ? true : false );
+                document.getElementById('chkbxClearance').checked = state;
+                document.getElementById('chkbxFlightFollowing').checked = state;   
+            } else if ( whichType === 'gc' ) {
+                let state = ( document.getElementById('chkbxGroundControl').checked ? true : false );
+                document.getElementById('chkbxArrival').checked = state;
+                document.getElementById('chkbxDeparture').checked = state;
+                document.getElementById('chkbxReposition').checked = state;
+            }
+        }
+
+        function consoleDebug( text ) {
+            if( document.getElementById("consoleOutput").checked ) {
+                console.log( text );
+            }
+        }
+
+        function setFocusToSTARSEntry() {
+            lastFocusElement = document.activeElement.id;
+            document.getElementById("starsEntry").style.display = "block";
+            document.getElementById("starsEntry").focus();
+        }
+
+        function starsKeyboard( key ) {
+            console.log( key );
+        }
+
+        function showSTARSEntryButton() {
+            document.getElementById("btnStarsEntry").style.display = "block";
+        }
+
+        function completeStripMarking( box ) {
+            if ( box === 'b16' ) {
+
+            }
+        }
+
+        function fillFlightProgressStrip( box1, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15, box16, box17, box18 ) {
+            document.getElementById("fps1").innerHTML = box1;
+            document.getElementById("fps3").innerHTML = box3;
+            document.getElementById("fps4").innerHTML = box4;
+            document.getElementById("fps5").innerHTML = box5;
+            document.getElementById("fps6").innerHTML = box6;
+            document.getElementById("fps7").innerHTML = box7;
+            document.getElementById("fps8").innerHTML = box8;
+            document.getElementById("fps9").innerHTML = box9;
+            document.getElementById("fps10").innerHTML = box10;
+            document.getElementById("fps11").innerHTML = box11;
+            document.getElementById("fps12").innerHTML = box12;
+            document.getElementById("fps13").innerHTML = box13;
+            document.getElementById("fps14").innerHTML = box14;
+            document.getElementById("fps15").innerHTML = box15;
+            document.getElementById("fps16").innerHTML = box16;
+            document.getElementById("fps17").innerHTML = box17;
+            document.getElementById("fps18").innerHTML = box18;
+        }
+
+        function completeStripMarking( box ) {
+            if ( box === 'b16' ) {
+                document.getElementById("fps16").innerHTML = "✓";
+            }
+        }
+
+        function fillFlightFollowingStrip( ffObj ) {
+            fillFlightProgressStrip( ffObj.getAcftIdForOutput(), ffObj.aircraft.type, "", ffObj.getSquawk(), "", "VFR/" + ffObj.altitude, "FTW " + ffObj.destination.airportFAA, "FTW " + ffObj.destination.airportFAA, "", "", "", "", "", "", "", "", "" );
+        }
+
+        function fillIFRFlightProgressStrip( ifrObj ) {
+            fillFlightProgressStrip( ifrObj.getAcftIdForOutput(), ifrObj.aircraft.type, ifrObj.cid, ifrObj.getSquawk(), ifrObj.depTime, ifrObj.altitude, "KFTW " + ifrObj.route.destination, ifrObj.route.route, "", "", "", "", "", "", "", "", "" );
+        }
+
+        function clearFlightProgressStrip() {
+            document.getElementById("fps1").innerHTML = "";
+            document.getElementById("fps3").innerHTML = "";
+            document.getElementById("fps4").innerHTML = "";
+            document.getElementById("fps5").innerHTML = "";
+            document.getElementById("fps6").innerHTML = "";
+            document.getElementById("fps7").innerHTML = "";
+            document.getElementById("fps8").innerHTML = "";
+            document.getElementById("fps9").innerHTML = "";
+            document.getElementById("fps10").innerHTML = "";
+            document.getElementById("fps11").innerHTML = "";
+            document.getElementById("fps12").innerHTML = "";
+            document.getElementById("fps13").innerHTML = "";
+            document.getElementById("fps14").innerHTML = "";
+            document.getElementById("fps15").innerHTML = "";
+            document.getElementById("fps16").innerHTML = "";
+            document.getElementById("fps17").innerHTML = "";
+            document.getElementById("fps18").innerHTML = "";
+        }
+
+        function noStarsEntryFlightFollowing() {
+            document.getElementById("btnStarsEntry").style.display = "none";
+            document.getElementById("txtStarsEntry").style.display = "block";
+            let starsEntryToShow = checkInList.at(-1).flightFollowingInput().toUpperCase().replace(/ /g, "<br>");
+            consoleDebug( starsEntryToShow );
+            document.getElementById("txtStarsEntry").innerHTML = starsEntryToShow;
+            fillFlightFollowingStrip( checkInList.at(-1) );
+        }
+
+        function checkFlightFollowing() {
+            consoleDebug( `   got: ${document.getElementById("starsEntry").value.toUpperCase()}\nexpect: ${checkInList.at(-1).flightFollowingInput().toUpperCase()}` );
+            let receivedInput = document.getElementById("starsEntry").value.toUpperCase();
+            let expectedInput = checkInList.at(-1).flightFollowingInput().toUpperCase();
+            if ( receivedInput.includes( expectedInput ) || receivedInput.includes( expectedInput.replace( /\s+\d{3}/, '' ) ) ) {
+                document.getElementById("starsError").style.display = "none";
+                document.getElementById("starsEntry").value = "";
+                document.getElementById("starsEntry").style.display = "none";
+                // document.getElementById(lastFocusElement).focus();
+                fillFlightFollowingStrip( checkInList.at(-1) );
+            } else {
+                document.getElementById("starsError").style.display = "block";
+            }
+        }
+
+        function getATIS() {
+            let chosenOption = atisOptions[ 0 ];
+            if ( document.getElementById("listenForATIS").checked ) {
+                // two randoms to skew towards more having the correct ATIS
+                let rand1 = Math.random();
+                let rand2 = Math.random();
+                chosenOption = atisOptions[ Math.floor( rand1 /** * rand2 */ * atisOptions.length ) ];
+            }
+            if ( chosenOption == atisOptions[0] ) {
+                return information;
+            } else if ( chosenOption == atisOptions[2] ) {
+                if ( informationList.indexOf( information ) == 0 ) {
+                    return informationList.at(-1);
+                } else {
+                    return informationList[ ( informationList.indexOf( information ) - 1 ) % informationList.length ];
+                }
+            } else {
+                return chosenOption;
+            }
+        }
+
+        function condenseWhiteSpace( text ) {
+            return text.replace(/\s+/g, ' ');
+        }
+
+        function atisToText(atis) {
+            if ( atis === atisOptions[3] ) {
+                return "";
+            } else if ( atis === atisOptions[1] ) {
+                return "with the numbers";
+            } else {
+                return "with information " + alphanumerics(atis);
+            }
+        }
+
+        function listToText( direction ) {
+            if ( checkInList != undefined ) {
+                var toReturn = "";
+                if ( direction === "none" ) {
+                    toReturn = "*** output hidden ***";
+                } else if ( checkInList.length == 0 ) {
+                    toReturn = "--"
+                } else if ( direction === "forward" ) {
+                    toReturn = checkInList.toString().replaceAll(",", "\n");
+                } else if ( direction === "reverse" ) {
+                    toReturn = checkInList.toReversed().toString().replaceAll(",", "\n");
+                } else if ( direction === "current" ) {
+                    toReturn = checkInList.at(-1).toString();
+                } else if ( direction === "previous" ) {
+                    toReturn = checkInList.at(-2).toString();
+                }
+                return toReturn;
+            } else {
+                toReturn = "--";
+            }
+        }
+
+        function setTheme( theme ) {
+            consoleDebug( `set theme: ${theme}` );
+            document.getElementById("body").className = theme;
+        }
+
+        function updateDisplay() {
+            document.getElementById("aircraftDisplay").innerHTML = listToText( document.getElementById("displayData").value );
+        }
+
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getUTCHours()).padStart(2, '0');
+            const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+            const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentTime').innerHTML = formattedTime;
+        }
+
+        window.onload = main;
+    </script>
+
+</html>
