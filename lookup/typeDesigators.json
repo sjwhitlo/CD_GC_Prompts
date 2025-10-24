@@ -1,0 +1,2718 @@
+[
+ {
+   "ICAO_Code": "A10",
+   "FAA_Designator": "A10",
+   "Manufacturer": "FAIRCHILD",
+   "Model_FAA": "Fairchild A10",
+   "Model_BADA": "Fairchild A-10A"
+ },
+ {
+   "ICAO_Code": "A124",
+   "FAA_Designator": "A124",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-124 Ruslan",
+   "Model_BADA": "Antonov AN-124-100"
+ },
+ {
+   "ICAO_Code": "A19N",
+   "FAA_Designator": "A19N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A319 Neo",
+   "Model_BADA": "Airbus A319 Neo"
+ },
+ {
+   "ICAO_Code": "A20N",
+   "FAA_Designator": "A20N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A320 Neo",
+   "Model_BADA": "Airbus A320-271N"
+ },
+ {
+   "ICAO_Code": "A21N",
+   "FAA_Designator": "A21N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A321 Neo",
+   "Model_BADA": "Airbus A321-251N"
+ },
+ {
+   "ICAO_Code": "A306",
+   "FAA_Designator": "A306",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A300 B4-600",
+   "Model_BADA": "Airbus A300B4-622"
+ },
+ {
+   "ICAO_Code": "A30B",
+   "FAA_Designator": "A30B",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A300-B2",
+   "Model_BADA": "Airbus A300B4-203"
+ },
+ {
+   "ICAO_Code": "A310",
+   "FAA_Designator": "A310",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A310",
+   "Model_BADA": "Airbus A310-204"
+ },
+ {
+   "ICAO_Code": "A318",
+   "FAA_Designator": "A318",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A318",
+   "Model_BADA": "Airbus A318-112"
+ },
+ {
+   "ICAO_Code": "A319",
+   "FAA_Designator": "A319",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A319",
+   "Model_BADA": "Airbus A319-131"
+ },
+ {
+   "ICAO_Code": "A320",
+   "FAA_Designator": "A320",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A320",
+   "Model_BADA": "Airbus A320-231"
+ },
+ {
+   "ICAO_Code": "A321",
+   "FAA_Designator": "A321",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A321",
+   "Model_BADA": "Airbus A321-111"
+ },
+ {
+   "ICAO_Code": "A332",
+   "FAA_Designator": "A332",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-200",
+   "Model_BADA": "Airbus A330-243"
+ },
+ {
+   "ICAO_Code": "A333",
+   "FAA_Designator": "A333",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-300",
+   "Model_BADA": "Airbus A330-301"
+ },
+ {
+   "ICAO_Code": "A337",
+   "FAA_Designator": "A337",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-700 - Beluga XL",
+   "Model_BADA": "Airbus A330-700 Beluga XL"
+ },
+ {
+   "ICAO_Code": "A338",
+   "FAA_Designator": "A338",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-800",
+   "Model_BADA": "Airbus A330-800"
+ },
+ {
+   "ICAO_Code": "A339",
+   "FAA_Designator": "A339",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-900",
+   "Model_BADA": "Airbus A330-941"
+ },
+ {
+   "ICAO_Code": "A342",
+   "FAA_Designator": "A342",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-200",
+   "Model_BADA": "Airbus A340-213"
+ },
+ {
+   "ICAO_Code": "A343",
+   "FAA_Designator": "A343",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-300",
+   "Model_BADA": "Airbus A340-313"
+ },
+ {
+   "ICAO_Code": "A345",
+   "FAA_Designator": "A345",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-500",
+   "Model_BADA": "Airbus A340-541"
+ },
+ {
+   "ICAO_Code": "A346",
+   "FAA_Designator": "A346",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-600",
+   "Model_BADA": "Airbus A340-642"
+ },
+ {
+   "ICAO_Code": "A359",
+   "FAA_Designator": "A359",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus 350-900",
+   "Model_BADA": "Airbus A350-941"
+ },
+ {
+   "ICAO_Code": "A35K",
+   "FAA_Designator": "A35K",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A350-1000 XWB",
+   "Model_BADA": "Airbus A350-1041"
+ },
+ {
+   "ICAO_Code": "A388",
+   "FAA_Designator": "A388",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A380-800",
+   "Model_BADA": "Airbus A380-841"
+ },
+ {
+   "ICAO_Code": "A400",
+   "FAA_Designator": "A400",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A400M Atlas",
+   "Model_BADA": "Airbus A-400M"
+ },
+ {
+   "ICAO_Code": "A5",
+   "FAA_Designator": "A5",
+   "Manufacturer": "ICON",
+   "Model_FAA": "Icon A-5",
+   "Model_BADA": "Icon A-5"
+ },
+ {
+   "ICAO_Code": "AA1",
+   "FAA_Designator": "AA1",
+   "Manufacturer": "GRUMMAN AMERICAN",
+   "Model_FAA": "Grumman American AA1",
+   "Model_BADA": "Grumman American AA-1 Yankee"
+ },
+ {
+   "ICAO_Code": "AA5",
+   "FAA_Designator": "AA5",
+   "Manufacturer": "GRUMMAN AMERICAN",
+   "Model_FAA": "Grumman American AA5",
+   "Model_BADA": "Grumman American AA-5 Cheetah"
+ },
+ {
+   "ICAO_Code": "AC11",
+   "FAA_Designator": "AC11",
+   "Manufacturer": "ROCKWELL",
+   "Model_FAA": "Rockwell Commander 112",
+   "Model_BADA": "Rockwell Commander 115"
+ },
+ {
+   "ICAO_Code": "AC50",
+   "FAA_Designator": "AC50",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 500",
+   "Model_BADA": "Aero Commander 500"
+ },
+ {
+   "ICAO_Code": "AC56",
+   "FAA_Designator": "AC56",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 560",
+   "Model_BADA": "Aero Commander 560"
+ },
+ {
+   "ICAO_Code": "AC68",
+   "FAA_Designator": "AC68",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 680FP",
+   "Model_BADA": "Aero Commander 680 Super"
+ },
+ {
+   "ICAO_Code": "AC6L",
+   "FAA_Designator": "AC6L",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 680FL",
+   "Model_BADA": "Aero Commander 685"
+ },
+ {
+   "ICAO_Code": "AC80",
+   "FAA_Designator": "AC80",
+   "Manufacturer": "ROCKWELL",
+   "Model_FAA": "Rockwell Commander Turbo 680",
+   "Model_BADA": "Rockwell Turbo Commander 680"
+ },
+ {
+   "ICAO_Code": "AC90",
+   "FAA_Designator": "AC90",
+   "Manufacturer": "GULFSTREAM AEROSPACE-ROCKWELL",
+   "Model_FAA": "Gulfstream 690 Commander 690",
+   "Model_BADA": "Rockwell Commander 690"
+ },
+ {
+   "ICAO_Code": "AC95",
+   "FAA_Designator": "AC95",
+   "Manufacturer": "GULFSTREAM AEROSPACE-ROCKWELL",
+   "Model_FAA": "Gulfstream Jetprop Commander 1000",
+   "Model_BADA": "Rockwell Jetprop Commander 980"
+ },
+ {
+   "ICAO_Code": "AEST",
+   "FAA_Designator": "AEST",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Aero Star",
+   "Model_BADA": "Piper Aerostar"
+ },
+ {
+   "ICAO_Code": "AN12",
+   "FAA_Designator": "AN12",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-12",
+   "Model_BADA": "Antonov AN-12"
+ },
+ {
+   "ICAO_Code": "AN72",
+   "FAA_Designator": "AN72",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-74-100/200",
+   "Model_BADA": "Antonov AN-72"
+ },
+ {
+   "ICAO_Code": "AR11",
+   "FAA_Designator": "AR11",
+   "Manufacturer": "AERONCA",
+   "Model_FAA": "Aeronca 11 Chief",
+   "Model_BADA": "Aeronca 11 Chief"
+ },
+ {
+   "ICAO_Code": "ASTR",
+   "FAA_Designator": "ASTR",
+   "Manufacturer": "IAI",
+   "Model_FAA": "IAI Astra 1125",
+   "Model_BADA": "IAI 1125 Astra"
+ },
+ {
+   "ICAO_Code": "AT3T",
+   "FAA_Designator": "AT3T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-402",
+   "Model_BADA": "Air Tractor AT-302/400/402"
+ },
+ {
+   "ICAO_Code": "AT43",
+   "FAA_Designator": "AT43",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-300/320",
+   "Model_BADA": "ATR 42-300"
+ },
+ {
+   "ICAO_Code": "AT44",
+   "FAA_Designator": "AT44",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-42-400",
+   "Model_BADA": "ATR 42-400"
+ },
+ {
+   "ICAO_Code": "AT45",
+   "FAA_Designator": "AT45",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-500",
+   "Model_BADA": "ATR 42-500"
+ },
+ {
+   "ICAO_Code": "AT46",
+   "FAA_Designator": "AT46",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-600",
+   "Model_BADA": "ATR 42-600"
+ },
+ {
+   "ICAO_Code": "AT5T",
+   "FAA_Designator": "AT5T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-503",
+   "Model_BADA": "Air Tractor AT-502/503/504"
+ },
+ {
+   "ICAO_Code": "AT6T",
+   "FAA_Designator": "AT6T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "AT-602 Air Tractor",
+   "Model_BADA": "Air Tractor AT-602"
+ },
+ {
+   "ICAO_Code": "AT72",
+   "FAA_Designator": "AT72",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-72-201/202",
+   "Model_BADA": "ATR 72-200"
+ },
+ {
+   "ICAO_Code": "AT73",
+   "FAA_Designator": "AT73",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 72-211/212",
+   "Model_BADA": "ATR 72-210"
+ },
+ {
+   "ICAO_Code": "AT75",
+   "FAA_Designator": "AT75",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-72-500",
+   "Model_BADA": "ATR 72-210A"
+ },
+ {
+   "ICAO_Code": "AT76",
+   "FAA_Designator": "AT76",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 72-600/212A",
+   "Model_BADA": "ATR 72-212A 600"
+ },
+ {
+   "ICAO_Code": "AT8T",
+   "FAA_Designator": "AT8T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-802",
+   "Model_BADA": "ATR AT-802"
+ },
+ {
+   "ICAO_Code": "B18T",
+   "FAA_Designator": "B18T",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 18 (Turbo)",
+   "Model_BADA": "Volpar Turbo 18"
+ },
+ {
+   "ICAO_Code": "B190",
+   "FAA_Designator": "B190",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 1900/C-12J",
+   "Model_BADA": "Beech 1900D"
+ },
+ {
+   "ICAO_Code": "B2",
+   "FAA_Designator": "B2",
+   "Manufacturer": "NORTHROP",
+   "Model_FAA": "Northrop B-2 Spirit",
+   "Model_BADA": "Northrop B-2 Spirit"
+ },
+ {
+   "ICAO_Code": "B350",
+   "FAA_Designator": "B350",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Super King Air 350",
+   "Model_BADA": "Beechcraft Super King Air 350"
+ },
+ {
+   "ICAO_Code": "B36T",
+   "FAA_Designator": "B36T",
+   "Manufacturer": "ALLISON-BEECH",
+   "Model_FAA": "Allison 36 Turbine Bonanza",
+   "Model_BADA": "Beech Bonanza 36 Turbine"
+ },
+ {
+   "ICAO_Code": "B37M",
+   "FAA_Designator": "B37M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 7",
+   "Model_BADA": "Boeing 737 Max 7"
+ },
+ {
+   "ICAO_Code": "B38M",
+   "FAA_Designator": "B38M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 8",
+   "Model_BADA": "Boeing B737-8 Max"
+ },
+ {
+   "ICAO_Code": "B39M",
+   "FAA_Designator": "B39M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 9",
+   "Model_BADA": "Boeing B737-9 Max"
+ },
+ {
+   "ICAO_Code": "B461",
+   "FAA_Designator": "B461",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 146-100",
+   "Model_BADA": "British Aerospace BAe 146-100 Statesman"
+ },
+ {
+   "ICAO_Code": "B462",
+   "FAA_Designator": "B462",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 146 -200",
+   "Model_BADA": "British Aerospace BAe 146-200"
+ },
+ {
+   "ICAO_Code": "B52",
+   "FAA_Designator": "B52",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing B-52 Stratofortress",
+   "Model_BADA": "Boeing B-52 Stratofortress"
+ },
+ {
+   "ICAO_Code": "B703",
+   "FAA_Designator": "B703",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 707-300",
+   "Model_BADA": "Boeing B707-300"
+ },
+ {
+   "ICAO_Code": "B712",
+   "FAA_Designator": "B712",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 717-200",
+   "Model_BADA": "Boeing B717-200"
+ },
+ {
+   "ICAO_Code": "B721",
+   "FAA_Designator": "B721",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-100 (C-22)",
+   "Model_BADA": "Boeing 727-100"
+ },
+ {
+   "ICAO_Code": "B722",
+   "FAA_Designator": "B722",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-200",
+   "Model_BADA": "Boeing B727-228 Adv"
+ },
+ {
+   "ICAO_Code": "B732",
+   "FAA_Designator": "B732",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-200/VC96",
+   "Model_BADA": "Boeing B737-200"
+ },
+ {
+   "ICAO_Code": "B733",
+   "FAA_Designator": "B733",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-300",
+   "Model_BADA": "Boeing B737-300"
+ },
+ {
+   "ICAO_Code": "B734",
+   "FAA_Designator": "B734",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-400",
+   "Model_BADA": "Boeing B737-400E"
+ },
+ {
+   "ICAO_Code": "B735",
+   "FAA_Designator": "B735",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-500",
+   "Model_BADA": "Boeing B737-500"
+ },
+ {
+   "ICAO_Code": "B736",
+   "FAA_Designator": "B736",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-600",
+   "Model_BADA": "Boeing B737-600"
+ },
+ {
+   "ICAO_Code": "B737",
+   "FAA_Designator": "B737",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-700",
+   "Model_BADA": "Boeing B737-700"
+ },
+ {
+   "ICAO_Code": "B738",
+   "FAA_Designator": "B738",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-800",
+   "Model_BADA": "Boeing B737-800"
+ },
+ {
+   "ICAO_Code": "B739",
+   "FAA_Designator": "B739",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-900",
+   "Model_BADA": "Boeing B737-900ER"
+ },
+ {
+   "ICAO_Code": "B741",
+   "FAA_Designator": "B741",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-100",
+   "Model_BADA": "Boeing 747-100"
+ },
+ {
+   "ICAO_Code": "B742",
+   "FAA_Designator": "B742",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-200",
+   "Model_BADA": "Boeing B747-200"
+ },
+ {
+   "ICAO_Code": "B743",
+   "FAA_Designator": "B743",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-300",
+   "Model_BADA": "Boeing B747-300"
+ },
+ {
+   "ICAO_Code": "B744",
+   "FAA_Designator": "B744",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-400",
+   "Model_BADA": "Boeing B747-400"
+ },
+ {
+   "ICAO_Code": "B748",
+   "FAA_Designator": "B748",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-8",
+   "Model_BADA": "Boeing B747-8F"
+ },
+ {
+   "ICAO_Code": "B752",
+   "FAA_Designator": "B752",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 757-200",
+   "Model_BADA": "Boeing B757-200"
+ },
+ {
+   "ICAO_Code": "B753",
+   "FAA_Designator": "B753",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 757-300",
+   "Model_BADA": "Boeing B757-300"
+ },
+ {
+   "ICAO_Code": "B762",
+   "FAA_Designator": "B762",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-200",
+   "Model_BADA": "Boeing B767-200"
+ },
+ {
+   "ICAO_Code": "B763",
+   "FAA_Designator": "B763",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-300",
+   "Model_BADA": "Boeing B767-300ER"
+ },
+ {
+   "ICAO_Code": "B764",
+   "FAA_Designator": "B764",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-400",
+   "Model_BADA": "Boeing B767-400"
+ },
+ {
+   "ICAO_Code": "B772",
+   "FAA_Designator": "B772",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-200",
+   "Model_BADA": "Boeing B777-200ER"
+ },
+ {
+   "ICAO_Code": "B773",
+   "FAA_Designator": "B773",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-300",
+   "Model_BADA": "Boeing B777-300"
+ },
+ {
+   "ICAO_Code": "B778",
+   "FAA_Designator": "B778",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-8 ",
+   "Model_BADA": "Boeing 777-8"
+ },
+ {
+   "ICAO_Code": "B779",
+   "FAA_Designator": "B779",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-9",
+   "Model_BADA": "Boeing 777-9"
+ },
+ {
+   "ICAO_Code": "B77L",
+   "FAA_Designator": "B77L",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-200LRF/LR",
+   "Model_BADA": "Boeing B777-200LR"
+ },
+ {
+   "ICAO_Code": "B77W",
+   "FAA_Designator": "B77W",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-300ER",
+   "Model_BADA": "Boeing B777-300ER"
+ },
+ {
+   "ICAO_Code": "B788",
+   "FAA_Designator": "B788",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-8 BBJ/Dreamliner",
+   "Model_BADA": "Boeing B787-8"
+ },
+ {
+   "ICAO_Code": "B789",
+   "FAA_Designator": "B789",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-9 Dreamliner",
+   "Model_BADA": "Boeing B787-9"
+ },
+ {
+   "ICAO_Code": "B78X",
+   "FAA_Designator": "B78X",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-10 Dreamliner",
+   "Model_BADA": "Boeing B787-10"
+ },
+ {
+   "ICAO_Code": "BA11",
+   "FAA_Designator": "BA11",
+   "Manufacturer": "BAC",
+   "Model_FAA": "BAC 111 One-Eleven",
+   "Model_BADA": "BAC 1.11/400"
+ },
+ {
+   "ICAO_Code": "BCS1",
+   "FAA_Designator": "BCS1",
+   "Manufacturer": "AIRBUS-BOMBARDIER",
+   "Model_FAA": "Airbus A220-100",
+   "Model_BADA": "Bombardier CS100"
+ },
+ {
+   "ICAO_Code": "BCS3",
+   "FAA_Designator": "BCS3",
+   "Manufacturer": "AIRBUS-BOMBARDIER",
+   "Model_FAA": "Airbus A220-300",
+   "Model_BADA": "Bombardier CS300"
+ },
+ {
+   "ICAO_Code": "BE10",
+   "FAA_Designator": "BE10",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech King Air 100",
+   "Model_BADA": "Beech 100 King Air"
+ },
+ {
+   "ICAO_Code": "BE18",
+   "FAA_Designator": "BE18",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 18",
+   "Model_BADA": "Beech 18 Twin Beech"
+ },
+ {
+   "ICAO_Code": "BE19",
+   "FAA_Designator": "BE19",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech B19 Musketeer",
+   "Model_BADA": "Beech 19 Sport"
+ },
+ {
+   "ICAO_Code": "BE20",
+   "FAA_Designator": "BE20",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 200 Super King",
+   "Model_BADA": "Beechcraft Super King Air B200"
+ },
+ {
+   "ICAO_Code": "BE23",
+   "FAA_Designator": "BE23",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 23 Sundowner",
+   "Model_BADA": "Beech 23 Musketeer"
+ },
+ {
+   "ICAO_Code": "BE24",
+   "FAA_Designator": "BE24",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 24 Sierra",
+   "Model_BADA": "Beech 24 Sierra"
+ },
+ {
+   "ICAO_Code": "BE30",
+   "FAA_Designator": "BE30",
+   "Manufacturer": "RAYTHEON-BEECH",
+   "Model_FAA": "Raytheon 300 Super King Air",
+   "Model_BADA": "Beech Super King Air 300"
+ },
+ {
+   "ICAO_Code": "BE33",
+   "FAA_Designator": "BE33",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 33",
+   "Model_BADA": "Beech 33 Bonanza"
+ },
+ {
+   "ICAO_Code": "BE35",
+   "FAA_Designator": "BE35",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 35",
+   "Model_BADA": "Beech 35 Bonanza"
+ },
+ {
+   "ICAO_Code": "BE36",
+   "FAA_Designator": "BE36",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 36",
+   "Model_BADA": "Beechcraft Bonanza G36"
+ },
+ {
+   "ICAO_Code": "BE40",
+   "FAA_Designator": "BE40",
+   "Manufacturer": "RAYTHEON-BEECH-HAWKER",
+   "Model_FAA": "Raytheon/Beech Beechjet 400/T-1 Jayhawk",
+   "Model_BADA": "Hawker 400XP"
+ },
+ {
+   "ICAO_Code": "BE50",
+   "FAA_Designator": "BE50",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beechcraft 50 Twin Bonanza",
+   "Model_BADA": "Beech 50 Twin Bonanza"
+ },
+ {
+   "ICAO_Code": "BE55",
+   "FAA_Designator": "BE55",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Baron 55",
+   "Model_BADA": "Beech 55 Baron"
+ },
+ {
+   "ICAO_Code": "BE58",
+   "FAA_Designator": "BE58",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 58 Baron",
+   "Model_BADA": "Beechcraft Baron 58"
+ },
+ {
+   "ICAO_Code": "BE60",
+   "FAA_Designator": "BE60",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 60 Duke",
+   "Model_BADA": "Beech 60 Duke"
+ },
+ {
+   "ICAO_Code": "BE65",
+   "FAA_Designator": "BE65",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 65 Queen Air",
+   "Model_BADA": "Beech 65 Queen Air"
+ },
+ {
+   "ICAO_Code": "BE70",
+   "FAA_Designator": "BE70",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 70 Queen Air",
+   "Model_BADA": "Beech 70 Queen Air"
+ },
+ {
+   "ICAO_Code": "BE76",
+   "FAA_Designator": "BE76",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 76 Duchess",
+   "Model_BADA": "Beech Duchess 76"
+ },
+ {
+   "ICAO_Code": "BE77",
+   "FAA_Designator": "BE77",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 77 Skipper",
+   "Model_BADA": "Beech 77 Skipper"
+ },
+ {
+   "ICAO_Code": "BE80",
+   "FAA_Designator": "BE80",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech BE-80 Queen Air",
+   "Model_BADA": "Beech 80 Queen Air"
+ },
+ {
+   "ICAO_Code": "BE95",
+   "FAA_Designator": "BE95",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beechcraft 95 Travel Air",
+   "Model_BADA": "Beech 95 Travel Air"
+ },
+ {
+   "ICAO_Code": "BE99",
+   "FAA_Designator": "BE99",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Airliner 99",
+   "Model_BADA": "Beech 99A Airliner"
+ },
+ {
+   "ICAO_Code": "BE9L",
+   "FAA_Designator": "BE9L",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech King Air 90",
+   "Model_BADA": "Beechcraft King Air E90"
+ },
+ {
+   "ICAO_Code": "BE9T",
+   "FAA_Designator": "BE9T",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech F90 King Air",
+   "Model_BADA": "Beech 90 (F90) King Air"
+ },
+ {
+   "ICAO_Code": "BL17",
+   "FAA_Designator": "BL17",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca Viking",
+   "Model_BADA": "Bellanca 17 Viking"
+ },
+ {
+   "ICAO_Code": "BL8",
+   "FAA_Designator": "BL8",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca 8 Scout",
+   "Model_BADA": "Bellanca 8 Scout"
+ },
+ {
+   "ICAO_Code": "BLCF",
+   "FAA_Designator": "BLCF",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-400LCF Dreamlifter",
+   "Model_BADA": "Boeing 747-400LCF Dreamlifter"
+ },
+ {
+   "ICAO_Code": "BT36",
+   "FAA_Designator": "BT36",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 36 Bonanza",
+   "Model_BADA": "Beech Bonanza B36TC"
+ },
+ {
+   "ICAO_Code": "C120",
+   "FAA_Designator": "C120",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 120",
+   "Model_BADA": "Cessna 120"
+ },
+ {
+   "ICAO_Code": "C130",
+   "FAA_Designator": "C130",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed 130 Hercules",
+   "Model_BADA": "Lockheed L-100-30 Hercules"
+ },
+ {
+   "ICAO_Code": "C140",
+   "FAA_Designator": "C140",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 140",
+   "Model_BADA": "Cessna 140"
+ },
+ {
+   "ICAO_Code": "C150",
+   "FAA_Designator": "C150",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 150",
+   "Model_BADA": "Cessna 150"
+ },
+ {
+   "ICAO_Code": "C152",
+   "FAA_Designator": "C152",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 152",
+   "Model_BADA": "Cessna 152"
+ },
+ {
+   "ICAO_Code": "C160",
+   "FAA_Designator": "C160",
+   "Manufacturer": "TRANSALL",
+   "Model_FAA": "Transall C-160",
+   "Model_BADA": "Transall C-160P"
+ },
+ {
+   "ICAO_Code": "C162",
+   "FAA_Designator": "C162",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 162 Skycatcher",
+   "Model_BADA": "Cessna 162"
+ },
+ {
+   "ICAO_Code": "C17",
+   "FAA_Designator": "C17",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing Globemaster 3",
+   "Model_BADA": "Boeing C-17 Globemaster 3"
+ },
+ {
+   "ICAO_Code": "C170",
+   "FAA_Designator": "C170",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 170",
+   "Model_BADA": "Cessna 170"
+ },
+ {
+   "ICAO_Code": "C172",
+   "FAA_Designator": "C172",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skyhawk 172/Cutlass",
+   "Model_BADA": "Cessna 172S Skyhawk SP"
+ },
+ {
+   "ICAO_Code": "C175",
+   "FAA_Designator": "C175",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 175",
+   "Model_BADA": "Cessna 175 Skylark"
+ },
+ {
+   "ICAO_Code": "C177",
+   "FAA_Designator": "C177",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 177 Cardinal",
+   "Model_BADA": "Cessna 177 Cardinal"
+ },
+ {
+   "ICAO_Code": "C180",
+   "FAA_Designator": "C180",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 180 Skywagon",
+   "Model_BADA": "Cessna 180"
+ },
+ {
+   "ICAO_Code": "C182",
+   "FAA_Designator": "C182",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skylane 182",
+   "Model_BADA": "Cessna 182T Skylane"
+ },
+ {
+   "ICAO_Code": "C185",
+   "FAA_Designator": "C185",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 185 Skywagon",
+   "Model_BADA": "Cessna 185 Skywagon"
+ },
+ {
+   "ICAO_Code": "C188",
+   "FAA_Designator": "C188",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 188",
+   "Model_BADA": "Cessna A188B"
+ },
+ {
+   "ICAO_Code": "C195",
+   "FAA_Designator": "C195",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 195",
+   "Model_BADA": "Cessna 195"
+ },
+ {
+   "ICAO_Code": "C206",
+   "FAA_Designator": "C206",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 206 Stationair",
+   "Model_BADA": "Cessna 206H"
+ },
+ {
+   "ICAO_Code": "C207",
+   "FAA_Designator": "C207",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 207 Stationair 7",
+   "Model_BADA": "Cessna 207"
+ },
+ {
+   "ICAO_Code": "C208",
+   "FAA_Designator": "C208",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 208 Caravan 1",
+   "Model_BADA": "Cessna 208B"
+ },
+ {
+   "ICAO_Code": "C210",
+   "FAA_Designator": "C210",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 210 Centurion",
+   "Model_BADA": "Cessna 210M"
+ },
+ {
+   "ICAO_Code": "C212",
+   "FAA_Designator": "C212",
+   "Manufacturer": "CASA",
+   "Model_FAA": "CASA Aviocar",
+   "Model_BADA": "CASA C-212 Aviocar"
+ },
+ {
+   "ICAO_Code": "C240",
+   "FAA_Designator": "C240",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna TTx Model T240",
+   "Model_BADA": "Cessna T240 Corvalis TTx"
+ },
+ {
+   "ICAO_Code": "C25A",
+   "FAA_Designator": "C25A",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ2",
+   "Model_BADA": "Cessna Citation CJ2+"
+ },
+ {
+   "ICAO_Code": "C25B",
+   "FAA_Designator": "C25B",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ3",
+   "Model_BADA": "Cessna Citation CJ3"
+ },
+ {
+   "ICAO_Code": "C25C",
+   "FAA_Designator": "C25C",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ4",
+   "Model_BADA": "Cessna Citation CJ4"
+ },
+ {
+   "ICAO_Code": "C25M",
+   "FAA_Designator": "C25M",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation M2",
+   "Model_BADA": "Cessna 525 Citation M2"
+ },
+ {
+   "ICAO_Code": "C303",
+   "FAA_Designator": "C303",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 303 Crusader",
+   "Model_BADA": "Cessna Crusader"
+ },
+ {
+   "ICAO_Code": "C30J",
+   "FAA_Designator": "C30J",
+   "Manufacturer": "LOCKHEED MARTIN",
+   "Model_FAA": "C-130J Super Hercules ; Lockheed",
+   "Model_BADA": "Lockheed Martin C-130J"
+ },
+ {
+   "ICAO_Code": "C310",
+   "FAA_Designator": "C310",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 310",
+   "Model_BADA": "Cessna 310R"
+ },
+ {
+   "ICAO_Code": "C320",
+   "FAA_Designator": "C320",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 320 Skyknight",
+   "Model_BADA": "Cessna 320 Skyknight"
+ },
+ {
+   "ICAO_Code": "C335",
+   "FAA_Designator": "C335",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 335",
+   "Model_BADA": "Cessna 335"
+ },
+ {
+   "ICAO_Code": "C340",
+   "FAA_Designator": "C340",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 340",
+   "Model_BADA": "Cessna 340A"
+ },
+ {
+   "ICAO_Code": "C402",
+   "FAA_Designator": "C402",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 401/402",
+   "Model_BADA": "Cessna 402B"
+ },
+ {
+   "ICAO_Code": "C404",
+   "FAA_Designator": "C404",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 404 Titan",
+   "Model_BADA": "Cessna 404 Titan"
+ },
+ {
+   "ICAO_Code": "C414",
+   "FAA_Designator": "C414",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Chancellor 414",
+   "Model_BADA": "Cessna 414A"
+ },
+ {
+   "ICAO_Code": "C421",
+   "FAA_Designator": "C421",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Golden Eagle 421",
+   "Model_BADA": "Cessna 421C"
+ },
+ {
+   "ICAO_Code": "C425",
+   "FAA_Designator": "C425",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 425 Corsair",
+   "Model_BADA": "Cessna 425 Corsair"
+ },
+ {
+   "ICAO_Code": "C441",
+   "FAA_Designator": "C441",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Conquest",
+   "Model_BADA": "Cessna 441 Conquest"
+ },
+ {
+   "ICAO_Code": "C500",
+   "FAA_Designator": "C500",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 500/Citation I",
+   "Model_BADA": "Cessna 500 Citation 1"
+ },
+ {
+   "ICAO_Code": "C501",
+   "FAA_Designator": "C501",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 1SP",
+   "Model_BADA": "Cessna 501 Citation 1SP"
+ },
+ {
+   "ICAO_Code": "C510",
+   "FAA_Designator": "C510",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Mustang",
+   "Model_BADA": "Cessna Citation Mustang"
+ },
+ {
+   "ICAO_Code": "C525",
+   "FAA_Designator": "C525",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna CitationJet/CJ1",
+   "Model_BADA": "Cessna Citation CJ1+"
+ },
+ {
+   "ICAO_Code": "C526",
+   "FAA_Designator": "C526",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 526 CitationJet",
+   "Model_BADA": "Cessna 526 CitationJet"
+ },
+ {
+   "ICAO_Code": "C550",
+   "FAA_Designator": "C550",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation II/Bravo",
+   "Model_BADA": "Cessna Citation II"
+ },
+ {
+   "ICAO_Code": "C551",
+   "FAA_Designator": "C551",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation II/SP",
+   "Model_BADA": "Cessna Citation II/SP"
+ },
+ {
+   "ICAO_Code": "C55B",
+   "FAA_Designator": "C55B",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Bravo",
+   "Model_BADA": "Cessna Citation Bravo"
+ },
+ {
+   "ICAO_Code": "C560",
+   "FAA_Designator": "C560",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation V/Ultra/Encore",
+   "Model_BADA": "Cessna Citation V"
+ },
+ {
+   "ICAO_Code": "C56X",
+   "FAA_Designator": "C56X",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Excel/XLS",
+   "Model_BADA": "Cessna Citation XLS+"
+ },
+ {
+   "ICAO_Code": "C650",
+   "FAA_Designator": "C650",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna III/VI/VII",
+   "Model_BADA": "Cessna Citation VII"
+ },
+ {
+   "ICAO_Code": "C680",
+   "FAA_Designator": "C680",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Sovereign",
+   "Model_BADA": "Cessna Citation Sovereign"
+ },
+ {
+   "ICAO_Code": "C68A",
+   "FAA_Designator": "C68A",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Latitude",
+   "Model_BADA": "Cessna 680A Citation Latitude"
+ },
+ {
+   "ICAO_Code": "C700",
+   "FAA_Designator": "C700",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Longitude",
+   "Model_BADA": "Cessna Citation Longitude"
+ },
+ {
+   "ICAO_Code": "C72R",
+   "FAA_Designator": "C72R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 172RG Cutlass RG",
+   "Model_BADA": "Cessna 172RG Cutlass RG"
+ },
+ {
+   "ICAO_Code": "C750",
+   "FAA_Designator": "C750",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation X",
+   "Model_BADA": "Cessna Citation X"
+ },
+ {
+   "ICAO_Code": "C77R",
+   "FAA_Designator": "C77R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 177 Cardinal RG",
+   "Model_BADA": "Cessna 177RG Cardinal RG"
+ },
+ {
+   "ICAO_Code": "C82R",
+   "FAA_Designator": "C82R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skylane RG",
+   "Model_BADA": "Cessna R182 Skylane RG"
+ },
+ {
+   "ICAO_Code": "CH7A",
+   "FAA_Designator": "CH7A",
+   "Manufacturer": "AERONCA",
+   "Model_FAA": "Aeronca 7AC",
+   "Model_BADA": "Citabria Aurora 7ECA"
+ },
+ {
+   "ICAO_Code": "CH7B",
+   "FAA_Designator": "CH7B",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca 7GCBC Citabria",
+   "Model_BADA": "Bellanca Citabria Adventure 7GCAA"
+ },
+ {
+   "ICAO_Code": "CL30",
+   "FAA_Designator": "CL30",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier (Canadair) Challenger 300",
+   "Model_BADA": "Bombardier Challenger 300"
+ },
+ {
+   "ICAO_Code": "CL35",
+   "FAA_Designator": "CL35",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier Challenger 350",
+   "Model_BADA": "Bombardier Challenger 350"
+ },
+ {
+   "ICAO_Code": "CL41",
+   "FAA_Designator": "CL41",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "Canadair 41 Tutor",
+   "Model_BADA": "Canadair CL-41 Tutor"
+ },
+ {
+   "ICAO_Code": "CL60",
+   "FAA_Designator": "CL60",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "Canadair Challenger 600/601/604",
+   "Model_BADA": "Canadair Challenger 604"
+ },
+ {
+   "ICAO_Code": "CN35",
+   "FAA_Designator": "CN35",
+   "Manufacturer": "CASA",
+   "Model_FAA": "CASA CN-235",
+   "Model_BADA": "CASA CN-235"
+ },
+ {
+   "ICAO_Code": "COL3",
+   "FAA_Designator": "COL3",
+   "Manufacturer": "LANCAIR-CESSNA",
+   "Model_FAA": "Lancair LC-40 Columbia 300",
+   "Model_BADA": "Cessna 350 Corvalis"
+ },
+ {
+   "ICAO_Code": "COL4",
+   "FAA_Designator": "COL4",
+   "Manufacturer": "LANCAIR-CESSNA",
+   "Model_FAA": "Lancair LC-41 Columbia 400",
+   "Model_BADA": "Cessna 400 Corvalis TT"
+ },
+ {
+   "ICAO_Code": "COUR",
+   "FAA_Designator": "COUR",
+   "Manufacturer": "HELIO",
+   "Model_FAA": "HELIO U-10 Super Courier",
+   "Model_BADA": "HELIO H-295 Super Courier"
+ },
+ {
+   "ICAO_Code": "CRJ1",
+   "FAA_Designator": "CRJ1",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-100",
+   "Model_BADA": "Canadair CRJ-100"
+ },
+ {
+   "ICAO_Code": "CRJ2",
+   "FAA_Designator": "CRJ2",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-200",
+   "Model_BADA": "Canadair CRJ-200"
+ },
+ {
+   "ICAO_Code": "CRJ7",
+   "FAA_Designator": "CRJ7",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-700",
+   "Model_BADA": "Bombardier CRJ-700"
+ },
+ {
+   "ICAO_Code": "CRJ9",
+   "FAA_Designator": "CRJ9",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-900",
+   "Model_BADA": "Canadair CRJ-900"
+ },
+ {
+   "ICAO_Code": "CRUZ",
+   "FAA_Designator": "CRUZ",
+   "Manufacturer": "CZAW",
+   "Model_FAA": "CZAW SportCruiser",
+   "Model_BADA": "CZAW SportCruiser"
+ },
+ {
+   "ICAO_Code": "CVLP",
+   "FAA_Designator": "CVLP",
+   "Manufacturer": "CONVAIR",
+   "Model_FAA": "Convair CV-440 Metropolitan",
+   "Model_BADA": "Convair CV-240 Convairliner"
+ },
+ {
+   "ICAO_Code": "CVLT",
+   "FAA_Designator": "CVLT",
+   "Manufacturer": "CONVAIR-CANADAIR",
+   "Model_FAA": "Convair CV-580/600/640, C-131H",
+   "Model_BADA": "Canadair CL-66"
+ },
+ {
+   "ICAO_Code": "D328",
+   "FAA_Designator": "D328",
+   "Manufacturer": "DORNIER",
+   "Model_FAA": "Dornier 328 Series",
+   "Model_BADA": "Dornier 328"
+ },
+ {
+   "ICAO_Code": "DA40",
+   "FAA_Designator": "DA40",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond Star DA40",
+   "Model_BADA": "Diamond DA40 NG"
+ },
+ {
+   "ICAO_Code": "DA42",
+   "FAA_Designator": "DA42",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond Twin Star",
+   "Model_BADA": "Diamond DA42 Twin Star"
+ },
+ {
+   "ICAO_Code": "DC10",
+   "FAA_Designator": "DC10",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) DC 10-10/30/40",
+   "Model_BADA": "McDonnell Douglas DC10-30"
+ },
+ {
+   "ICAO_Code": "DC3",
+   "FAA_Designator": "DC3",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 3",
+   "Model_BADA": "Douglas DC-3"
+ },
+ {
+   "ICAO_Code": "DC3S",
+   "FAA_Designator": "DC3S",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas Super DC-3",
+   "Model_BADA": "Douglas R4D-8"
+ },
+ {
+   "ICAO_Code": "DC3T",
+   "FAA_Designator": "DC3T",
+   "Manufacturer": "DOUGLAS/BASLER",
+   "Model_FAA": "Basler, BT-67 Turbo 67",
+   "Model_BADA": ""
+ },
+ {
+   "ICAO_Code": "DC6",
+   "FAA_Designator": "DC6",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 6",
+   "Model_BADA": "Douglas DC-6"
+ },
+ {
+   "ICAO_Code": "DC87",
+   "FAA_Designator": "DC87",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC-8-70",
+   "Model_BADA": "Douglas DC8-72CF"
+ },
+ {
+   "ICAO_Code": "DC91",
+   "FAA_Designator": "DC91",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-10",
+   "Model_BADA": "Douglas DC-9-10"
+ },
+ {
+   "ICAO_Code": "DC93",
+   "FAA_Designator": "DC93",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-30",
+   "Model_BADA": "Douglas C9-B"
+ },
+ {
+   "ICAO_Code": "DC95",
+   "FAA_Designator": "DC95",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-50",
+   "Model_BADA": "Douglas DC-9-50"
+ },
+ {
+   "ICAO_Code": "DH8A",
+   "FAA_Designator": "DH8A",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC8-100",
+   "Model_BADA": "DeHavilland Canada DHC-8 100"
+ },
+ {
+   "ICAO_Code": "DH8B",
+   "FAA_Designator": "DH8B",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC8-200",
+   "Model_BADA": "DeHavilland Canada DHC-8 200"
+ },
+ {
+   "ICAO_Code": "DH8C",
+   "FAA_Designator": "DH8C",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada Dash 8/DHC8-300",
+   "Model_BADA": "DeHavilland Canada DHC-8 300"
+ },
+ {
+   "ICAO_Code": "DH8D",
+   "FAA_Designator": "DH8D",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada 8/DHC8-400",
+   "Model_BADA": "DeHavilland Canada Dash-8 Q400"
+ },
+ {
+   "ICAO_Code": "DHC2",
+   "FAA_Designator": "DHC2",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada 2 Mk1 Beaver",
+   "Model_BADA": "DeHavilland Canada DHC-2 Beaver"
+ },
+ {
+   "ICAO_Code": "DHC6",
+   "FAA_Designator": "DHC6",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada Twin Otter",
+   "Model_BADA": "DeHavilland Canada DHC-6 Twin Otter"
+ },
+ {
+   "ICAO_Code": "DHC7",
+   "FAA_Designator": "DHC7",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC-7",
+   "Model_BADA": "DeHavilland Canada DHC-7 Dash 7"
+ },
+ {
+   "ICAO_Code": "DV20",
+   "FAA_Designator": "DV20",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond 20 Katana",
+   "Model_BADA": "Diamond DV-20 Katana"
+ },
+ {
+   "ICAO_Code": "E110",
+   "FAA_Designator": "E110",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer EMB110 Bandeirante",
+   "Model_BADA": "Embraer EMB-110 Bandeirante"
+ },
+ {
+   "ICAO_Code": "E120",
+   "FAA_Designator": "E120",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer Brasilia EMB 120",
+   "Model_BADA": "Embraer EMB-120"
+ },
+ {
+   "ICAO_Code": "E135",
+   "FAA_Designator": "E135",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ 135/140/Legacy",
+   "Model_BADA": "Embraer EMB-135LR"
+ },
+ {
+   "ICAO_Code": "E145",
+   "FAA_Designator": "E145",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ-145",
+   "Model_BADA": "Embraer EMB-145LR"
+ },
+ {
+   "ICAO_Code": "E170",
+   "FAA_Designator": "E170",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 170",
+   "Model_BADA": "Embraer ERJ 170-100 IGW"
+ },
+ {
+   "ICAO_Code": "E190",
+   "FAA_Designator": "E190",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 190",
+   "Model_BADA": "Embraer ERJ 190-100 IGW"
+ },
+ {
+   "ICAO_Code": "E195",
+   "FAA_Designator": "E195",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 195",
+   "Model_BADA": "Embraer ERJ 190-200 IGW"
+ },
+ {
+   "ICAO_Code": "E290",
+   "FAA_Designator": "E290",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 190-E2",
+   "Model_BADA": "Embraer ERJ 190-300"
+ },
+ {
+   "ICAO_Code": "E295",
+   "FAA_Designator": "E295",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 195-E2",
+   "Model_BADA": "Embraer ERJ-190-400"
+ },
+ {
+   "ICAO_Code": "E35L",
+   "FAA_Designator": "E35L",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 135BJ Legacy 600",
+   "Model_BADA": "Embraer EMB-135BJ Legacy 600"
+ },
+ {
+   "ICAO_Code": "E45X",
+   "FAA_Designator": "E45X",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ 145 XR",
+   "Model_BADA": "Embraer EMB-145XR"
+ },
+ {
+   "ICAO_Code": "E50P",
+   "FAA_Designator": "E50P",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 500 Phenom 100",
+   "Model_BADA": "Embraer EMB-500 Phenom 100"
+ },
+ {
+   "ICAO_Code": "E545",
+   "FAA_Designator": "E545",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer EMB-545 Legacy 450",
+   "Model_BADA": "Embraer EMB-545 Legacy 450"
+ },
+ {
+   "ICAO_Code": "E550",
+   "FAA_Designator": "E550",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Legacy 500/Praetor 600",
+   "Model_BADA": "Embraer EMB-550 Legacy 500"
+ },
+ {
+   "ICAO_Code": "E55P",
+   "FAA_Designator": "E55P",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer Phenom 300",
+   "Model_BADA": "Embraer EMB-505 Phenom 300"
+ },
+ {
+   "ICAO_Code": "E75L",
+   "FAA_Designator": "E75L",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 175 long wing",
+   "Model_BADA": "Embraer ERJ 170-200 IGW EWT"
+ },
+ {
+   "ICAO_Code": "E75S",
+   "FAA_Designator": "E75S",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 175 short wing",
+   "Model_BADA": "Embraer ERJ 170-200 IGW"
+ },
+ {
+   "ICAO_Code": "EA50",
+   "FAA_Designator": "EA50",
+   "Manufacturer": "ECLIPSE",
+   "Model_FAA": "Eclipse 500",
+   "Model_BADA": "Eclipse EA500"
+ },
+ {
+   "ICAO_Code": "ERCO",
+   "FAA_Designator": "ERCO",
+   "Manufacturer": "ERCO",
+   "Model_FAA": "Ercoupe 415",
+   "Model_BADA": "Erco Ercoupe 415-C"
+ },
+ {
+   "ICAO_Code": "EVOT",
+   "FAA_Designator": "EVOT",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair Evolution Turbine",
+   "Model_BADA": "Lancair Evolution Turbine"
+ },
+ {
+   "ICAO_Code": "F15",
+   "FAA_Designator": "F15",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing F-15 Eagle",
+   "Model_BADA": "McDonnell Douglas F-15E"
+ },
+ {
+   "ICAO_Code": "F16",
+   "FAA_Designator": "F16",
+   "Manufacturer": "LOCKHEED-GENERAL DYNAMICS",
+   "Model_FAA": "Lockheed F-16 Fighting Falcon",
+   "Model_BADA": "General Dynamics F-16C"
+ },
+ {
+   "ICAO_Code": "F18H",
+   "FAA_Designator": "F18H",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "F/A 18 Hornet",
+   "Model_BADA": "Boeing F/A-18C/D Hornet"
+ },
+ {
+   "ICAO_Code": "F18S",
+   "FAA_Designator": "F18S",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "FA-18E/F Super Hornet",
+   "Model_BADA": "Boeing F/A-18E/F Super Hornet"
+ },
+ {
+   "ICAO_Code": "F22",
+   "FAA_Designator": "F22",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed Martin L-645 Raptor",
+   "Model_BADA": "Lockheed Martin F-22 Raptor"
+ },
+ {
+   "ICAO_Code": "F2TH",
+   "FAA_Designator": "F2TH",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 2000",
+   "Model_BADA": "Dassault Falcon 2000EX"
+ },
+ {
+   "ICAO_Code": "F406",
+   "FAA_Designator": "F406",
+   "Manufacturer": "REIMS-CESSNA",
+   "Model_FAA": "Reims-Cessna F406 Caravan II",
+   "Model_BADA": "Cessna 406"
+ },
+ {
+   "ICAO_Code": "F900",
+   "FAA_Designator": "F900",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 900",
+   "Model_BADA": "Dassault Falcon 900EX"
+ },
+ {
+   "ICAO_Code": "FA10",
+   "FAA_Designator": "FA10",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 10",
+   "Model_BADA": "Dassault Falcon 10"
+ },
+ {
+   "ICAO_Code": "FA20",
+   "FAA_Designator": "FA20",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 20",
+   "Model_BADA": "Dassault Falcon 20"
+ },
+ {
+   "ICAO_Code": "FA50",
+   "FAA_Designator": "FA50",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 50",
+   "Model_BADA": "Dassault Falcon 50EX"
+ },
+ {
+   "ICAO_Code": "FA7X",
+   "FAA_Designator": "FA7X",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 7X",
+   "Model_BADA": "Dassault Falcon 7X"
+ },
+ {
+   "ICAO_Code": "FA8X",
+   "FAA_Designator": "FA8X",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 8X",
+   "Model_BADA": "Dassault Falcon 8X"
+ },
+ {
+   "ICAO_Code": "FDCT",
+   "FAA_Designator": "FDCT",
+   "Manufacturer": "FLIGHT DESIGN",
+   "Model_FAA": "Flight Design CT",
+   "Model_BADA": "Flight Design CT"
+ },
+ {
+   "ICAO_Code": "G150",
+   "FAA_Designator": "G150",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G150",
+   "Model_BADA": "Gulfstream G150"
+ },
+ {
+   "ICAO_Code": "G164",
+   "FAA_Designator": "G164",
+   "Manufacturer": "GRUMMAN AMERICAN",
+   "Model_FAA": "Grumman American G164",
+   "Model_BADA": "Grumman G-164 (Super) Ag-Cat"
+ },
+ {
+   "ICAO_Code": "G280",
+   "FAA_Designator": "G280",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G280",
+   "Model_BADA": "Gulfstream G280"
+ },
+ {
+   "ICAO_Code": "GA5C",
+   "FAA_Designator": "GA5C",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream Aerospace Gulfstream G7-G500",
+   "Model_BADA": "Gulfstream G500 (G-7)"
+ },
+ {
+   "ICAO_Code": "GA6C",
+   "FAA_Designator": "GA6C",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream Aerospace Gulfstream G7-G600",
+   "Model_BADA": "Gulfstream G600 (G-7)"
+ },
+ {
+   "ICAO_Code": "GA7",
+   "FAA_Designator": "GA7",
+   "Manufacturer": "GULFSTREAM AMERICAN - GRUMMAN AMERICAN",
+   "Model_FAA": "Gulfstream American GA7",
+   "Model_BADA": "Grumman American GA-7 Cougar"
+ },
+ {
+   "ICAO_Code": "GALX",
+   "FAA_Designator": "GALX",
+   "Manufacturer": "GULFSTREAM AEROSPACE-IAI",
+   "Model_FAA": "IAI 1126 Galaxy/Gulfstream G200",
+   "Model_BADA": "IAI 1126 Galaxy"
+ },
+ {
+   "ICAO_Code": "GC1",
+   "FAA_Designator": "GC1",
+   "Manufacturer": "GLOBE",
+   "Model_FAA": "Globe GC-1 Swift",
+   "Model_BADA": "Globe GC-1 Swift"
+ },
+ {
+   "ICAO_Code": "GL5T",
+   "FAA_Designator": "GL5T",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global 5000",
+   "Model_BADA": "Bombardier Global 5000"
+ },
+ {
+   "ICAO_Code": "GL7T",
+   "FAA_Designator": "GL7T",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global 7500",
+   "Model_BADA": "Bombardier Global 7500"
+ },
+ {
+   "ICAO_Code": "GLEX",
+   "FAA_Designator": "GLEX",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global Express",
+   "Model_BADA": "Bombardier Global 6000"
+ },
+ {
+   "ICAO_Code": "GLF2",
+   "FAA_Designator": "GLF2",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream II",
+   "Model_BADA": "Gulfstream G-1159 Gulfstream II"
+ },
+ {
+   "ICAO_Code": "GLF3",
+   "FAA_Designator": "GLF3",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream III",
+   "Model_BADA": "Gulfstream III"
+ },
+ {
+   "ICAO_Code": "GLF4",
+   "FAA_Designator": "GLF4",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream IV/G400",
+   "Model_BADA": "Gulfstream IV"
+ },
+ {
+   "ICAO_Code": "GLF5",
+   "FAA_Designator": "GLF5",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream V",
+   "Model_BADA": "Gulfstream G550"
+ },
+ {
+   "ICAO_Code": "GLF6",
+   "FAA_Designator": "GLF6",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G650",
+   "Model_BADA": "Gulfstream G650"
+ },
+ {
+   "ICAO_Code": "H25A",
+   "FAA_Designator": "H25A",
+   "Manufacturer": "HAWKER SIDDELEY",
+   "Model_FAA": "HS 125-1/2/3/400/600",
+   "Model_BADA": "Hawker Siddeley HS.125-3B"
+ },
+ {
+   "ICAO_Code": "H25B",
+   "FAA_Designator": "H25B",
+   "Manufacturer": "BRITISH AEROSPACE - HAWKER SIDDELEY",
+   "Model_FAA": "BAe HS 125/700-800/Hawker 800",
+   "Model_BADA": "Hawker 800XP"
+ },
+ {
+   "ICAO_Code": "H25C",
+   "FAA_Designator": "H25C",
+   "Manufacturer": "BRITISH AEROSPACE RAYTHEON",
+   "Model_FAA": "BAe/Raytheon HS 125-1000",
+   "Model_BADA": "Hawker 1000"
+ },
+ {
+   "ICAO_Code": "HA4T",
+   "FAA_Designator": "HA4T",
+   "Manufacturer": "HAWKER",
+   "Model_FAA": "Hawker 4000",
+   "Model_BADA": "Hawker 4000"
+ },
+ {
+   "ICAO_Code": "HAWK",
+   "FAA_Designator": "HAWK",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe T-45 Goshawk",
+   "Model_BADA": "British Aerospace T-45A Goshawk"
+ },
+ {
+   "ICAO_Code": "HDJT",
+   "FAA_Designator": "HDJT",
+   "Manufacturer": "HONDA",
+   "Model_FAA": "HONDA HA-420 HondaJet",
+   "Model_BADA": "Honda HA-420 HondaJet"
+ },
+ {
+   "ICAO_Code": "HUSK",
+   "FAA_Designator": "HUSK",
+   "Manufacturer": "AVIAT",
+   "Model_FAA": "AVIAT Huskey ",
+   "Model_BADA": "Aviat A-1 Husky"
+ },
+ {
+   "ICAO_Code": "IL76",
+   "FAA_Designator": "IL76",
+   "Manufacturer": "ILYUSHIN",
+   "Model_FAA": "Ilyushin IL 76",
+   "Model_BADA": "Ilyushin Il-76TD"
+ },
+ {
+   "ICAO_Code": "J328",
+   "FAA_Designator": "J328",
+   "Manufacturer": "FAIRCHILD DORNIER",
+   "Model_FAA": "Fairchild Dornier 328 Jet",
+   "Model_BADA": "Dornier 328 Jet"
+ },
+ {
+   "ICAO_Code": "JS31",
+   "FAA_Designator": "JS31",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 3100 Jetstream 31",
+   "Model_BADA": "British Aerospace BAe-3100 Jetstream 31"
+ },
+ {
+   "ICAO_Code": "JS32",
+   "FAA_Designator": "JS32",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe Jetstream super 31",
+   "Model_BADA": "British Aerospace Jetstream 31"
+ },
+ {
+   "ICAO_Code": "JS41",
+   "FAA_Designator": "JS41",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe Jetstream 41",
+   "Model_BADA": "British Aerospace Jetstream 41"
+ },
+ {
+   "ICAO_Code": "K35R",
+   "FAA_Designator": "K35R",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing KC-135 Stratotanker",
+   "Model_BADA": "Boeing KC-135R Stratotanker"
+ },
+ {
+   "ICAO_Code": "KODI",
+   "FAA_Designator": "KODI",
+   "Manufacturer": "QUEST",
+   "Model_FAA": "Quest Kodiak",
+   "Model_BADA": "Quest Kodiak 100"
+ },
+ {
+   "ICAO_Code": "L29B",
+   "FAA_Designator": "L29B",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed Jetstar 2/731",
+   "Model_BADA": "Lockheed L-1329 Jetstar 2"
+ },
+ {
+   "ICAO_Code": "L5",
+   "FAA_Designator": "L5",
+   "Manufacturer": "STINSON",
+   "Model_FAA": "Stinson L5 Sentinel",
+   "Model_BADA": "Stinson L-5 Sentinel"
+ },
+ {
+   "ICAO_Code": "L8",
+   "FAA_Designator": "L8",
+   "Manufacturer": "LUSCOMBE",
+   "Model_FAA": "Luscombe 8",
+   "Model_BADA": "Luscombe 8 Silvaire"
+ },
+ {
+   "ICAO_Code": "LA4",
+   "FAA_Designator": "LA4",
+   "Manufacturer": "LAKE",
+   "Model_FAA": "Lake LA-4",
+   "Model_BADA": "Lake LA-4"
+ },
+ {
+   "ICAO_Code": "LJ23",
+   "FAA_Designator": "LJ23",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 23",
+   "Model_BADA": "Learjet 23"
+ },
+ {
+   "ICAO_Code": "LJ24",
+   "FAA_Designator": "LJ24",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 24",
+   "Model_BADA": "Learjet 24"
+ },
+ {
+   "ICAO_Code": "LJ25",
+   "FAA_Designator": "LJ25",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 25",
+   "Model_BADA": "Learjet 25D"
+ },
+ {
+   "ICAO_Code": "LJ31",
+   "FAA_Designator": "LJ31",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 31",
+   "Model_BADA": "Learjet 31"
+ },
+ {
+   "ICAO_Code": "LJ35",
+   "FAA_Designator": "LJ35",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 35/36",
+   "Model_BADA": "Learjet 35"
+ },
+ {
+   "ICAO_Code": "LJ40",
+   "FAA_Designator": "LJ40",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 40",
+   "Model_BADA": "Learjet 40"
+ },
+ {
+   "ICAO_Code": "LJ45",
+   "FAA_Designator": "LJ45",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 45",
+   "Model_BADA": "Learjet 45"
+ },
+ {
+   "ICAO_Code": "LJ55",
+   "FAA_Designator": "LJ55",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 55",
+   "Model_BADA": "Learjet 55"
+ },
+ {
+   "ICAO_Code": "LJ60",
+   "FAA_Designator": "LJ60",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 60",
+   "Model_BADA": "Learjet 60XR"
+ },
+ {
+   "ICAO_Code": "LJ70",
+   "FAA_Designator": "LJ70",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 70",
+   "Model_BADA": "Learjet 70"
+ },
+ {
+   "ICAO_Code": "LJ75",
+   "FAA_Designator": "LJ75",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 75",
+   "Model_BADA": "Learjet 75"
+ },
+ {
+   "ICAO_Code": "LNC4",
+   "FAA_Designator": "LNC4",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair IV",
+   "Model_BADA": "Lancair IV-P"
+ },
+ {
+   "ICAO_Code": "LNP4",
+   "FAA_Designator": "LNP4",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair PropJet IV",
+   "Model_BADA": "Lancair IV PropJet"
+ },
+ {
+   "ICAO_Code": "M20P",
+   "FAA_Designator": "M20P",
+   "Manufacturer": "MOONEY",
+   "Model_FAA": "Mooney M-20C Ranger",
+   "Model_BADA": "Mooney M20R Ovation 2 GX"
+ },
+ {
+   "ICAO_Code": "M20T",
+   "FAA_Designator": "M20T",
+   "Manufacturer": "MOONEY",
+   "Model_FAA": "Mooney M20K Encore/M20M Bravo",
+   "Model_BADA": "Mooney M20TN Acclaim Type S"
+ },
+ {
+   "ICAO_Code": "M5",
+   "FAA_Designator": "M5",
+   "Manufacturer": "MAULE",
+   "Model_FAA": "Maule M-5",
+   "Model_BADA": "Maule M-5"
+ },
+ {
+   "ICAO_Code": "MD11",
+   "FAA_Designator": "MD11",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 11",
+   "Model_BADA": "McDonnell Douglas MD-11"
+ },
+ {
+   "ICAO_Code": "MD81",
+   "FAA_Designator": "MD81",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 81",
+   "Model_BADA": "McDonnell Douglas MD-81"
+ },
+ {
+   "ICAO_Code": "MD82",
+   "FAA_Designator": "MD82",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 82",
+   "Model_BADA": "McDonnell Douglas MD-82"
+ },
+ {
+   "ICAO_Code": "MD83",
+   "FAA_Designator": "MD83",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 83",
+   "Model_BADA": "McDonnell Douglas MD-83"
+ },
+ {
+   "ICAO_Code": "MD87",
+   "FAA_Designator": "MD87",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 87",
+   "Model_BADA": "McDonnell Douglas MD-87"
+ },
+ {
+   "ICAO_Code": "MD88",
+   "FAA_Designator": "MD88",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 88",
+   "Model_BADA": "McDonnell Douglas MD-88"
+ },
+ {
+   "ICAO_Code": "MD90",
+   "FAA_Designator": "MD90",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 90",
+   "Model_BADA": "McDonnell Douglas MD-90"
+ },
+ {
+   "ICAO_Code": "MU2",
+   "FAA_Designator": "MU2",
+   "Manufacturer": "MITSUBISHI",
+   "Model_FAA": "Mitsubishi Marquise/Solitaire",
+   "Model_BADA": "Mitsubishi MU-2B-60"
+ },
+ {
+   "ICAO_Code": "MU30",
+   "FAA_Designator": "MU30",
+   "Manufacturer": "MITSUBISHI",
+   "Model_FAA": "Mitsubishi Diamond/MU300 Diamond",
+   "Model_BADA": "Mitsubishi MU-300 Diamond"
+ },
+ {
+   "ICAO_Code": "NAVI",
+   "FAA_Designator": "NAVI",
+   "Manufacturer": "NORTH AMERICAN-RYAN",
+   "Model_FAA": "North American Navion",
+   "Model_BADA": "Ryan Navion"
+ },
+ {
+   "ICAO_Code": "P180",
+   "FAA_Designator": "P180",
+   "Manufacturer": "PIAGGIO",
+   "Model_FAA": "Piaggio P-180 Avanti",
+   "Model_BADA": "Piaggio P.180 Avanti II"
+ },
+ {
+   "ICAO_Code": "P210",
+   "FAA_Designator": "P210",
+   "Manufacturer": "RILEY-CESSNA",
+   "Model_FAA": "Riley Super P210",
+   "Model_BADA": "Cessna P210 Pressurized"
+ },
+ {
+   "ICAO_Code": "P28A",
+   "FAA_Designator": "P28A",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cherokee",
+   "Model_BADA": "Piper PA-28-161"
+ },
+ {
+   "ICAO_Code": "P28B",
+   "FAA_Designator": "P28B",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Turbo Dakota",
+   "Model_BADA": "Piper PA-28-236 Dakota"
+ },
+ {
+   "ICAO_Code": "P28R",
+   "FAA_Designator": "P28R",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Cherokee Arrow",
+   "Model_BADA": "Piper PA-28R-201"
+ },
+ {
+   "ICAO_Code": "P28T",
+   "FAA_Designator": "P28T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 28T Arrow 4",
+   "Model_BADA": "Piper PA-28RT-201"
+ },
+ {
+   "ICAO_Code": "P3",
+   "FAA_Designator": "P3",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed P-3 Orion",
+   "Model_BADA": "Lockheed P-3 Orion"
+ },
+ {
+   "ICAO_Code": "P32R",
+   "FAA_Designator": "P32R",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-32R Lance/ Saratoga SP",
+   "Model_BADA": "Piper PA-32R-301T Turbo Sarato"
+ },
+ {
+   "ICAO_Code": "P32T",
+   "FAA_Designator": "P32T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 32T Turbo Lance 2",
+   "Model_BADA": "Piper PA-32RT-300T Turbo Lance"
+ },
+ {
+   "ICAO_Code": "P46T",
+   "FAA_Designator": "P46T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Malibu Meridian",
+   "Model_BADA": "Piper PA-46-500TP"
+ },
+ {
+   "ICAO_Code": "P51",
+   "FAA_Designator": "P51",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American Mustang",
+   "Model_BADA": "North American P-51 Mustang"
+ },
+ {
+   "ICAO_Code": "P68",
+   "FAA_Designator": "P68",
+   "Manufacturer": "VULCAN- PARTEVANIA",
+   "Model_FAA": "Vulcan Air P68",
+   "Model_BADA": "Partenavia P-68 Observer"
+ },
+ {
+   "ICAO_Code": "P750",
+   "FAA_Designator": "P750",
+   "Manufacturer": "PACIFIC AEROSPACE",
+   "Model_FAA": "Pacific Aerospace P-750 Xstol",
+   "Model_BADA": "PAC 750XL"
+ },
+ {
+   "ICAO_Code": "P8",
+   "FAA_Designator": "P8",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing P-8 Poseidon",
+   "Model_BADA": "Boeing P-8 Poseidon"
+ },
+ {
+   "ICAO_Code": "PA11",
+   "FAA_Designator": "PA11",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-11 Cub Special",
+   "Model_BADA": "Piper PA-11 Cub Special"
+ },
+ {
+   "ICAO_Code": "PA12",
+   "FAA_Designator": "PA12",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 12 Supercruiser",
+   "Model_BADA": "Piper PA-12 Super Cruiser"
+ },
+ {
+   "ICAO_Code": "PA16",
+   "FAA_Designator": "PA16",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-16 Clipper",
+   "Model_BADA": "Piper PA-16 Clipper"
+ },
+ {
+   "ICAO_Code": "PA18",
+   "FAA_Designator": "PA18",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 18 Super Cub",
+   "Model_BADA": "Piper PA-18 Super Cub"
+ },
+ {
+   "ICAO_Code": "PA20",
+   "FAA_Designator": "PA20",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-20 Pacer",
+   "Model_BADA": "Piper PA-20 Pacer"
+ },
+ {
+   "ICAO_Code": "PA22",
+   "FAA_Designator": "PA22",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 22 Tri-Pacer",
+   "Model_BADA": "Piper PA-22 Tri-Pacer"
+ },
+ {
+   "ICAO_Code": "PA23",
+   "FAA_Designator": "PA23",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-23-150/160 Apache",
+   "Model_BADA": "Piper PA-23-160 Apache"
+ },
+ {
+   "ICAO_Code": "PA24",
+   "FAA_Designator": "PA24",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-24 Comanche",
+   "Model_BADA": "Piper PA-24 Comanche"
+ },
+ {
+   "ICAO_Code": "PA25",
+   "FAA_Designator": "PA25",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-25 Pawnee",
+   "Model_BADA": "Piper PA-25 Pawnee"
+ },
+ {
+   "ICAO_Code": "PA27",
+   "FAA_Designator": "PA27",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Aztec",
+   "Model_BADA": "Piper PA-23-250 Aztec D"
+ },
+ {
+   "ICAO_Code": "PA30",
+   "FAA_Designator": "PA30",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-30 Turbo Twin Comanche/Turbo Twin Comanche",
+   "Model_BADA": "Piper PA-30 Turbo Twin Comanch"
+ },
+ {
+   "ICAO_Code": "PA31",
+   "FAA_Designator": "PA31",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Navajo PA-31",
+   "Model_BADA": "Piper PA-31 Navajo C"
+ },
+ {
+   "ICAO_Code": "PA32",
+   "FAA_Designator": "PA32",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cherokee Six",
+   "Model_BADA": "Piper PA-32-301T Turbo Saratog"
+ },
+ {
+   "ICAO_Code": "PA34",
+   "FAA_Designator": "PA34",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-34 Seneca",
+   "Model_BADA": "Piper PA-34-220T"
+ },
+ {
+   "ICAO_Code": "PA36",
+   "FAA_Designator": "PA36",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-36 Pawnee Brave",
+   "Model_BADA": "Piper PA-36 Pawnee Brave"
+ },
+ {
+   "ICAO_Code": "PA38",
+   "FAA_Designator": "PA38",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Tomahawk PA38",
+   "Model_BADA": "Piper PA-38 Tomahawk"
+ },
+ {
+   "ICAO_Code": "PA44",
+   "FAA_Designator": "PA44",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Seminole",
+   "Model_BADA": "Piper PA-44-180 Seminole"
+ },
+ {
+   "ICAO_Code": "PA46",
+   "FAA_Designator": "PA46",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Malibu",
+   "Model_BADA": "Piper PA-46-350P"
+ },
+ {
+   "ICAO_Code": "PAT4",
+   "FAA_Designator": "PAT4",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-31T3-500 T-1040",
+   "Model_BADA": "Piper PA-31T-3T-1040"
+ },
+ {
+   "ICAO_Code": "PAY1",
+   "FAA_Designator": "PAY1",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 1",
+   "Model_BADA": "Piper PA-31T1 Cheyenne IA"
+ },
+ {
+   "ICAO_Code": "PAY2",
+   "FAA_Designator": "PAY2",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 2",
+   "Model_BADA": "Piper PA-31T2 Cheyenne 2XL"
+ },
+ {
+   "ICAO_Code": "PAY3",
+   "FAA_Designator": "PAY3",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-42-720 Cheyenne 3",
+   "Model_BADA": "Piper PA-42 Cheyenne III"
+ },
+ {
+   "ICAO_Code": "PAY4",
+   "FAA_Designator": "PAY4",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 400",
+   "Model_BADA": "Piper PA-42-1000 Cheyenne 400"
+ },
+ {
+   "ICAO_Code": "PC12",
+   "FAA_Designator": "PC12",
+   "Manufacturer": "PILATUS",
+   "Model_FAA": "Pilatus PC-12",
+   "Model_BADA": "Pilatus PC-12/45"
+ },
+ {
+   "ICAO_Code": "PC24",
+   "FAA_Designator": "PC24",
+   "Manufacturer": "PILATUS",
+   "Model_FAA": "Pilatus PC-24",
+   "Model_BADA": "Pilatus PC-24"
+ },
+ {
+   "ICAO_Code": "PRM1",
+   "FAA_Designator": "PRM1",
+   "Manufacturer": "RAYTHEON- HAWKER BEECHCRAFT",
+   "Model_FAA": "Raytheon Premier 1/390 Premier 1",
+   "Model_BADA": "Hawker Beechcraft Premier IA"
+ },
+ {
+   "ICAO_Code": "R721",
+   "FAA_Designator": "R721",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-100RE Super 27",
+   "Model_BADA": "Boeing 727-100"
+ },
+ {
+   "ICAO_Code": "R722",
+   "FAA_Designator": "R722",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-200RE Super 27",
+   "Model_BADA": "Boeing 727-200RE Super 27"
+ },
+ {
+   "ICAO_Code": "RJ1H",
+   "FAA_Designator": "RJ1H",
+   "Manufacturer": "AVRO",
+   "Model_FAA": "Avro RJ-100 Avroliner",
+   "Model_BADA": "Avro RJ100"
+ },
+ {
+   "ICAO_Code": "RJ85",
+   "FAA_Designator": "RJ85",
+   "Manufacturer": "AVRO",
+   "Model_FAA": "Avro RJ-85 Avroliner",
+   "Model_BADA": "Avro RJ85"
+ },
+ {
+   "ICAO_Code": "RV12",
+   "FAA_Designator": "RV12",
+   "Manufacturer": "VAN'S",
+   "Model_FAA": "Van's RV-12",
+   "Model_BADA": "Van's RV-12"
+ },
+ {
+   "ICAO_Code": "S108",
+   "FAA_Designator": "S108",
+   "Manufacturer": "STINSON",
+   "Model_FAA": "Stinson 108 Voyager",
+   "Model_BADA": "Stinson 108 Voyager"
+ },
+ {
+   "ICAO_Code": "S22T",
+   "FAA_Designator": "S22T",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR-22 Turbo",
+   "Model_BADA": "Cirrus SR22T"
+ },
+ {
+   "ICAO_Code": "SB20",
+   "FAA_Designator": "SB20",
+   "Manufacturer": "SAAB",
+   "Model_FAA": "Saab 2000",
+   "Model_BADA": "Saab 2000"
+ },
+ {
+   "ICAO_Code": "SBR1",
+   "FAA_Designator": "SBR1",
+   "Manufacturer": "NORTH AMERICAN ROCKWELL",
+   "Model_FAA": "North American Rockwell Sabre 40/60",
+   "Model_BADA": "Rockwell CT-39G Sabreliner"
+ },
+ {
+   "ICAO_Code": "SBR2",
+   "FAA_Designator": "SBR2",
+   "Manufacturer": "NORTH AMERICAN ROCKWELL",
+   "Model_FAA": "North American Rockwell Sabre 75",
+   "Model_BADA": "Rockwell Sabre 75/80"
+ },
+ {
+   "ICAO_Code": "SC7",
+   "FAA_Designator": "SC7",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Short Skyvan SC7",
+   "Model_BADA": "Short SC-7 Skyvan"
+ },
+ {
+   "ICAO_Code": "SF34",
+   "FAA_Designator": "SF34",
+   "Manufacturer": "SAAB",
+   "Model_FAA": "Saab SF 340",
+   "Model_BADA": "Saab SF 340B"
+ },
+ {
+   "ICAO_Code": "SF50",
+   "FAA_Designator": "SF50",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus Vision SF50",
+   "Model_BADA": "Cirrus SF50 Vision"
+ },
+ {
+   "ICAO_Code": "SH33",
+   "FAA_Designator": "SH33",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Shorts 330",
+   "Model_BADA": "Short 330"
+ },
+ {
+   "ICAO_Code": "SH36",
+   "FAA_Designator": "SH36",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Shorts 360",
+   "Model_BADA": "Short SD3-60"
+ },
+ {
+   "ICAO_Code": "SR20",
+   "FAA_Designator": "SR20",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR-20",
+   "Model_BADA": "Cirrus SR20"
+ },
+ {
+   "ICAO_Code": "SR22",
+   "FAA_Designator": "SR22",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR 22",
+   "Model_BADA": "Cirrus SR22"
+ },
+ {
+   "ICAO_Code": "SU95",
+   "FAA_Designator": "SU95",
+   "Manufacturer": "SUKHOI",
+   "Model_FAA": "SUKHOI Superjet 100-95",
+   "Model_BADA": "SUKHOI RRJ-95B Superjet 100"
+ },
+ {
+   "ICAO_Code": "SW3",
+   "FAA_Designator": "SW3",
+   "Manufacturer": "FAIRCHILD SWEARINGEN",
+   "Model_FAA": "Fairchild Swearingen SA-226T/TB Merlin 3",
+   "Model_BADA": "Swearingen Merlin 3"
+ },
+ {
+   "ICAO_Code": "SW4",
+   "FAA_Designator": "SW4",
+   "Manufacturer": "FAIRCHILD SWEARINGEN",
+   "Model_FAA": "Swearingen SA-227AT Merlin 4",
+   "Model_BADA": "Swearingen SA227-AC Metro III"
+ },
+ {
+   "ICAO_Code": "T210",
+   "FAA_Designator": "T210",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna T210 Turbo Centurion",
+   "Model_BADA": "Cessna T210M"
+ },
+ {
+   "ICAO_Code": "T28",
+   "FAA_Designator": "T28",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American T-28 Trojan",
+   "Model_BADA": "North American T-28 Trojan"
+ },
+ {
+   "ICAO_Code": "T34P",
+   "FAA_Designator": "T34P",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech T-34/45 Mentor",
+   "Model_BADA": "Beech T-34B Mentor"
+ },
+ {
+   "ICAO_Code": "T38",
+   "FAA_Designator": "T38",
+   "Manufacturer": "NORTHROP",
+   "Model_FAA": "Northrop T-38 Talon",
+   "Model_BADA": "Northrop T-38 Talon"
+ },
+ {
+   "ICAO_Code": "T6",
+   "FAA_Designator": "T6",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American T-6 Texan",
+   "Model_BADA": "North American T-6 Texan"
+ },
+ {
+   "ICAO_Code": "TAYB",
+   "FAA_Designator": "TAYB",
+   "Manufacturer": "TAYLORCRAFT",
+   "Model_FAA": "Taylorcraft BC",
+   "Model_BADA": "N/A"
+ },
+ {
+   "ICAO_Code": "TB20",
+   "FAA_Designator": "TB20",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TB-20 Trinidad",
+   "Model_BADA": "Socata TB 20 Trinidad"
+ },
+ {
+   "ICAO_Code": "TBM7",
+   "FAA_Designator": "TBM7",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-700/700A",
+   "Model_BADA": "Socata TBM-700"
+ },
+ {
+   "ICAO_Code": "TBM8",
+   "FAA_Designator": "TBM8",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-850",
+   "Model_BADA": "Socata TBM-850"
+ },
+ {
+   "ICAO_Code": "TBM9",
+   "FAA_Designator": "TBM9",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-900",
+   "Model_BADA": "Socata TBM-930"
+ },
+ {
+   "ICAO_Code": "TEX2",
+   "FAA_Designator": "TEX2",
+   "Manufacturer": "RAYTHEON",
+   "Model_FAA": "Raytheon Texan 2",
+   "Model_BADA": "Raytheon T-6B"
+ },
+ {
+   "ICAO_Code": "TOBA",
+   "FAA_Designator": "TOBA",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TB-10 Tobago",
+   "Model_BADA": "Socata TB-10 Tobago"
+ },
+ {
+   "ICAO_Code": "V22",
+   "FAA_Designator": "V22",
+   "Manufacturer": "BELL-BOEING",
+   "Model_FAA": "Bell V-22 Osprey",
+   "Model_BADA": "Bell-Boeing V-22 Osprey"
+ },
+ {
+   "ICAO_Code": "WW24",
+   "FAA_Designator": "WW24",
+   "Manufacturer": "IAI",
+   "Model_FAA": "IAI 1124 Westwind",
+   "Model_BADA": "IAI 1124 Westwind"
+ }
+]
