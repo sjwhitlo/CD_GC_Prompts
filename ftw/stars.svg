@@ -1,0 +1,90 @@
+<svg id="starsMap" version="1.1" viewbox="50, 70, 550, 460" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" class="starsMap" role="img">
+
+                <path id="ftw_classD" d="M 320 239 A 68.25 68.25, 0, 1, 1, 320 360 z" stroke-dasharray="18 25.5"/>
+                <path id="afw_classD" d="M 458 148.5
+                                         A 73 73, 0, 1, 0, 453.5 162.5" stroke-dasharray="18 25"/>
+                <path id="afw_classD_cutout" d="M 453.5 162.5
+                                                A 4 4, 0, 1, 1, 458 148.5" />
+                <path id="nfw_classD" d="M 320 283
+                                         A 73.25 73.25, 0, 0, 0, 308 278
+                                         L 307.5 242 L 265 243 L 265.5 277.5
+                                         A 73.25 73.25, 0, 0, 0, 264 418
+                                         L 262.5 453 L 304.5 454.5 L 306 418
+                                         A 73.25 73.25, 0, 0, 0, 320 412
+                                         Z" stroke-dasharray="18 24"/>
+                <g id="ftw" transform="rotate(-11.1)" transform-origin="center" >
+                    <path id="ftw_16" d="M 347.5 286 v 19.75" />
+                    <path id="ftw_17" d="M 343.5 290.5 v 10.5" />
+                    <path id="ftw_boundingBox" d="M 337.5 280 H 353.5 v 31.75 H 337.5 z" />
+                </g>
+                <g id="ftw_centerlines" transform="rotate(-11.1)" transform-origin="center">
+                    <path d="M 347.5  88    v -18" />
+                    <path d="M 347.5 124    v -18" />
+                    <path d="M 347.5 160    v -18" />
+                    <path d="M 347.5 196    v -18" />
+                    <path d="M 347.5 232    v -18" />
+                    <path d="M 347.5 268    v -18" />
+
+                    <path d="M 347.5 323.75 v  18" />
+                    <path d="M 347.5 359.75 v  18" />
+                    <path d="M 347.5 395.75 v  18" />
+                    <path d="M 347.5 431.75 v  18" />
+                    <path d="M 347.5 467.75 v  18" />
+                    <path d="M 347.5 503.75 v  18" />
+                </g>
+                <g id="afw" transform="rotate(-9.5)" transform-origin="center" >
+                    <path id="afw_16r" d="M 386 119 v 29" />
+                    <path id="afw_16l" d="M 388 119 v 29" />
+                    <path id="afw_boundingBox" d="M 380 113 H 394 v 41 H 380 z" />
+                </g>
+                <g id="afw_centerlines" transform="rotate(-9.5)" transform-origin="center" >
+                    <path d="M 388 65 v -18" />
+                    <path d="M 388 101 v -18" />
+
+                    <path d="M 388 166 v  18" />
+                    <path d="M 388 202 v  18" />
+                </g>
+                <path id="fuz" d="M 502 220 v 24"/>
+                <g id="dfw">
+                    <path id="dfw_18r" d="M 604 206.5 v 35.5" />
+                    <path id="dfw_18l" d="M 607 206.5 v 35.5" />
+                    <path id="dfw_13r" d="M 580.5 212 L 597 231" />
+                    
+                    <path id="dfw_17r" d="M 624 206.5 v 35.5" />
+                    <path id="dfw_17c" d="M 627 206.5 v 35.5" />
+                    <path id="dfw_17l" d="M 640.5 223 v 22.5" />
+                    <path id="dfw_13l" d="M 630.5 209 L 648 226" />
+                    <path d="M 598 200.5 H 633 v 3 L 656.4 226 L 648 234.4 l -1.5 -1.5 L 646.5 251.5 H 634.5 V 248 H 598 v -7 L 572.1 212 L 580.5 203.6 L 598 222.6 z" />
+                </g>
+                <g id="nfw" >
+                    <path id="nfw_18" d="M 284 328 V 360" />
+                    <path id="nfw_boundingBox" d="M 278 322 h 12 V 366 h -12 z" />
+                </g>
+                <g id="gky" transform="rotate(-12)" transform-origin="center" >
+                    <path id="gky_16" d="M 571 442.75 v 16.5" />
+                    <path id="gky_boundingBox" d="M 565 436.75 h 12 v 28.5 h -12 z" />
+                </g>
+                <g id="gpm" transform="rotate(0)" transform-origin="center" >
+                    <path id="gpm_18" d="M 610 411.5 v 11" />
+                    <path id="gpm_boundingBox" d="M 604 405.5 h 12 v 23 h -12 z" />
+                </g>
+                <g id="9f9" transform="rotate(0)" transform-origin="center" >
+                    <path id="9f9_18" d="M 361 500 v 11" />
+                    <path id="9f9_boundingBox" d="M 355 494 h 12 v 23 h -12 z" />
+                </g>
+                <g id="obstructions">
+                    <rect id="interchange" x="385" y="270" width="10" height="10" transform="rotate(5)" transform-origin="center" />
+                    <rect id="downtown" x="366" y="352" width="10" height="10" transform="rotate(5)" transform-origin="center" />
+                    <rect id="tcu" x="341" y="401" width="10" height="10" transform="rotate(5)" transform-origin="center" />
+                    <rect id="6flags" x="583" y="352" width="10" height="10" transform="rotate(5)" transform-origin="center" />
+                    <rect id="stadiums" x="570" y="362" width="15" height="10" rx="5" ry="5" transform="rotate(-10)" transform-origin="center" />
+                    <path id="meadowbrook" d="M 421 365 l 6 -10 l 6 10" />
+                </g>
+                <g>
+                    <circle id="4t2" cx="244.5" cy="145" r="5.5" />
+                    <circle id="t67" cx="309.5" cy="185.5" r="5.5" />
+                    <circle id="wea" cx="87.5" cy="369" r="5.5" />
+                    <circle id="pvt" cx="456" cy="155.5" r="5.5" />
+                </g>
+                <text id="starsDisclaimer" x="650" y="520">Not for traffic use</text>
+            </svg>
