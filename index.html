@@ -1103,38 +1103,48 @@
             }
         }
 
-        async function fetchAirportInfo() {
-            const response = await fetch( airportInfoUrl );
+        async function fetchFacilities() {
+            const response = await fetch( './facilityList.json' );
+            console.log( await response.json() );
+        }
+
+        async function fetchAirportInfo( airport ) {
+            const response = await fetch( `./facilities/${airport}/${airportInfoUrl}` );
             return await response.json();
         }
 
-        async function fetchAircraft() {
+        async function fetchAircraft( airport ) {
             const response = await fetch( aircraftUrl );
             let tempList = await response.json();
             return tempList.filter( acft => acft.parking != null );
         }
 
-        async function fetchAirports() {
+        async function fetchAirports( airport ) {
             const response = await fetch( airportsUrl );
             return await response.json();
         }
 
-        async function fetchFlightPlans() {
+        async function fetchFlightPlans( airport ) {
             const response = await fetch( flightPlansUrl );
             return await response.json();
         }
 
-        async function fetchMetars() {
+        async function fetchMetars( airport ) {
             const response = await fetch( metarsUrl );
             return await response.json();
         }
 
-        async function loadData() {
-            airportInfo = await fetchAirportInfo();
-            aircraft = await fetchAircraft();
-            airports = await fetchAirports();
-            ifrFlightPlans = await fetchFlightPlans();
-            metarList = await fetchMetars();
+        async function loadFacilities() {
+            // load json for facilities
+
+        }
+
+        async function setFacility( airport ) {
+            airportInfo = await fetchAirportInfo( airport );
+            aircraft = await fetchAircraft( airport );
+            airports = await fetchAirports( airport );
+            ifrFlightPlans = await fetchFlightPlans( airport );
+            metarList = await fetchMetars( airport );
 
             updateHeader();
             updateLocalAircraft();
@@ -1186,7 +1196,7 @@
         }
 
         async function main() {
-            await loadData();
+            await loadFacilities();
 
             updateTime(); // Display time immediately on page load
             setInterval(updateTime, 1000);
@@ -1535,12 +1545,6 @@
 
         function showSTARSEntryButton() {
             document.getElementById("btnStarsEntry").style.display = "block";
-        }
-
-        function completeStripMarking( box ) {
-            if ( box === 'b16' ) {
-
-            }
         }
 
         function fillFlightProgressStrip( box1, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15, box16, box17, box18 ) {
