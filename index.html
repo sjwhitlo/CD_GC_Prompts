@@ -660,11 +660,11 @@
     <script>
 
         const headerSuffix = "Phraseology Prompts";
-        const airportInfoUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/airportInfo.json';
-        const aircraftUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/aircraft.json';
-        const airportsUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/flightFollowingAirports.json';
-        const flightPlansUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/flightPlans.json';
-        const metarsUrl = 'https://raw.githubusercontent.com/sjwhitlo/FTW_GC/refs/heads/main/ftw/metars.json';
+        const airportInfoUrl = 'airportInfo.json';
+        const aircraftUrl = 'aircraft.json';
+        const airportsUrl = 'flightFollowingAirports.json';
+        const flightPlansUrl = 'flightPlans.json';
+        const metarsUrl = 'metars.json';
 
         let airportInfo = {
             "info": {
@@ -1114,29 +1114,24 @@
         }
 
         async function fetchAircraft( airport ) {
-            const response = await fetch( aircraftUrl );
+            const response = await fetch( `./facilities/${airport}/${aircraftUrl}` );
             let tempList = await response.json();
             return tempList.filter( acft => acft.parking != null );
         }
 
         async function fetchAirports( airport ) {
-            const response = await fetch( airportsUrl );
+            const response = await fetch( `./facilities/${airport}/${airportsUrl}` );
             return await response.json();
         }
 
         async function fetchFlightPlans( airport ) {
-            const response = await fetch( flightPlansUrl );
+            const response = await fetch( `./facilities/${airport}/${flightPlansUrl}` );
             return await response.json();
         }
 
         async function fetchMetars( airport ) {
-            const response = await fetch( metarsUrl );
+            const response = await fetch( `./facilities/${airport}/${metarsUrl}` );
             return await response.json();
-        }
-
-        async function loadFacilities() {
-            // load json for facilities
-
         }
 
         async function setFacility( airport ) {
