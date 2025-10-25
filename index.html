@@ -1110,6 +1110,7 @@
             let facilities = await response.json();
             facilities.forEach( facility => {
                 let opt = document.createElement('option');
+                console.log( facility );
                 opt.value = facility.id;
                 opt.textContent += facility.name
                 document.getElementById( "facilitySelection" ).appendChild(opt);
