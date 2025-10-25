@@ -737,7 +737,7 @@
 
         async function fetchFacilities() {
             const response = await fetch( './facilityList.json' );
-            // console.log( await response.json() );
+            // consoleDebug( await response.json() );
             document.getElementById( "facilitySelection" ).replaceChildren();
             let facilities = await response.json();
             facilities.forEach( facility => {
@@ -781,6 +781,7 @@
             airports = await fetchAirports( airport );
             ifrFlightPlans = await fetchFlightPlans( airport );
             metarList = await fetchMetars( airport );
+            consoleDebug(metarList);
 
             updateHeader();
             updateLocalAircraft();
@@ -888,10 +889,10 @@
                         let minIndex = -1;
                         let minIsPrimary = true;
                         for (let j = 0; j < airportInfo.runways.available.length; j++ ) {
-                            console.log( windDir, airportInfo.runways.available[j].heading, airportInfo.runways.available[j].heading + 180 );
+                            consoleDebug( windDir, airportInfo.runways.available[j].heading, airportInfo.runways.available[j].heading + 180 );
                             let primaryDiff = Math.abs( windDir - airportInfo.runways.available[j].heading );
                             let reciprocalDiff = Math.abs( ( windDir - airportInfo.runways.available[j].heading + 180 ) - 360 );
-                            console.log( { primaryDiff, reciprocalDiff } );
+                            consoleDebug( { primaryDiff, reciprocalDiff } );
                             if ( primaryDiff < minDiff || reciprocalDiff < minDiff) {
                                 if ( primaryDiff < reciprocalDiff ) {
                                     minDiff = primaryDiff;
@@ -903,8 +904,8 @@
                                     minIsPrimary = false;
                                 }
                             }
-                            console.log( {minDiff, minIndex, minIsPrimary } );
-                            console.log( Math.abs( windDir - 160 ) <= 90 ? 16 : 34 );
+                            consoleDebug( {minDiff, minIndex, minIsPrimary } );
+                            consoleDebug( Math.abs( windDir - 160 ) <= 90 ? 16 : 34 );
                         }
                         runwayInUse = ( minIsPrimary ? airportInfo.runways.available[ minIndex ].primary : airportInfo.runways.available[ minIndex ].reciprocal);
                     }
@@ -1064,7 +1065,7 @@
                 // Arrival
                 let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
                 let availableTaxiways = airportInfo.taxiways.runwayInUse;
-                console.log( availableTaxiways );
+                consoleDebug( availableTaxiways );
                 let currentTaxiway = taxiwayList[ Math.floor( Math.random() * taxiwayList.length ) ];
                 checkInList.push( new Arrival( currentAircraft, currentTaxiway ) );
             } else if ( checkInType === checkInTypes[1] ) {
@@ -1169,7 +1170,7 @@
 
         function consoleDebug( text ) {
             if( document.getElementById("consoleOutput").checked ) {
-                console.log( text );
+                consoleDebug( text );
             }
         }
 
@@ -1180,7 +1181,7 @@
         }
 
         function starsKeyboard( key ) {
-            console.log( key );
+            consoleDebug( key );
         }
 
         function showSTARSEntryButton() {
