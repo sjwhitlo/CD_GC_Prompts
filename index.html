@@ -835,6 +835,7 @@
         async function main() {
             await fetchFacilities();
 
+            await setFacility( document.getElementById("facilitySelection").value );
             updateTime(); // Display time immediately on page load
             setInterval(updateTime, 1000);
             setTheme( document.getElementById("themeSelection").value );
