@@ -1,0 +1,44 @@
+{
+  "info": {
+    "icao": "TEST",
+    "faa": "TST",
+    "name": "Test Airport",
+    "name_short": "Test"
+  },
+  "positions": {
+    "clearance": "Test Clearance",
+    "ground": "Test Ground"
+  },
+  "runways": {
+    "available": [
+      {
+        "primary": "9",
+        "heading": 90,
+        "reciprocal": "27"
+      }
+    ],
+    "calm_wind": "9"
+  },
+  "taxiways": {
+    "9": [
+      "A",
+      "A1",
+      "A2",
+      "A3",
+      "D",
+      "C",
+      "A6",
+      "the end"
+    ],
+    "27": [
+      "A",
+      "A1",
+      "A2",
+      "A3",
+      "D",
+      "C",
+      "A6",
+      "the end"
+    ]
+  }
+}
