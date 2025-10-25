@@ -1105,7 +1105,15 @@
 
         async function fetchFacilities() {
             const response = await fetch( './facilityList.json' );
-            console.log( await response.json() );
+            // console.log( await response.json() );
+            document.getElementById( "facilitySelection" ).replaceChildren();
+            let facilities = await response.json();
+            facilities.forEach( facility => {
+                let opt = document.createElement('option');
+                opt.value = facility.id;
+                opt.textContent += facility.name
+                document.getElementById( "facilitySelection" ).appendChild(opt);
+            });
         }
 
         async function fetchAirportInfo( airport ) {
