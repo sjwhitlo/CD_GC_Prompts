@@ -875,6 +875,9 @@
             for (let i = 0; i < metarComponents.length; i++) {
                 if ( metarComponents[i].includes( "KT" ) ) {
                     var windDir = metarComponents[i].substring(0,3);
+
+                    let expectedRwy = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 );
+
                     // if wind calm or less than 90º -> calm wind. Else reciprocal.
                     if ( windDir === "000" ) {
                         runwayInUse = airportInfo.runways.calm_wind;
@@ -905,6 +908,7 @@
                         }
                         runwayInUse = ( minIsPrimary ? airportInfo.runways.available[ minIndex ].primary : airportInfo.runways.available[ minIndex ].reciprocal);
                     }
+                    console.assert( runwayInUse === expectedRwy, "Wind direction %o. Expected runway %o, got %o", windDir, expectedRwy, runwayInUse );
                     // runwayInUse = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 ); 
                 }
             }

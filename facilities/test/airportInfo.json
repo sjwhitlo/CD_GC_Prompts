@@ -12,9 +12,24 @@
   "runways": {
     "available": [
       {
+        "primary": "4",
+        "heading": 45,
+        "reciprocal": "22"
+      },
+      {
         "primary": "9",
         "heading": 90,
         "reciprocal": "27"
+      },
+      {
+        "primary": "14",
+        "heading": 140,
+        "reciprocal": "32"
+      },
+      {
+        "primary": "18",
+        "heading": 180,
+        "reciprocal": "36"
       }
     ],
     "calm_wind": "9"
