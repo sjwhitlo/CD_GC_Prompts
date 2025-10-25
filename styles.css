@@ -33,6 +33,91 @@
     --buttonBlue: steelblue;
 }
 
+.light-mode {
+    --background: hsl(0, 0%, 98%);
+    --flightProgressStripBackground: #F7FADE;
+    --flightProgressStripForeground: black;
+    --settingsForeground: black;
+    --settingsText: black;
+    --settingsBackground: hsl(0, 0%, 90%);
+    --siaColorSplash: orange;
+    --stars: forestgreen;
+    --starsError: red;
+    --starsMap: orange;
+    --buttonText: white;
+    --buttonRed: crimson;
+    --buttonGreen: forestgreen;
+    --buttonBlue: royalblue;
+}
+
+.dark-mode {
+    --background: #2d2d2d;
+    --flightProgressStripBackground: #F7FADE;
+    --flightProgressStripForeground: black;
+    --settingsForeground: #cfcfcf;
+    --settingsText: #f3f3f3;
+    --settingsBackground: #2d2d2d;
+    --siaColorSplash: #b58b00;
+    --stars: #42b52b;
+    --starsError: #c82f2f;
+    --starsMap: #b58b00;
+    --buttonText: #f3f3f3;
+    --buttonRed: #c82f2f;
+    --buttonGreen: #009b76;
+    --buttonBlue: #376fe1;
+}
+
+.darker-mode {
+    --background: hsl(0, 0%, 8%);
+    --flightProgressStripBackground: #F7FADE;
+    --flightProgressStripForeground: black;
+    --settingsForeground: hsl(0, 0%, 29%);
+    --settingsText: gray;
+    --settingsBackground: hsl(0, 0%, 12%);
+    --siaColorSplash: #b58b00;
+    --stars: #42b52b;
+    --starsError: #c82f2f;
+    --starsMap: #b58b00;
+    --buttonText: #f3f3f3;
+    --buttonRed: #c82f2f;
+    --buttonGreen: #009b76;
+    --buttonBlue: #376fe1;
+}
+
+.darcula-mode {
+    --background: hsl(231, 15%, 18%);
+    --flightProgressStripBackground: #F7FADE;
+    --flightProgressStripForeground: black;
+    --settingsForeground: hsl(60, 30%, 96%);
+    --settingsText: hsl(60, 30%, 96%);
+    --settingsBackground: hsl(232, 14%, 31%);
+    --siaColorSplash: hsl(31, 100%, 66%);
+    --stars: hsl(135, 94%, 65%);
+    --starsError: hsl(0, 100%, 67%);
+    --starsError: hsl(31, 100%, 66%);
+    --buttonText: hsl(60, 30%, 96%);
+    --buttonRed: hsl(0, 95%, 67%);
+    --buttonGreen: hsl(135, 75%, 60%);
+    --buttonBlue: hsl(225, 27%, 51%);
+}
+
+.grayscale-mode {
+    --background: black;
+    --flightProgressStripBackground: #bebebe;
+    --flightProgressStripForeground: black;
+    --settingsForeground: #707070;
+    --settingsText: #b0b0b0;
+    --settingsBackground: #202020;
+    --siaColorSplash: #f5f5f5;
+    --stars: whitesmoke;
+    --starsError: gainsboro;
+    --starsMap: #707070;
+    --buttonText: dimgray;
+    --buttonRed: #b0b0b0;
+    --buttonGreen: whitesmoke;
+    --buttonBlue: #d0d0d0;
+}
+
 .matrix-mode {
     --background: black;
     --flightProgressStripBackground: black;
