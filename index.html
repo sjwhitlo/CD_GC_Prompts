@@ -446,7 +446,6 @@
                 let flightNum = this.aircraft.registration.split('').reverse().join('');
                 flightNum = flightNum.replace(/(.{2})/g, '$1 ');
                 flightNum = flightNum.split('').reverse().join('');
-                consoleDebug( `group form: ${flightNum}` );
                 return ( this.aircraft.medevac ? "Medevac " : '' ) + this.aircraft.callsignSpoken + " " + flightNum;
             }
 
@@ -484,7 +483,6 @@
                         let randStart = Math.floor( Math.random() * length );
                         spokenID += " " + alphanumerics( this.aircraft.registration.slice(randStart, randStart+3) );
                     }
-                    consoleDebug( spokenID );
                     return spokenID;
                 }
             }
@@ -563,7 +561,6 @@
             }
             
             initialCall() {
-                consoleDebug( `this aircraft has ATIS code: ${this.atis}`);
                 return `${airportInfo.positions.ground}, ${this.requestCallsign()} at ${this.aircraft.parkingName} ${this.intent} ${atisToText( this.atis )}`;
             }
 
@@ -669,7 +666,6 @@
                 startTime.setHours(startTime.getHours() - 3);
                 let endTime = new Date();
                 endTime.setMinutes(endTime.getMinutes() + 30);
-                consoleDebug( `now: ${String(date.getUTCHours()).padStart(2,"0")}:${String(date.getUTCMinutes()).padStart(2,"0")}\nstart: ${String(startTime.getUTCHours()).padStart(2,"0")}:${String(startTime.getUTCMinutes()).padStart(2,"0")}\nend: ${String(endTime.getUTCHours()).padStart(2,"0")}:${String(endTime.getUTCMinutes()).padStart(2,"0")}` );
 
                 // Convert start and end times to milliseconds since epoch
                 const startMillis = startTime.getTime();
@@ -740,7 +736,6 @@
 
         async function fetchFacilities() {
             const response = await fetch( './facilityList.json' );
-            // consoleDebug( await response.json() );
             document.getElementById( "facilitySelection" ).replaceChildren();
             let facilities = await response.json();
             facilities.forEach( facility => {
@@ -784,7 +779,6 @@
             airports = await fetchAirports( airport );
             ifrFlightPlans = await fetchFlightPlans( airport );
             metarList = await fetchMetars( airport );
-            consoleDebug(metarList);
 
             updateHeader();
             updateLocalAircraft();
@@ -888,19 +882,29 @@
                     } else if ( windDir === "VRB" ) {
                         runwayInUse = airportInfo.runways.calm_wind[0];
                     } else {
+                        console.log( "minA" );
+                        console.group();
                         let minAIdx = airportInfo.runways.available.reduce((minAIdx, currRwy, currIdx, arr) => {
+                            console.log( currRwy, Math.abs(currRwy.heading - windDir), arr[minAIdx], Math.abs(arr[minAIdx].heading - windDir) );
                             if ( Math.abs(currRwy.heading - windDir) < Math.abs(arr[minAIdx].heading - windDir) ) {
                                 return currIdx;
                             }
                             return minAIdx;
                         }, 0);
+                        console.log( airportInfo.runways.available[minAIdx], Math.abs(airportInfo.runways.available[minAIdx].heading - windDir) );
+                        console.groupEnd();
 
+                        console.log( "minB" );
+                        console.group();
                         let minBIdx = airportInfo.runways.available.reduce((minBIdx, currRwy, currIdx, arr) => {
+                            console.log( currRwy, Math.abs(360 - currRwy.heading + windDir), arr[minBIdx], Math.abs(360 - arr[minBIdx].heading + windDir) );
                             if ( Math.abs(360 - currRwy.heading + windDir) < Math.abs(360 - arr[minBIdx].heading + windDir) ) {
                                 return currIdx;
                             }
                             return minBIdx;
                         }, 0);
+                        console.log( airportInfo.runways.available[minBIdx], Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir) );
+                        console.groupEnd();
 
                         let minADiff = Math.abs(airportInfo.runways.available[minAIdx].heading - windDir);
                         let minBDiff = Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir);
@@ -1060,7 +1064,6 @@
                 // Arrival
                 let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
                 let availableTaxiways = airportInfo.taxiways.runwayInUse;
-                consoleDebug( availableTaxiways );
                 let currentTaxiway = taxiwayList[ Math.floor( Math.random() * taxiwayList.length ) ];
                 checkInList.push( new Arrival( currentAircraft, currentTaxiway ) );
             } else if ( checkInType === checkInTypes[1] ) {
@@ -1076,8 +1079,6 @@
                 let currentAltitude = "" + ( Math.floor( Math.random() * 13 ) + 3 ) + "5";
                 currentAltitude = currentAltitude.padStart(3,"0");
                 checkInList.push( new FlightFollowing( currentAircraft, currentDestination, currentAltitude ) );
-
-                consoleDebug( checkInList.at(-1).flightFollowingInput() );
                 
                 if ( document.getElementById("checkKeyboardEntries").checked ) {   
                     setFocusToSTARSEntry();
@@ -1105,8 +1106,6 @@
                 let currentAircraft = localAircraft[ Math.floor( Math.random() * localAircraft.length ) ];
                 checkInList.push( new Callsign( currentAircraft ) );
             }
-
-            consoleDebug( condenseWhiteSpace( checkInList.at(-1).toString() ) );
             
             speakText( checkInList.at(-1).initialCall() );
 
@@ -1150,7 +1149,6 @@
         }
 
         function changeCheckInFocus( whichType ) {
-            consoleDebug( `changeCheckInFocus() received: ${whichType}`);
             if ( whichType === 'cd' ) {
                 let state = ( document.getElementById('chkbxClearanceDelivery').checked ? true : false );
                 document.getElementById('chkbxClearance').checked = state;
@@ -1241,13 +1239,11 @@
             document.getElementById("btnStarsEntry").style.display = "none";
             document.getElementById("txtStarsEntry").style.display = "block";
             let starsEntryToShow = checkInList.at(-1).flightFollowingInput().toUpperCase().replace(/ /g, "<br>");
-            consoleDebug( starsEntryToShow );
             document.getElementById("txtStarsEntry").innerHTML = starsEntryToShow;
             fillFlightFollowingStrip( checkInList.at(-1) );
         }
 
         function checkFlightFollowing() {
-            consoleDebug( `   got: ${document.getElementById("starsEntry").value.toUpperCase()}\nexpect: ${checkInList.at(-1).flightFollowingInput().toUpperCase()}` );
             let receivedInput = document.getElementById("starsEntry").value.toUpperCase();
             let expectedInput = checkInList.at(-1).flightFollowingInput().toUpperCase();
             if ( receivedInput.includes( expectedInput ) || receivedInput.includes( expectedInput.replace( /\s+\d{3}/, '' ) ) ) {
@@ -1319,7 +1315,6 @@
         }
 
         function setTheme( theme ) {
-            consoleDebug( `set theme: ${theme}` );
             document.getElementById("body").className = theme;
         }
 
