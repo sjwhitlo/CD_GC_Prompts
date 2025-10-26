@@ -908,7 +908,120 @@
                         let minB = airportInfo.runways.available.reduce(function(prev, curr) {
                             return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
                         });
-                        runwayInUse = ( minA <= minB ? minA : minB )[0];
+                        runwayInUse = ( minA <= minB ? minA[0] : minB[0] );
+                    }
+                    switch (windDir) {
+                    case "000":
+                        expectedRwy = "9";
+                        break;
+                    case "010":
+                        expectedRwy = "36";
+                        break;
+                    case "020":
+                        expectedRwy = "36";
+                        break;
+                    case "030":
+                        expectedRwy = "4";
+                        break;
+                    case "040":
+                        expectedRwy = "4";
+                        break;
+                    case "050":
+                        expectedRwy = "4";
+                        break;
+                    case "060":
+                        expectedRwy = "4";
+                        break;
+                    case "070":
+                        expectedRwy = "9";
+                        break;
+                    case "080":
+                        expectedRwy = "9";
+                        break;
+                    case "090":
+                        expectedRwy = "9";
+                        break;
+                    case "100":
+                        expectedRwy = "9";
+                        break;
+                    case "110":
+                        expectedRwy = "9";
+                        break;
+                    case "120":
+                        expectedRwy = "14";
+                        break;
+                    case "130":
+                        expectedRwy = "14";
+                        break;
+                    case "140":
+                        expectedRwy = "14";
+                        break;
+                    case "150":
+                        expectedRwy = "14";
+                        break;
+                    case "160":
+                        expectedRwy = "18";
+                        break;
+                    case "170":
+                        expectedRwy = "18";
+                        break;
+                    case "180":
+                        expectedRwy = "18";
+                        break;
+                    case "190":
+                        expectedRwy = "18";
+                        break;
+                    case "200":
+                        expectedRwy = "22";
+                        break;
+                    case "210":
+                        expectedRwy = "22";
+                        break;
+                    case "220":
+                        expectedRwy = "22";
+                        break;
+                    case "230":
+                        expectedRwy = "22";
+                        break;
+                    case "240":
+                        expectedRwy = "22";
+                        break;
+                    case "250":
+                        expectedRwy = "27";
+                        break;
+                    case "260":
+                        expectedRwy = "27";
+                        break;
+                    case "270":
+                        expectedRwy = "27";
+                        break;
+                    case "280":
+                        expectedRwy = "27";
+                        break;
+                    case "290":
+                        expectedRwy = "27";
+                        break;
+                    case "300":
+                        expectedRwy = "32";
+                        break;
+                    case "310":
+                        expectedRwy = "32";
+                        break;
+                    case "320":
+                        expectedRwy = "32";
+                        break;
+                    case "330":
+                        expectedRwy = "32";
+                        break;
+                    case "340":
+                        expectedRwy = "36";
+                        break;
+                    case "350":
+                        expectedRwy = "36";
+                        break;
+                    case "360":
+                        expectedRwy = "36";
+                        break;
                     }
                     console.assert( runwayInUse === expectedRwy, "Wind direction %o. Expected runway %o, got %o", windDir, expectedRwy, runwayInUse );
                     // runwayInUse = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 ); 
