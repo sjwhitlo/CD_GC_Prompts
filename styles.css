@@ -237,41 +237,41 @@ fieldset, .flightProgressStrip, #buttonContainer button {
     text-wrap: wrap;
 }
 
+button {    
+    border: none;
+    color: var(--buttonText);
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
 #buttonContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
 
-    button {    
-        border: none;
-        color: var(--buttonText);
-        width: 120px;
-        height: 40px;
-        border-radius: 6px;
-        font-size: 14px;
-    }
+.buttonNew {
+    background-color: var(--buttonGreen);
+}
 
-    .buttonNew {
-        background-color: var(--buttonGreen);
-    }
+.buttonRepeat {
+    background-color: var(--buttonBlue);
+}
 
-    .buttonRepeat {
-        background-color: var(--buttonBlue);
-    }
+.buttonRepeatInitial {
+    background-color: var(--buttonRed);
+}
 
-    .buttonRepeatInitial {
-        background-color: var(--buttonRed);
-    }
+.buttonMETAR {
+    background-color: var(--siaColorSplash);
+}
 
-    .buttonMETAR {
-        background-color: var(--siaColorSplash);
-    }
-
-    .buttonSTARS {
-        border: 1px solid var(--stars);
-        color: var(--stars);
-        background-color: var(--background);
-    }
+.buttonSTARS {
+    border: 1px solid var(--stars);
+    color: var(--stars);
+    background-color: var(--background);
 }
 
 .parentCheckbox {
