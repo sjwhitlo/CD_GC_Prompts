@@ -900,10 +900,14 @@
                         // airportInfo.runways.available.heading
 
                         // always gets the runway number, not the difference between the wind direction and runway heading
+                        console.log( "minA" );
                         let minA = airportInfo.runways.available.reduce(function(prev, curr) {
+                            console.log( {prev, curr} );
                             return Math.abs(prev.heading - windDir) < Math.abs(prev.heading - windDir) ? prev : curr;
                         });
+                        console.log( "minB" );
                         let minB = airportInfo.runways.available.reduce(function(prev, curr) {
+                            console.log( {prev, curr} );
                             return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
                         });
                         console.log( minA, minB );
