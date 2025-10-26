@@ -883,15 +883,12 @@
 
                     let expectedRwy = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 );
 
-                    // if wind calm or less than 90º -> calm wind. Else reciprocal.
+                    // if wind calm or variable -> calm wind
                     if ( windDir === "000" ) {
                         runwayInUse = airportInfo.runways.calm_wind;
                     } else if ( windDir === "VRB" ) {
                         runwayInUse = airportInfo.runways.calm_wind;
                     } else {
-                        let minDiff = 360;
-                        let minIndex = -1;
-
                         // def short(bb,c):
                         //     x0= np.min(np.abs(bb-c))
                         //     x1= np.min(np.abs(366-bb+c))  
@@ -902,12 +899,14 @@
 
                         // airportInfo.runways.available.heading
 
+                        // always gets the runway number, not the difference between the wind direction and runway heading
                         let minA = airportInfo.runways.available.reduce(function(prev, curr) {
                             return Math.abs(prev.heading - windDir) < Math.abs(prev.heading - windDir) ? prev : curr;
                         });
                         let minB = airportInfo.runways.available.reduce(function(prev, curr) {
                             return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
                         });
+                        console.log( minA, minB );
                         runwayInUse = ( minA <= minB ? minA : minB ).runways[0];
                     }
                     switch (windDir) {
