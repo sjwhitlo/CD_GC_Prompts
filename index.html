@@ -908,7 +908,7 @@
                         let minB = airportInfo.runways.available.reduce(function(prev, curr) {
                             return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
                         });
-                        runwayInUse = ( minA <= minB ? minA : minB );
+                        runwayInUse = ( minA <= minB ? minA : minB ).runways[0];
                     }
                     switch (windDir) {
                     case "000":
