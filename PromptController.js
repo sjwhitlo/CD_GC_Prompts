@@ -136,12 +136,28 @@ const taxiwayList = [ "A1",
 const atisOptions = [ "+", "WX", "previous", "-" ];
 
 const informationList = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
-var information = "";
 var runwayInUse = "";
 var lastFocusElement = "";
-var metar = "";
 
 var checkInList = [];
+
+// Check In Types
+
+// Settings
+
+// Check Ins
+//  Voice Prompts
+
+// SIA
+
+// Local Reference
+
+// Activity Log
+
+// Flight Progress Strip
+
+// STARs
+
 
 class CallIn {
     constructor( aircraft ) {
@@ -559,16 +575,16 @@ function getMETAR() {
     var obsMin = "53";
     let observationTime = obsDay + obsHour + obsMin + "Z";
 
-    metar = `${airportInfo.info.icao} ${observationTime} ${metarList[ Math.floor( Math.random() * metarList.length ) ]}`;
+    return `${airportInfo.info.icao} ${observationTime} ${metarList[ Math.floor( Math.random() * metarList.length ) ]}`;
 }
 
 function getNewMETAR() {
-    getMETAR();
-    document.getElementById("currentMETAR").innerHTML = metar;
+    document.getElementById("currentMETAR").innerHTML = getMETAR();
 
     getRunways();
     document.getElementById("currentRunway").innerHTML = runwayInUse;
 
+    let information = document.getElementById("currentATIS").innerHTML;
     if ( information === "" ) {
         information = informationList[ Math.floor( Math.random() * informationList.length ) ];
     } else {
@@ -578,7 +594,7 @@ function getNewMETAR() {
 }
 
 function getRunways() {
-    var metarComponents = metar.split( " " );
+    var metarComponents = document.getElementById("currentMETAR").innerHTML.split( " " );
     for (let i = 0; i < metarComponents.length; i++) {
         if ( metarComponents[i].includes( "KT" ) ) {
             var windDir = metarComponents[i].substring(0,3);
@@ -956,6 +972,7 @@ function checkFlightFollowing() {
 }
 
 function getATIS() {
+    let currentInformation = document.getElementById( "currentATIS" ).innerHTML;
     let chosenOption = atisOptions[ 0 ];
     if ( document.getElementById("listenForATIS").checked ) {
         // two randoms to skew towards more having the correct ATIS
@@ -964,12 +981,12 @@ function getATIS() {
         chosenOption = atisOptions[ Math.floor( rand1 /** * rand2 */ * atisOptions.length ) ];
     }
     if ( chosenOption == atisOptions[0] ) {
-        return information;
+        return currentInformation;
     } else if ( chosenOption == atisOptions[2] ) {
-        if ( informationList.indexOf( information ) == 0 ) {
+        if ( informationList.indexOf( currentInformation ) == 0 ) {
             return informationList.at(-1);
         } else {
-            return informationList[ ( informationList.indexOf( information ) - 1 ) % informationList.length ];
+            return informationList[ ( informationList.indexOf( currentInformation ) - 1 ) % informationList.length ];
         }
     } else {
         return chosenOption;
