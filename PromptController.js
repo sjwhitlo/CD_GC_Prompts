@@ -611,6 +611,18 @@ function setFocusToSTARSEntry() {
 
 function starsKeyboard( key ) {
     consoleDebug( key );
+    if ( key === "space" ) {
+        document.getElementById( "starsEntry" ).value += " ";
+    } else if ( key === "bkspc" ) {
+        let temp = document.getElementById( "starsEntry" ).value;
+        document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length());
+    } else if ( key === "clear" ) {
+        document.getElementById( "starsEntry" ).value = "";
+    } else if ( key === "enter" ) {
+        checkFlightFollowing();
+    } else {
+        document.getElementById( "starsEntry" ).value += key;
+    }
 }
 
 function showSTARSEntryButton() {
