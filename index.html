@@ -883,6 +883,7 @@
                         runwayInUse = airportInfo.runways.calm_wind[0];
                     } else {
                         windDir = Number(windDir);
+                        console.log( "windDir: " + windDir );
                         console.log( "minA" );
                         console.group();
                         let minAIdx = airportInfo.runways.available.reduce((minAIdx, currRwy, currIdx, arr) => {
