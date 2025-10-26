@@ -12,24 +12,36 @@
   "runways": {
     "available": [
       {
-        "primary": "4",
         "heading": 45,
-        "reciprocal": "22"
+        "runways": ["4"]
       },
       {
-        "primary": "9",
         "heading": 90,
-        "reciprocal": "27"
+        "runways": ["9"]
       },
       {
-        "primary": "14",
         "heading": 135,
-        "reciprocal": "32"
+        "runways": ["14"]
       },
       {
-        "primary": "18",
         "heading": 180,
-        "reciprocal": "36"
+        "runways": ["18"]
+      },
+      {
+        "heading": 225,
+        "runways": ["22"]
+      },
+      {
+        "heading": 270,
+        "runways": ["27"]
+      },
+      {
+        "heading": 315,
+        "runways": ["32"]
+      },
+      {
+        "heading": 360,
+        "runways": ["36"]
       }
     ],
     "calm_wind": "9"

@@ -12,9 +12,12 @@
   "runways": {
     "available": [
       {
-        "primary": "16",
         "heading": 168.9,
-        "reciprocal": "34"
+        "runways": ["16"]
+      },
+      {
+        "heading": 348.9,
+        "runways": ["34"]
       }
     ],
     "calm_wind": "16"
