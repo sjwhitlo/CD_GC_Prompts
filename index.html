@@ -883,30 +883,19 @@
                         runwayInUse = airportInfo.runways.calm_wind[0];
                     } else {
                         windDir = Number(windDir);
-                        console.log( "windDir: " + windDir );
-                        console.log( "minA" );
-                        console.group();
                         let minAIdx = airportInfo.runways.available.reduce((minAIdx, currRwy, currIdx, arr) => {
-                            console.log( currRwy, Math.abs(currRwy.heading - windDir), arr[minAIdx], Math.abs(arr[minAIdx].heading - windDir) );
                             if ( Math.abs(currRwy.heading - windDir) < Math.abs(arr[minAIdx].heading - windDir) ) {
                                 return currIdx;
                             }
                             return minAIdx;
                         }, 0);
-                        console.log( airportInfo.runways.available[minAIdx], Math.abs(airportInfo.runways.available[minAIdx].heading - windDir) );
-                        console.groupEnd();
 
-                        console.log( "minB" );
-                        console.group();
                         let minBIdx = airportInfo.runways.available.reduce((minBIdx, currRwy, currIdx, arr) => {
-                            console.log( currRwy, Math.abs(360 - currRwy.heading + windDir), arr[minBIdx], Math.abs(360 - arr[minBIdx].heading + windDir) );
                             if ( Math.abs(360 - currRwy.heading + windDir) < Math.abs(360 - arr[minBIdx].heading + windDir) ) {
                                 return currIdx;
                             }
                             return minBIdx;
                         }, 0);
-                        console.log( airportInfo.runways.available[minBIdx], Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir) );
-                        console.groupEnd();
 
                         let minADiff = Math.abs(airportInfo.runways.available[minAIdx].heading - windDir);
                         let minBDiff = Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir);
