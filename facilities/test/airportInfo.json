@@ -44,7 +44,7 @@
         "runways": ["36"]
       }
     ],
-    "calm_wind": "9"
+    "calm_wind": ["9"]
   },
   "taxiways": {
     "9": [

@@ -320,7 +320,7 @@
                         "runways": ["36"]
                     }
                 ],
-                "calm_wind": "18"
+                "calm_wind": ["18"]
             },
             "taxiways": {
                 "18": ["A", "B", "C", "D", "E", "F"],
@@ -788,6 +788,7 @@
 
             updateHeader();
             updateLocalAircraft();
+            getNewMETAR();
         }
 
         function updateHeader() {
@@ -881,27 +882,12 @@
                 if ( metarComponents[i].includes( "KT" ) ) {
                     var windDir = metarComponents[i].substring(0,3);
 
-                    let expectedRwy = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 );
-
                     // if wind calm or variable -> calm wind
                     if ( windDir === "000" ) {
-                        runwayInUse = airportInfo.runways.calm_wind;
+                        runwayInUse = airportInfo.runways.calm_wind[0];
                     } else if ( windDir === "VRB" ) {
-                        runwayInUse = airportInfo.runways.calm_wind;
+                        runwayInUse = airportInfo.runways.calm_wind[0];
                     } else {
-                        // airportInfo.runways.available.heading
-
-                        // minA = abs( rwy - wind );
-                        // minB = abs( range - rwy + wind );
-                        // min = ( minA <= minB ? minA : minB );
-
-                        // const minIndex = data.reduce((minIndex, currentObject, currentIndex, arr) => {
-                        //     if (currentObject.value < arr[minIndex].value) {
-                        //         return currentIndex;
-                        //     }
-                        //     return minIndex;
-                        // }, 0);
-
                         let minAIdx = airportInfo.runways.available.reduce((minAIdx, currRwy, currIdx, arr) => {
                             if ( Math.abs(currRwy.heading - windDir) < Math.abs(arr[minAIdx].heading - windDir) ) {
                                 return currIdx;
@@ -916,138 +902,10 @@
                             return minBIdx;
                         }, 0);
 
-                        // always gets the runway number, not the difference between the wind direction and runway heading
-                        // console.log( "minA" );
-                        // let minA = airportInfo.runways.available.reduce(function(prev, curr) {
-                        //     console.log( {prev, curr} );
-                        //     return Math.abs(prev.heading - windDir) < Math.abs(prev.heading - windDir) ? prev : curr;
-                        // });
-                        // console.log( "minB" );
-                        // let minB = airportInfo.runways.available.reduce(function(prev, curr) {
-                        //     console.log( {prev, curr} );
-                        //     return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
-                        // });
-
                         let minADiff = Math.abs(airportInfo.runways.available[minAIdx].heading - windDir);
                         let minBDiff = Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir);
-                        console.log( airportInfo.runways.available[minAIdx], airportInfo.runways.available[minBIdx] );
                         runwayInUse = ( airportInfo.runways.available[minAIdx] <= airportInfo.runways.available[minBIdx] ? airportInfo.runways.available[minAIdx] : airportInfo.runways.available[minBIdx] ).runways[0];
                     }
-                    switch (windDir) {
-                    case "000":
-                        expectedRwy = "9";
-                        break;
-                    case "010":
-                        expectedRwy = "36";
-                        break;
-                    case "020":
-                        expectedRwy = "36";
-                        break;
-                    case "030":
-                        expectedRwy = "4";
-                        break;
-                    case "040":
-                        expectedRwy = "4";
-                        break;
-                    case "050":
-                        expectedRwy = "4";
-                        break;
-                    case "060":
-                        expectedRwy = "4";
-                        break;
-                    case "070":
-                        expectedRwy = "9";
-                        break;
-                    case "080":
-                        expectedRwy = "9";
-                        break;
-                    case "090":
-                        expectedRwy = "9";
-                        break;
-                    case "100":
-                        expectedRwy = "9";
-                        break;
-                    case "110":
-                        expectedRwy = "9";
-                        break;
-                    case "120":
-                        expectedRwy = "14";
-                        break;
-                    case "130":
-                        expectedRwy = "14";
-                        break;
-                    case "140":
-                        expectedRwy = "14";
-                        break;
-                    case "150":
-                        expectedRwy = "14";
-                        break;
-                    case "160":
-                        expectedRwy = "18";
-                        break;
-                    case "170":
-                        expectedRwy = "18";
-                        break;
-                    case "180":
-                        expectedRwy = "18";
-                        break;
-                    case "190":
-                        expectedRwy = "18";
-                        break;
-                    case "200":
-                        expectedRwy = "22";
-                        break;
-                    case "210":
-                        expectedRwy = "22";
-                        break;
-                    case "220":
-                        expectedRwy = "22";
-                        break;
-                    case "230":
-                        expectedRwy = "22";
-                        break;
-                    case "240":
-                        expectedRwy = "22";
-                        break;
-                    case "250":
-                        expectedRwy = "27";
-                        break;
-                    case "260":
-                        expectedRwy = "27";
-                        break;
-                    case "270":
-                        expectedRwy = "27";
-                        break;
-                    case "280":
-                        expectedRwy = "27";
-                        break;
-                    case "290":
-                        expectedRwy = "27";
-                        break;
-                    case "300":
-                        expectedRwy = "32";
-                        break;
-                    case "310":
-                        expectedRwy = "32";
-                        break;
-                    case "320":
-                        expectedRwy = "32";
-                        break;
-                    case "330":
-                        expectedRwy = "32";
-                        break;
-                    case "340":
-                        expectedRwy = "36";
-                        break;
-                    case "350":
-                        expectedRwy = "36";
-                        break;
-                    case "360":
-                        expectedRwy = "36";
-                        break;
-                    }
-                    console.assert( runwayInUse === expectedRwy, "Wind direction %o. Expected runway %o, got %o", windDir, expectedRwy, runwayInUse );
-                    // runwayInUse = ( ( windDir === "000" || Math.abs( windDir - 160 ) <= 90 ) ? 16 : 34 ); 
                 }
             }
         }
