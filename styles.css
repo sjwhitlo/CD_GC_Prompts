@@ -152,9 +152,36 @@
     --buttonBlue: firebrick;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background: orange;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: gold;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: forestgreen;
+    }
+}
+
 body {
     background: var(--background);
-    color: fuschia;
 }
 
 h1 {
@@ -214,37 +241,37 @@ fieldset, .flightProgressStrip, #buttonContainer button {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-}
 
-button {
-    border: none;
-    color: var(--buttonText);
-    width: 120px;
-    height: 40px;
-    border-radius: 6px;
-    font-size: 14px;
-}
+    button {    
+        border: none;
+        color: var(--buttonText);
+        width: 120px;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
 
-.buttonNew {
-    background-color: var(--buttonGreen);
-}
+    .buttonNew {
+        background-color: var(--buttonGreen);
+    }
 
-.buttonRepeat {
-    background-color: var(--buttonBlue);
-}
+    .buttonRepeat {
+        background-color: var(--buttonBlue);
+    }
 
-.buttonRepeatInitial {
-    background-color: var(--buttonRed);
-}
+    .buttonRepeatInitial {
+        background-color: var(--buttonRed);
+    }
 
-.buttonMETAR {
-    background-color: var(--siaColorSplash);
-}
+    .buttonMETAR {
+        background-color: var(--siaColorSplash);
+    }
 
-.buttonSTARS {
-    border: 1px solid var(--stars);
-    color: var(--stars);
-    background-color: var(--background);
+    .buttonSTARS {
+        border: 1px solid var(--stars);
+        color: var(--stars);
+        background-color: var(--background);
+    }
 }
 
 .parentCheckbox {

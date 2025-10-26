@@ -142,23 +142,6 @@ var lastFocusElement = "";
 var checkInList = [];
 
 // Check In Types
-
-// Settings
-
-// Check Ins
-//  Voice Prompts
-
-// SIA
-
-// Local Reference
-
-// Activity Log
-
-// Flight Progress Strip
-
-// STARs
-
-
 class CallIn {
     constructor( aircraft ) {
         this.aircraft = aircraft;
@@ -457,61 +440,17 @@ class Callsign extends CallIn {
     }
 }
 
-async function fetchFacilities() {
-    const response = await fetch( './facilityList.json' );
-    document.getElementById( "facilitySelection" ).replaceChildren();
-    let facilities = await response.json();
-    facilities.forEach( facility => {
-        let opt = document.createElement('option');
-        opt.value = facility.id.toLowerCase();
-        opt.textContent += facility.id;
-        opt.title = facility.name;
-        document.getElementById( "facilitySelection" ).appendChild(opt);
-    });
-}
+// Controller
 
-async function fetchAirportInfo( airport ) {
-    const response = await fetch( `./facilities/${airport}/${airportInfoUrl}` );
-    return await response.json();
-}
 
-async function fetchAircraft( airport ) {
-    const response = await fetch( `./facilities/${airport}/${aircraftUrl}` );
-    let tempList = await response.json();
-    return tempList.filter( acft => acft.parking != null );
-}
+// Settings
 
-async function fetchAirports( airport ) {
-    const response = await fetch( `./facilities/${airport}/${airportsUrl}` );
-    return await response.json();
-}
+// Check Ins
+//  Voice Prompts
 
-async function fetchFlightPlans( airport ) {
-    const response = await fetch( `./facilities/${airport}/${flightPlansUrl}` );
-    return await response.json();
-}
+// SIA
 
-async function fetchMetars( airport ) {
-    const response = await fetch( `./facilities/${airport}/${metarsUrl}` );
-    return await response.json();
-}
-
-async function setFacility( airport ) {
-    airportInfo = await fetchAirportInfo( airport );
-    aircraft = await fetchAircraft( airport );
-    airports = await fetchAirports( airport );
-    ifrFlightPlans = await fetchFlightPlans( airport );
-    metarList = await fetchMetars( airport );
-
-    updateHeader();
-    updateLocalAircraft();
-    getNewMETAR();
-}
-
-function updateHeader() {
-    document.getElementById("headerText").innerHTML = `${airportInfo.info.name_short} ${headerSuffix}`;
-}
-
+// Local Reference
 function updateLocalAircraft( sortBy ) {
     let toReturn = "";
     let localList = aircraft.filter( acft => acft.flightSchool != null );
@@ -552,6 +491,105 @@ function updateLocalAircraft( sortBy ) {
 
     document.getElementById("localAircraftDisplay").innerHTML = toReturn;
 }
+
+// Activity Log
+
+// Flight Progress Strip
+function fillFlightProgressStrip( box1, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15, box16, box17, box18 ) {
+    document.getElementById("fps1").innerHTML = box1;
+    document.getElementById("fps3").innerHTML = box3;
+    document.getElementById("fps4").innerHTML = box4;
+    document.getElementById("fps5").innerHTML = box5;
+    document.getElementById("fps6").innerHTML = box6;
+    document.getElementById("fps7").innerHTML = box7;
+    document.getElementById("fps8").innerHTML = box8;
+    document.getElementById("fps9").innerHTML = box9;
+    document.getElementById("fps10").innerHTML = box10;
+    document.getElementById("fps11").innerHTML = box11;
+    document.getElementById("fps12").innerHTML = box12;
+    document.getElementById("fps13").innerHTML = box13;
+    document.getElementById("fps14").innerHTML = box14;
+    document.getElementById("fps15").innerHTML = box15;
+    document.getElementById("fps16").innerHTML = box16;
+    document.getElementById("fps17").innerHTML = box17;
+    document.getElementById("fps18").innerHTML = box18;
+}
+
+function completeStripMarking( box ) {
+    if ( box === 'b16' ) {
+        document.getElementById("fps16").innerHTML = "✓";
+    }
+}
+
+function fillFlightFollowingStrip( ffObj ) {
+    fillFlightProgressStrip( ffObj.getAcftIdForOutput(), ffObj.aircraft.type, "", ffObj.getSquawk(), "", "VFR/" + ffObj.altitude, "FTW " + ffObj.destination.airportFAA, "FTW " + ffObj.destination.airportFAA, "", "", "", "", "", "", "", "", "" );
+}
+
+function fillIFRFlightProgressStrip( ifrObj ) {
+    fillFlightProgressStrip( ifrObj.getAcftIdForOutput(), ifrObj.aircraft.type, ifrObj.cid, ifrObj.getSquawk(), ifrObj.depTime, ifrObj.altitude, "KFTW " + ifrObj.route.destination, ifrObj.route.route, "", "", "", "", "", "", "", "", "" );
+}
+
+function clearFlightProgressStrip() {
+    document.getElementById("fps1").innerHTML = "";
+    document.getElementById("fps3").innerHTML = "";
+    document.getElementById("fps4").innerHTML = "";
+    document.getElementById("fps5").innerHTML = "";
+    document.getElementById("fps6").innerHTML = "";
+    document.getElementById("fps7").innerHTML = "";
+    document.getElementById("fps8").innerHTML = "";
+    document.getElementById("fps9").innerHTML = "";
+    document.getElementById("fps10").innerHTML = "";
+    document.getElementById("fps11").innerHTML = "";
+    document.getElementById("fps12").innerHTML = "";
+    document.getElementById("fps13").innerHTML = "";
+    document.getElementById("fps14").innerHTML = "";
+    document.getElementById("fps15").innerHTML = "";
+    document.getElementById("fps16").innerHTML = "";
+    document.getElementById("fps17").innerHTML = "";
+    document.getElementById("fps18").innerHTML = "";
+}
+
+// STARs
+function setFocusToSTARSEntry() {
+    lastFocusElement = document.activeElement.id;
+    document.getElementById("starsEntry").style.display = "block";
+    document.getElementById("starsEntry").focus();
+}
+
+function starsKeyboard( key ) {
+    consoleDebug( key );
+}
+
+function showSTARSEntryButton() {
+    document.getElementById("btnStarsEntry").style.display = "block";
+}
+
+function noStarsEntryFlightFollowing() {
+    document.getElementById("btnStarsEntry").style.display = "none";
+    document.getElementById("txtStarsEntry").style.display = "block";
+    let starsEntryToShow = checkInList.at(-1).flightFollowingInput().toUpperCase().replace(/ /g, "<br>");
+    document.getElementById("txtStarsEntry").innerHTML = starsEntryToShow;
+    fillFlightFollowingStrip( checkInList.at(-1) );
+}
+
+function checkFlightFollowing() {
+    let receivedInput = document.getElementById("starsEntry").value.toUpperCase();
+    let expectedInput = checkInList.at(-1).flightFollowingInput().toUpperCase();
+    if ( receivedInput.includes( expectedInput ) || receivedInput.includes( expectedInput.replace( /\s+\d{3}/, '' ) ) ) {
+        document.getElementById("starsError").style.display = "none";
+        document.getElementById("starsEntry").value = "";
+        document.getElementById("starsEntry").style.display = "none";
+        // document.getElementById(lastFocusElement).focus();
+        fillFlightFollowingStrip( checkInList.at(-1) );
+    } else {
+        document.getElementById("starsError").style.display = "block";
+    }
+}
+
+
+
+
+
 
 async function main() {
     await fetchFacilities();
@@ -878,96 +916,6 @@ function changeCheckInFocus( whichType ) {
 function consoleDebug( text ) {
     if( document.getElementById("consoleOutput").checked ) {
         console.log( text );
-    }
-}
-
-function setFocusToSTARSEntry() {
-    lastFocusElement = document.activeElement.id;
-    document.getElementById("starsEntry").style.display = "block";
-    document.getElementById("starsEntry").focus();
-}
-
-function starsKeyboard( key ) {
-    consoleDebug( key );
-}
-
-function showSTARSEntryButton() {
-    document.getElementById("btnStarsEntry").style.display = "block";
-}
-
-function fillFlightProgressStrip( box1, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box14, box15, box16, box17, box18 ) {
-    document.getElementById("fps1").innerHTML = box1;
-    document.getElementById("fps3").innerHTML = box3;
-    document.getElementById("fps4").innerHTML = box4;
-    document.getElementById("fps5").innerHTML = box5;
-    document.getElementById("fps6").innerHTML = box6;
-    document.getElementById("fps7").innerHTML = box7;
-    document.getElementById("fps8").innerHTML = box8;
-    document.getElementById("fps9").innerHTML = box9;
-    document.getElementById("fps10").innerHTML = box10;
-    document.getElementById("fps11").innerHTML = box11;
-    document.getElementById("fps12").innerHTML = box12;
-    document.getElementById("fps13").innerHTML = box13;
-    document.getElementById("fps14").innerHTML = box14;
-    document.getElementById("fps15").innerHTML = box15;
-    document.getElementById("fps16").innerHTML = box16;
-    document.getElementById("fps17").innerHTML = box17;
-    document.getElementById("fps18").innerHTML = box18;
-}
-
-function completeStripMarking( box ) {
-    if ( box === 'b16' ) {
-        document.getElementById("fps16").innerHTML = "✓";
-    }
-}
-
-function fillFlightFollowingStrip( ffObj ) {
-    fillFlightProgressStrip( ffObj.getAcftIdForOutput(), ffObj.aircraft.type, "", ffObj.getSquawk(), "", "VFR/" + ffObj.altitude, "FTW " + ffObj.destination.airportFAA, "FTW " + ffObj.destination.airportFAA, "", "", "", "", "", "", "", "", "" );
-}
-
-function fillIFRFlightProgressStrip( ifrObj ) {
-    fillFlightProgressStrip( ifrObj.getAcftIdForOutput(), ifrObj.aircraft.type, ifrObj.cid, ifrObj.getSquawk(), ifrObj.depTime, ifrObj.altitude, "KFTW " + ifrObj.route.destination, ifrObj.route.route, "", "", "", "", "", "", "", "", "" );
-}
-
-function clearFlightProgressStrip() {
-    document.getElementById("fps1").innerHTML = "";
-    document.getElementById("fps3").innerHTML = "";
-    document.getElementById("fps4").innerHTML = "";
-    document.getElementById("fps5").innerHTML = "";
-    document.getElementById("fps6").innerHTML = "";
-    document.getElementById("fps7").innerHTML = "";
-    document.getElementById("fps8").innerHTML = "";
-    document.getElementById("fps9").innerHTML = "";
-    document.getElementById("fps10").innerHTML = "";
-    document.getElementById("fps11").innerHTML = "";
-    document.getElementById("fps12").innerHTML = "";
-    document.getElementById("fps13").innerHTML = "";
-    document.getElementById("fps14").innerHTML = "";
-    document.getElementById("fps15").innerHTML = "";
-    document.getElementById("fps16").innerHTML = "";
-    document.getElementById("fps17").innerHTML = "";
-    document.getElementById("fps18").innerHTML = "";
-}
-
-function noStarsEntryFlightFollowing() {
-    document.getElementById("btnStarsEntry").style.display = "none";
-    document.getElementById("txtStarsEntry").style.display = "block";
-    let starsEntryToShow = checkInList.at(-1).flightFollowingInput().toUpperCase().replace(/ /g, "<br>");
-    document.getElementById("txtStarsEntry").innerHTML = starsEntryToShow;
-    fillFlightFollowingStrip( checkInList.at(-1) );
-}
-
-function checkFlightFollowing() {
-    let receivedInput = document.getElementById("starsEntry").value.toUpperCase();
-    let expectedInput = checkInList.at(-1).flightFollowingInput().toUpperCase();
-    if ( receivedInput.includes( expectedInput ) || receivedInput.includes( expectedInput.replace( /\s+\d{3}/, '' ) ) ) {
-        document.getElementById("starsError").style.display = "none";
-        document.getElementById("starsEntry").value = "";
-        document.getElementById("starsEntry").style.display = "none";
-        // document.getElementById(lastFocusElement).focus();
-        fillFlightFollowingStrip( checkInList.at(-1) );
-    } else {
-        document.getElementById("starsError").style.display = "block";
     }
 }
 
