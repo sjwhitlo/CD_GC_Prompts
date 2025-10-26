@@ -910,7 +910,7 @@
 
                         let minADiff = Math.abs(airportInfo.runways.available[minAIdx].heading - windDir);
                         let minBDiff = Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir);
-                        runwayInUse = ( airportInfo.runways.available[minAIdx] <= airportInfo.runways.available[minBIdx] ? airportInfo.runways.available[minAIdx] : airportInfo.runways.available[minBIdx] ).runways[0];
+                        runwayInUse = ( minADiff <= minBDiff ? airportInfo.runways.available[minAIdx] : airportInfo.runways.available[minBIdx] ).runways[0];
                     }
                 }
             }
