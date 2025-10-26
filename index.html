@@ -889,29 +889,49 @@
                     } else if ( windDir === "VRB" ) {
                         runwayInUse = airportInfo.runways.calm_wind;
                     } else {
-                        // def short(bb,c):
-                        //     x0= np.min(np.abs(bb-c))
-                        //     x1= np.min(np.abs(366-bb+c))  
-                        //     if x0<x1:
-                        //         return bb[np.argmin(bb-c)]
-                        //     else: 
-                        //         return bb[np.argmin(366-bb+c)]
-
                         // airportInfo.runways.available.heading
 
+                        // minA = abs( rwy - wind );
+                        // minB = abs( range - rwy + wind );
+                        // min = ( minA <= minB ? minA : minB );
+
+                        // const minIndex = data.reduce((minIndex, currentObject, currentIndex, arr) => {
+                        //     if (currentObject.value < arr[minIndex].value) {
+                        //         return currentIndex;
+                        //     }
+                        //     return minIndex;
+                        // }, 0);
+
+                        let minAIdx = airportInfo.runways.available.reduce((minAIdx, currRwy, currIdx, arr) => {
+                            if ( Math.abs(currRwy.heading - windDir) < Math.abs(arr[minAIdx].heading - windDir) ) {
+                                return currIdx;
+                            }
+                            return minAIdx;
+                        }, 0);
+
+                        let minBIdx = airportInfo.runways.available.reduce((minBIdx, currRwy, currIdx, arr) => {
+                            if ( Math.abs(360 - currRwy.heading + windDir) < Math.abs(360 - arr[minBIdx].heading + windDir) ) {
+                                return currIdx;
+                            }
+                            return minBIdx;
+                        }, 0);
+
                         // always gets the runway number, not the difference between the wind direction and runway heading
-                        console.log( "minA" );
-                        let minA = airportInfo.runways.available.reduce(function(prev, curr) {
-                            console.log( {prev, curr} );
-                            return Math.abs(prev.heading - windDir) < Math.abs(prev.heading - windDir) ? prev : curr;
-                        });
-                        console.log( "minB" );
-                        let minB = airportInfo.runways.available.reduce(function(prev, curr) {
-                            console.log( {prev, curr} );
-                            return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
-                        });
-                        console.log( minA, minB );
-                        runwayInUse = ( minA <= minB ? minA : minB ).runways[0];
+                        // console.log( "minA" );
+                        // let minA = airportInfo.runways.available.reduce(function(prev, curr) {
+                        //     console.log( {prev, curr} );
+                        //     return Math.abs(prev.heading - windDir) < Math.abs(prev.heading - windDir) ? prev : curr;
+                        // });
+                        // console.log( "minB" );
+                        // let minB = airportInfo.runways.available.reduce(function(prev, curr) {
+                        //     console.log( {prev, curr} );
+                        //     return Math.abs(360 - prev.heading + windDir) < Math.abs(360 - prev.heading + windDir) ? prev : curr;
+                        // });
+
+                        let minADiff = Math.abs(airportInfo.runways.available[minAIdx].heading - windDir);
+                        let minBDiff = Math.abs(360 - airportInfo.runways.available[minBIdx].heading + windDir);
+                        console.log( airportInfo.runways.available[minAIdx], airportInfo.runways.available[minBIdx] );
+                        runwayInUse = ( airportInfo.runways.available[minAIdx] <= airportInfo.runways.available[minBIdx] ? airportInfo.runways.available[minAIdx] : airportInfo.runways.available[minBIdx] ).runways[0];
                     }
                     switch (windDir) {
                     case "000":
