@@ -441,7 +441,60 @@ class Callsign extends CallIn {
 }
 
 // Controller
+async function fetchFacilities() {
+    const response = await fetch( './facilityList.json' );
+    document.getElementById( "facilitySelection" ).replaceChildren();
+    let facilities = await response.json();
+    facilities.forEach( facility => {
+        let opt = document.createElement('option');
+        opt.value = facility.id.toLowerCase();
+        opt.textContent += facility.id;
+        opt.title = facility.name;
+        document.getElementById( "facilitySelection" ).appendChild(opt);
+    });
+}
 
+async function fetchAirportInfo( airport ) {
+    const response = await fetch( `./facilities/${airport}/${airportInfoUrl}` );
+    return await response.json();
+}
+
+async function fetchAircraft( airport ) {
+    const response = await fetch( `./facilities/${airport}/${aircraftUrl}` );
+    let tempList = await response.json();
+    return tempList.filter( acft => acft.parking != null );
+}
+
+async function fetchAirports( airport ) {
+    const response = await fetch( `./facilities/${airport}/${airportsUrl}` );
+    return await response.json();
+}
+
+async function fetchFlightPlans( airport ) {
+    const response = await fetch( `./facilities/${airport}/${flightPlansUrl}` );
+    return await response.json();
+}
+
+async function fetchMetars( airport ) {
+    const response = await fetch( `./facilities/${airport}/${metarsUrl}` );
+    return await response.json();
+}
+
+async function setFacility( airport ) {
+    airportInfo = await fetchAirportInfo( airport );
+    aircraft = await fetchAircraft( airport );
+    airports = await fetchAirports( airport );
+    ifrFlightPlans = await fetchFlightPlans( airport );
+    metarList = await fetchMetars( airport );
+
+    updateHeader();
+    updateLocalAircraft();
+    getNewMETAR();
+}
+
+function updateHeader() {
+    document.getElementById("headerText").innerHTML = `${airportInfo.info.name_short} ${headerSuffix}`;
+}
 
 // Settings
 
