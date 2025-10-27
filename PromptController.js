@@ -616,7 +616,7 @@ function starsKeyboard( key ) {
     } else if ( key === "bkspc" ) {
         let temp = document.getElementById( "starsEntry" ).value;
         document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length-1);
-    } else if ( key === "clear" ) {
+    } else if ( key === "clear" || key === "core" ) {
         document.getElementById( "starsEntry" ).value = "";
     } else if ( key === "enter" ) {
         checkFlightFollowing();
