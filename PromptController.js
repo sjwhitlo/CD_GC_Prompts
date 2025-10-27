@@ -854,6 +854,7 @@ function newCheckIn() {
     document.getElementById("btnStarsEntry").style.display = "none";
     document.getElementById("txtStarsEntry").style.display = "none";
     document.getElementById("starsEntry").style.display = "none";
+    document.getElementById("starsKeyboard").style.display = "none";
     document.getElementById("starsError").style.display = "none";
 
     let selectedCheckInTypes = [];
