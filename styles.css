@@ -440,7 +440,7 @@ button {
         line-height: 1em;
         font-weight: bold;
         text-align: center;
-        border-style: 1px solid black;
+        border-style: 1px solid var(--starsKeyBorder);
         border-radius: 5px;
         align-items: center;
         box-shadow: inset 0px 0px 1.5px 5px rgba(0,0,0,0.25);
@@ -450,24 +450,24 @@ button {
     }
 
     .green {
-        background: darkgreen;
-        color: whitesmoke;
+        background: var(--starsGreen);
+        color: var(--starsTextLight);
     }
     .red {
-        background: firebrick;
-        color: whitesmoke;
+        background: var(--starsRed);
+        color: var(--starsTextLight);
     }
     .blue {
-        background: deepskyblue;
-        color: black;
+        background: var(--starsBlue);
+        color: var(--starsTextDark);
     }
     .white {
-        background: whitesmoke;
-        color: black;
+        background: var(--starsWhite);
+        color: var(--starsTextDark);
     }
     .yellow {
-        background: gold;
-        color: black;
+        background: var(--starsYellow);
+        color: var(--starsTextDark);
     }
 }
 
