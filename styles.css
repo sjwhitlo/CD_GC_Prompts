@@ -9,11 +9,19 @@
     --siaColorSplash: goldenrod;
     --stars: limegreen;
     --starsError: red;
-    --starsMap: yellow;
+    --starsKeyBorder: black;
+    --starsTextLight: whitesmoke;
+    --starsTextDark: black;
+    --starsGreen: darkgreen;
+    --starsRed: firebrick;
+    --starsBlue: deepskyblue;
+    --starsWhite: whitesmoke;
+    --starsYellow: gold;
     --buttonText: white;
     --buttonRed: firebrick;
     --buttonGreen: seagreen;
     --buttonBlue: steelblue;
+
 }
 
 .default {
@@ -26,7 +34,6 @@
     --siaColorSplash: goldenrod;
     --stars: limegreen;
     --starsError: red;
-    --starsMap: yellow;
     --buttonText: white;
     --buttonRed: firebrick;
     --buttonGreen: seagreen;
@@ -43,7 +50,6 @@
     --siaColorSplash: orange;
     --stars: forestgreen;
     --starsError: red;
-    --starsMap: orange;
     --buttonText: white;
     --buttonRed: crimson;
     --buttonGreen: forestgreen;
@@ -60,7 +66,6 @@
     --siaColorSplash: #b58b00;
     --stars: #42b52b;
     --starsError: #c82f2f;
-    --starsMap: #b58b00;
     --buttonText: #f3f3f3;
     --buttonRed: #c82f2f;
     --buttonGreen: #009b76;
@@ -77,7 +82,6 @@
     --siaColorSplash: #b58b00;
     --stars: #42b52b;
     --starsError: #c82f2f;
-    --starsMap: #b58b00;
     --buttonText: #f3f3f3;
     --buttonRed: #c82f2f;
     --buttonGreen: #009b76;
@@ -94,28 +98,10 @@
     --siaColorSplash: hsl(31, 100%, 66%);
     --stars: hsl(135, 94%, 65%);
     --starsError: hsl(0, 100%, 67%);
-    --starsError: hsl(31, 100%, 66%);
     --buttonText: hsl(60, 30%, 96%);
     --buttonRed: hsl(0, 95%, 67%);
     --buttonGreen: hsl(135, 75%, 60%);
     --buttonBlue: hsl(225, 27%, 51%);
-}
-
-.grayscale-mode {
-    --background: black;
-    --flightProgressStripBackground: #bebebe;
-    --flightProgressStripForeground: black;
-    --settingsForeground: #707070;
-    --settingsText: #b0b0b0;
-    --settingsBackground: #202020;
-    --siaColorSplash: #f5f5f5;
-    --stars: whitesmoke;
-    --starsError: gainsboro;
-    --starsMap: #707070;
-    --buttonText: dimgray;
-    --buttonRed: #b0b0b0;
-    --buttonGreen: whitesmoke;
-    --buttonBlue: #d0d0d0;
 }
 
 .matrix-mode {
@@ -128,7 +114,14 @@
     --siaColorSplash: limegreen;
     --stars: limegreen;
     --starsError: red;
-    --starsMap: limegreen;
+    --starsKeyBorder: limegreen;
+    --starsTextLight: limegreen;
+    --starsTextDark: limegreen;
+    --starsGreen: black;
+    --starsRed: black;
+    --starsBlue: black;
+    --starsWhite: black;
+    --starsYellow: black;
     --buttonText: black;
     --buttonRed: limegreen;
     --buttonGreen: limegreen;
@@ -145,7 +138,14 @@
     --siaColorSplash: firebrick;
     --stars: firebrick;
     --starsError: firebrick;
-    --starsMap: firebrick;
+    --starsKeyBorder: firebrick;
+    --starsTextLight: firebrick;
+    --starsTextDark: black;
+    --starsGreen: firebrick;
+    --starsRed: firebrick;
+    --starsBlue: firebrick;
+    --starsWhite: black;
+    --starsYellow: black;
     --buttonText: black;
     --buttonRed: firebrick;
     --buttonGreen: firebrick;
