@@ -615,7 +615,7 @@ function starsKeyboard( key ) {
         document.getElementById( "starsEntry" ).value += " ";
     } else if ( key === "bkspc" ) {
         let temp = document.getElementById( "starsEntry" ).value;
-        document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length()-1);
+        document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length-1);
     } else if ( key === "clear" ) {
         document.getElementById( "starsEntry" ).value = "";
     } else if ( key === "enter" ) {
