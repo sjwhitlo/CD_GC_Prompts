@@ -369,7 +369,7 @@ legend {
 
 #currentMETAR {
     min-width: 350px;
-    max-width: 500px;
+/*    max-width: 500px;*/
     text-wrap: wrap;
     overflow-wrap: break-word;
 }
