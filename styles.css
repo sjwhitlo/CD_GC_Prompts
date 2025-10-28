@@ -219,7 +219,8 @@
         display: grid;
         grid-template-areas: 
             "header      header      header      header"
-            "settings    mode        sia         buttons"
+            "settings    mode        .         buttons"
+            "sia         sia         . ."
             "flightStrip flightStrip flightStrip flightFollowing"
             "cheatsheet  activityLog .           starsKeyboard";
     }
