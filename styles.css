@@ -155,7 +155,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        display: inline-grid;
+        display: grid;
         grid-template-areas: 
             "header          header"
             "settings        mode"
@@ -176,7 +176,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     body {
-        display: inline-grid;
+        display: grid;
         grid-template-areas: 
             "header          header"
             "settings        mode"
@@ -190,7 +190,7 @@
 
     #flightProgressStrip {
         width: 100%;
-        height: auto;
+/*        height: auto;*/
         aspect-ratio: 8;
     }
 }
@@ -198,7 +198,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        display: inline-grid;
+        display: grid;
         grid-template-areas: 
             "header      header      header      header"
             "settings    mode        sia         buttons"
@@ -216,7 +216,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        display: inline-grid;
+        display: grid;
         grid-template-areas: 
             "header      header      header      header"
             "settings    mode        sia         buttons"
