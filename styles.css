@@ -261,6 +261,7 @@
 }
 
 body {
+    align-items: start;
     background: var(--background);
     font-family: arial;
     color: var(--settingsText);
@@ -496,6 +497,8 @@ button {
 
 #starsKeyboard {
     grid-area: starsKeyboard;
+    align-self: end;
+    justify-self: end;
     width: 500px;
     background: black;
 
