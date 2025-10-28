@@ -370,6 +370,7 @@ legend {
 #currentMETAR {
 /*    min-width: 350px;*/
     text-wrap: wrap;
+    overflow-wrap: break-word;
 }
 
 button {    
