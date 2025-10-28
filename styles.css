@@ -156,7 +156,6 @@
 @media only screen and (max-width: 600px) {
     body {
         display: inline-grid;
-/*        grid-template-columns: auto auto;*/
         grid-template-areas: 
             "header          header"
             "settings        mode"
@@ -172,7 +171,16 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
-        background: orange;
+        display: inline-grid;
+        grid-template-areas: 
+            "header          header"
+            "settings        mode"
+            "sia             sia"
+            "cheatsheet      activityLog"
+            "flightStrip     flightStrip"
+            "buttons         buttons"
+            "flightFollowing flightFollowing"
+            "starsKeyboard   starsKeyboard";
     }
 }
 
@@ -180,7 +188,6 @@
 @media only screen and (min-width: 768px) {
     body {
         display: inline-grid;
-/*        grid-template-columns: auto auto auto auto;*/
         grid-template-areas: 
             "header      header      header      header"
             "settings    mode        sia         buttons"
@@ -194,7 +201,6 @@
 @media only screen and (min-width: 992px) {
     body {
         display: inline-grid;
-/*        grid-template-columns: auto auto auto auto;*/
         grid-template-areas: 
             "header      header      header      header"
             "settings    mode        sia         buttons"
