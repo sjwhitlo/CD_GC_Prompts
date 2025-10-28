@@ -309,6 +309,7 @@ body {
 
 #references {
     display: flex;
+    align-items: flex-end;
     grid-area: references;
     gap: 5px;
 }
