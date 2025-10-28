@@ -262,6 +262,7 @@
 
 body {
     align-items: start;
+    gap: 5px;
     background: var(--background);
     font-family: arial;
     color: var(--settingsText);
@@ -315,7 +316,7 @@ legend {
 }
 
 #currentMETAR {
-    min-width: 350px;
+/*    min-width: 350px;*/
     text-wrap: wrap;
 }
 
