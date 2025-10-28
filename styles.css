@@ -200,19 +200,6 @@
     }
 }
 
-/**
- * header .................. header
- * settingsArea ............ settings
- * modePanel ............... mode
- * siaPanel ................ sia
- * buttonContainer ......... buttons
- * flightProgressStrip ..... flightStrip
- * flightFollowingContainer  flightFollowing
- * localCheatsheet ......... cheatsheet
- * activityLog ............. activityLog
- * starsKeyboard ........... starsKeyboard
- */
-
 #header {
     grid-area: header;
 };
@@ -254,9 +241,9 @@ h1 {
 }
 
 #settingsArea {
-    display: flex;
+    /*display: flex;
     align-items: flex-start;
-    gap: 5px;
+    gap: 5px;*/
     font-family: arial;
     color: var(--settingsText);
 }
@@ -359,7 +346,7 @@ button {
     vertical-align: top;
     text-align: left;
     text-wrap: wrap;
-    font-family: consolas;
+    font-family: Consolas, courier, monospace;
     font-size: 19px;
     color: var(--flightProgressStripForeground);
     font-weight: bold;
@@ -464,7 +451,7 @@ button {
     resize: none;
     background: var(--background);
     color: var(--stars);
-    font-family: consolas;
+    font-family: Consolas, courier, monospace;
     color: var(--stars);
     font-size: 16px;
     font-weight: bold;
@@ -472,7 +459,7 @@ button {
 
 .starsError {
     display: none;
-    font-family: consolas;
+    font-family: Consolas, courier, monospace;
     color:var(--starsError);
     font-size:16px;
     font-weight:bold;
