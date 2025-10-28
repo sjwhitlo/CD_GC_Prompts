@@ -232,10 +232,11 @@
 
 body {
     background: var(--background);
+    font-family: arial;
+    color: var(--settingsText);
 }
 
 h1 {
-    font-family: arial;
     color: var(--settingsForeground);
     text-align: center;
 }
@@ -264,9 +265,9 @@ legend {
     padding: 3px 6px;
 }
 
-fieldset, .flightProgressStrip, #buttonContainer button {
+/*fieldset, .flightProgressStrip, #buttonContainer button {
     box-shadow: 0px 0px 0px 3px var(--background);
-}
+}*/
 
 .listDisplay {
     width: 300px;
