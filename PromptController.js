@@ -506,41 +506,43 @@ function updateHeader() {
 // Local Reference
 function updateLocalAircraft( sortBy ) {
     let toReturn = "";
-    let localList = aircraft.filter( acft => acft.flightSchool != null );
-    // sort by callsign and school
-    switch ( sortBy ) {
-        case "callsign":
-            localList.sort((a, b) => {
-                const nameA = a.registration.toUpperCase();
-                const nameB = b.registration.toUpperCase();
-                return ( nameA < nameB ? -1 : 1 );
-            });
-            break;
-        case "last3":
-            localList.sort((a, b) => {
-                const nameA = a.registration.slice(-3).toUpperCase();
-                const nameB = b.registration.slice(-3).toUpperCase();
-                return ( nameA < nameB ? -1 : 1 );
-            });
-            break;
-        case "type":
-            localList.sort((a, b) => {
-                const nameA = a.type.toUpperCase();
-                const nameB = b.type.toUpperCase();
-                return ( nameA < nameB ? -1 : 1 );
-            });
-            break;
-        case "company":
-            localList.sort((a, b) => {
-                const nameA = a.flightSchool.toUpperCase();
-                const nameB = b.flightSchool.toUpperCase();
-                return ( nameA < nameB ? -1 : 1 );
-            });
-            break;
+    if ( sortBy !== "none" ) {
+        let localList = aircraft.filter( acft => acft.flightSchool != null );
+        // sort by callsign and school
+        switch ( sortBy ) {
+            case "callsign":
+                localList.sort((a, b) => {
+                    const nameA = a.registration.toUpperCase();
+                    const nameB = b.registration.toUpperCase();
+                    return ( nameA < nameB ? -1 : 1 );
+                });
+                break;
+            case "last3":
+                localList.sort((a, b) => {
+                    const nameA = a.registration.slice(-3).toUpperCase();
+                    const nameB = b.registration.slice(-3).toUpperCase();
+                    return ( nameA < nameB ? -1 : 1 );
+                });
+                break;
+            case "type":
+                localList.sort((a, b) => {
+                    const nameA = a.type.toUpperCase();
+                    const nameB = b.type.toUpperCase();
+                    return ( nameA < nameB ? -1 : 1 );
+                });
+                break;
+            case "company":
+                localList.sort((a, b) => {
+                    const nameA = a.flightSchool.toUpperCase();
+                    const nameB = b.flightSchool.toUpperCase();
+                    return ( nameA < nameB ? -1 : 1 );
+                });
+                break;
+        }
+        localList.forEach( ( acft ) => {
+            toReturn += `${acft.type} N${acft.registration.padEnd(5," ")} ${acft.flightSchool}\n`
+        });
     }
-    localList.forEach( ( acft ) => {
-        toReturn += `${acft.type} N${acft.registration.padEnd(5," ")} ${acft.flightSchool}\n`
-    });
 
     document.getElementById("localAircraftDisplay").innerHTML = toReturn;
 }
