@@ -156,14 +156,14 @@
 @media only screen and (max-width: 600px) {
     body {
         grid-template-areas: 
-            "header          header"
-            "settings        mode"
-            "sia             sia"
-            "references      references"
-            "flightStrip     flightStrip"
-            "buttons         buttons"
-            "flightFollowing flightFollowing"
-            "starsKeyboard   starsKeyboard";
+            "header"
+            "settings"
+            "sia"
+            "references"
+            "flightStrip"
+            "buttons"
+            "flightFollowing"
+            "starsKeyboard";
     }
 
     #references {
@@ -180,14 +180,14 @@
 @media only screen and (min-width: 600px) {
     body {
         grid-template-areas: 
-            "header          header"
-            "settings        mode"
-            "sia             sia"
-            "references      references"
-            "flightStrip     flightStrip"
-            "buttons         buttons"
-            "flightFollowing flightFollowing"
-            "starsKeyboard   starsKeyboard";
+            "header"
+            "settings"
+            "sia"
+            "references"
+            "flightStrip"
+            "buttons"
+            "flightFollowing"
+            "starsKeyboard";
     }
 
     #references {
@@ -204,12 +204,12 @@
 @media only screen and (min-width: 768px) {
     body {
         grid-template-areas: 
-            "header      header      header"
-            "settings    mode        references"
-            "sia         sia         references"
-            "buttons     buttons     references"
-            "flightStrip flightStrip references"
-            ".           .           starsKeyboard";
+            "header      header"
+            "settings    references"
+            "sia         references"
+            "buttons     references"
+            "flightStrip references"
+            ".           starsKeyboard";
     }
 
     #references {
@@ -226,13 +226,13 @@
 @media only screen and (min-width: 992px) {
     body {
         grid-template-areas: 
-            "header          header          header"
-            "settings        mode            references"
-            "sia             sia             references"
-            "buttons         buttons         references"
-            "flightStrip     flightStrip     references"
-            "flightFollowing flightFollowing references"
-            "starsKeyboard   starsKeyboard   references";
+            "header          header"
+            "settings        references"
+            "sia             references"
+            "buttons         references"
+            "flightStrip     references"
+            "flightFollowing references"
+            "starsKeyboard   references";
     }
 
     #references {
@@ -249,13 +249,13 @@
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-areas: 
-            "header          header          header"
-            "settings        mode            references"
-            "sia             sia             references"
-            "buttons         buttons         references"
-            "flightStrip     flightStrip     references"
-            "flightFollowing flightFollowing references"
-            "starsKeyboard   starsKeyboard   references";
+            "header          header"
+            "settings        references"
+            "sia             references"
+            "buttons         references"
+            "flightStrip     references"
+            "flightFollowing references"
+            "starsKeyboard   references";
     }
 
     #references {
@@ -272,13 +272,13 @@
     grid-area: header;
 };
 
-#settingsPanel {
+/*#settingsPanel {
     grid-area: settings;
 }
 
 #modePanel {
     grid-area: mode;
-}
+}*/
 
 #siaPanel {
     grid-area: sia;
@@ -319,11 +319,14 @@ h1 {
 }
 
 #settingsArea {
-    /*display: flex;
+    grid-area: settings;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;*/
-    font-family: arial;
-    color: var(--settingsText);
+    gap: 5px;
+/*    font-family: arial;*/
+/*    color: var(--settingsText);*/
 }
 
 fieldset {
