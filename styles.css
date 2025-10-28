@@ -155,16 +155,19 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        display: grid;
         grid-template-areas: 
             "header          header"
             "settings        mode"
             "sia             sia"
-            "cheatsheet      activityLog"
+            "references      references"
             "flightStrip     flightStrip"
             "buttons         buttons"
             "flightFollowing flightFollowing"
             "starsKeyboard   starsKeyboard";
+    }
+
+    #references {
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -176,16 +179,19 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
-        display: grid;
         grid-template-areas: 
             "header          header"
             "settings        mode"
             "sia             sia"
-            "cheatsheet      activityLog"
+            "references      references"
             "flightStrip     flightStrip"
             "buttons         buttons"
             "flightFollowing flightFollowing"
             "starsKeyboard   starsKeyboard";
+    }
+
+    #references {
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -198,14 +204,17 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        display: grid;
         grid-template-areas: 
             "header      header      header"
-            "settings    mode        activityLog"
-            "sia         sia         activityLog"
-            "buttons     buttons     cheatsheet"
-            "flightStrip flightStrip cheatsheet"
+            "settings    mode        references"
+            "sia         sia         references"
+            "buttons     buttons     references"
+            "flightStrip flightStrip references"
             ".           .           starsKeyboard";
+    }
+
+    #references {
+        flex-direction: column;
     }
 
     #flightProgressStrip {
@@ -217,15 +226,41 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        display: grid;
         grid-template-areas: 
-            "header          header          header      header"
-            "settings        mode            activityLog cheatsheet"
-            "sia             sia             activityLog cheatsheet"
-            "buttons         buttons         activityLog cheatsheet"
-            "flightStrip     flightStrip     activityLog cheatsheet"
-            "flightFollowing flightFollowing activityLog cheatsheet"
-            "starsKeyboard   starsKeyboard   activityLog cheatsheet";
+            "header          header          header"
+            "settings        mode            references"
+            "sia             sia             references"
+            "buttons         buttons         references"
+            "flightStrip     flightStrip     references"
+            "flightFollowing flightFollowing references"
+            "starsKeyboard   starsKeyboard   references";
+    }
+
+    #references {
+        flex-direction: column;
+    }
+
+    #flightProgressStrip {
+        width: 8in;
+        aspect-ratio: 8;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        grid-template-areas: 
+            "header          header          header"
+            "settings        mode            references"
+            "sia             sia             references"
+            "buttons         buttons         references"
+            "flightStrip     flightStrip     references"
+            "flightFollowing flightFollowing references"
+            "starsKeyboard   starsKeyboard   references";
+    }
+
+    #references {
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -265,11 +300,17 @@
 }
 
 body {
+    display: grid;
     align-items: start;
     gap: 5px;
     background: var(--background);
     font-family: arial;
     color: var(--settingsText);
+}
+
+#references {
+    display: flex;
+    grid-area: references;
 }
 
 h1 {

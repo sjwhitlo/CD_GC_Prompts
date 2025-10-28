@@ -136,32 +136,34 @@
             <div id="starsError" class="starsError">Error, try again</div>
         </div>
 
-        <fieldset id="localCheatsheet" class="listDisplay">
-            <legend>Local Callsigns</legend>
-            <label for="sortLocalBy">Sort by:</label>
-            <select id="sortLocalBy" onchange="updateLocalAircraft(value)">
-                <option value="callsign">Callsign</option>
-                <option value="last3">Last 3 Callsign</option>
-                <option value="type">Type</option>
-                <option value="company">Company</option>
-            </select>
-            <hr>
-            <div id="localAircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
-        </fieldset>
-        
-        <fieldset id="activityLog" class="listDisplay">
-            <legend>Activity Log</legend>
-            <label for="displayData">Display:</label>
-            <select id="displayData" onchange="updateDisplay()">
-                <option value="none">None</option>
-                <option value="forward" selected>Forward</option>
-                <option value="reverse">Reverse</option>
-                <option value="current">Current</option>
-                <option value="previous">Previous</option>
-            </select> 
-            <hr>
-            <div id="aircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
-        </fieldset>
+        <div id="references">
+            <fieldset id="localCheatsheet" class="listDisplay">
+                <legend>Local Callsigns</legend>
+                <label for="sortLocalBy">Sort by:</label>
+                <select id="sortLocalBy" onchange="updateLocalAircraft(value)">
+                    <option value="callsign">Callsign</option>
+                    <option value="last3">Last 3 Callsign</option>
+                    <option value="type">Type</option>
+                    <option value="company">Company</option>
+                </select>
+                <hr>
+                <div id="localAircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
+            </fieldset>
+
+            <fieldset id="activityLog" class="listDisplay">
+                <legend>Activity Log</legend>
+                <label for="displayData">Display:</label>
+                <select id="displayData" onchange="updateDisplay()">
+                    <option value="none">None</option>
+                    <option value="forward" selected>Forward</option>
+                    <option value="reverse">Reverse</option>
+                    <option value="current">Current</option>
+                    <option value="previous">Previous</option>
+                </select> 
+                <hr>
+                <div id="aircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
+            </fieldset>
+        </div>
 
         <div id="starsKeyboard" style="display:none;">
             <div class="standardRow">
