@@ -157,17 +157,17 @@
     body {
         grid-template-areas: 
             "header"
-            "settings"
-            "sia"
+            "mainContent"
             "references"
-            "flightStrip"
-            "buttons"
-            "flightFollowing"
-            "starsKeyboard";
+            "stars";
     }
 
     #references {
         flex-direction: row;
+    }
+
+    #starsContent {
+        flex-direction: column;
     }
 
     #flightProgressStrip {
@@ -181,17 +181,17 @@
     body {
         grid-template-areas: 
             "header"
-            "settings"
-            "sia"
+            "mainContent"
             "references"
-            "flightStrip"
-            "buttons"
-            "flightFollowing"
-            "starsKeyboard";
+            "stars";
     }
 
     #references {
         flex-direction: row;
+    }
+
+    #starsContent {
+        flex-direction: column;
     }
 
     #flightProgressStrip {
@@ -205,14 +205,15 @@
     body {
         grid-template-areas: 
             "header      header"
-            "settings    references"
-            "sia         references"
-            "buttons     references"
-            "flightStrip references"
-            ".           starsKeyboard";
+            "mainContent references"
+            "start       stars";
     }
 
     #references {
+        flex-direction: column;
+    }
+
+    #starsContent {
         flex-direction: column;
     }
 
@@ -226,16 +227,16 @@
 @media only screen and (min-width: 992px) {
     body {
         grid-template-areas: 
-            "header          header"
-            "settings        references"
-            "sia             references"
-            "buttons         references"
-            "flightStrip     references"
-            "flightFollowing references"
-            "starsKeyboard   references";
+            "header      header"
+            "mainContent references"
+            "stars       references";
     }
 
     #references {
+        flex-direction: column;
+    }
+
+    #starsContent {
         flex-direction: column;
     }
 
@@ -249,17 +250,17 @@
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-areas: 
-            "header          header"
-            "settings        references"
-            "sia             references"
-            "buttons         references"
-            "flightStrip     references"
-            "flightFollowing references"
-            "starsKeyboard   references";
+            "header      header"
+            "mainContent references"
+            "stars       references";
     }
 
     #references {
-        flex-direction: columns;
+        flex-direction: column;
+    }
+
+    #starsContent {
+        flex-direction: column;
     }
 
     #flightProgressStrip {
@@ -270,31 +271,25 @@
 
 #header {
     grid-area: header;
-};
-
-/*#settingsPanel {
-    grid-area: settings;
 }
 
-#modePanel {
-    grid-area: mode;
-}*/
-
-#siaPanel {
-    grid-area: sia;
+#mainContent {
+    grid-area: mainContent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
 }
 
-#flightFollowingContainer {
-    grid-area: flightFollowing;
+#starsContent {
+    grid-area: stars;
 }
 
 #localCheatsheet {
-    grid-area: cheatsheet;
     font-family: Consolas, courier, monospace;
 }
 
 #activityLog {
-    grid-area: activityLog;
     font-family: Consolas, courier, monospace;
 }
 
@@ -314,6 +309,13 @@ body {
     gap: 5px;
 }
 
+#starsContent {
+    display: flex;
+/*    align-items: flex-end;*/
+    grid-area: stars;
+    gap: 5px;
+}
+
 h1 {
     color: var(--settingsForeground);
     text-align: center;
@@ -322,6 +324,7 @@ h1 {
 #settingsArea {
     grid-area: settings;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;

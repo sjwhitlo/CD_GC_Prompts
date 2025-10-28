@@ -13,127 +13,244 @@
             <h1 id="headerText">Meacham Phraseology Prompts</h1>
         </div>
 
-        <div id="settingsArea">
-            <fieldset id="settingsPanel">
-                <legend>Settings</legend>
-                <label for="facilitySelector">Facility: </label>
-                <select name="facilityPicker" id="facilitySelection" onchange="setFacility(value)">
-                    <option selected value="ftw">FTW</option>
-                </select>
-                <br>
-                <label for="themeSelection">Theme: </label>
-                <select name="themePicker" id="themeSelection" onchange="setTheme(value)">
-                    <option selected value="default">Default</option>
-                    <option value="light-mode">Light</option>
-                    <option value="dark-mode">Dark</option>
-                    <option value="darker-mode">Darker</option>
-                    <option value="darcula-mode">Darcula</option>
-                    <option value="matrix-mode">The Matrix</option>
-                    <option value="redlight-mode">Red Light</option>
-                </select>
-                <br>
-                <input type="checkbox" id="voice" title="Toggle audible prompts" checked>Voice Output</input>
-                <br>
-                <label for="speechRate">Speech Rate</label>
-                <select id="speechRate">
-                    <option value=0.25>0.25x</option>
-                    <option value=0.5>0.5x</option>
-                    <option value=0.75>0.75x</option>
-                    <option selected value=1>1x</option>
-                    <option value=1.25>1.25x</option>
-                    <option value=1.5>1.5x</option>
-                    <option value=1.75>1.75x</option>
-                    <option value=2>2x</option>
-                </select>
-                <br>
-                <label for="truncateCallsigns">Initial Call Truncation</label>
-                <select id="truncateCallsigns">
-                    <option selected value="none" title="Use full callsign on initial call. ie: N2233W">None</option>
-                    <option value="first3" title="Use first three characters on initial call. ie: N223">First 3</option>
-                    <option value="last3" title="Use last three characters on initial call. ie: N33W">Last 3</option>
-                    <option value="rand3" title="Use random three characters on initial call. ie: N233">Random 3</option>
-                </select>
-                <br>
-                <input type="checkbox" id="consoleOutput" title="Show console logs" unchecked>Debug Mode</input>
-            </fieldset>
+        <div id="mainContent">
+            <div id="settingsArea">
+                <fieldset id="settingsPanel">
+                    <legend>Settings</legend>
+                    <label for="facilitySelector">Facility: </label>
+                    <select name="facilityPicker" id="facilitySelection" onchange="setFacility(value)">
+                        <option selected value="ftw">FTW</option>
+                    </select>
+                    <br>
+                    <label for="themeSelection">Theme: </label>
+                    <select name="themePicker" id="themeSelection" onchange="setTheme(value)">
+                        <option selected value="default">Default</option>
+                        <option value="light-mode">Light</option>
+                        <option value="dark-mode">Dark</option>
+                        <option value="darker-mode">Darker</option>
+                        <option value="darcula-mode">Darcula</option>
+                        <option value="matrix-mode">The Matrix</option>
+                        <option value="redlight-mode">Red Light</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" id="voice" title="Toggle audible prompts" checked>Voice Output</input>
+                    <br>
+                    <label for="speechRate">Speech Rate</label>
+                    <select id="speechRate">
+                        <option value=0.25>0.25x</option>
+                        <option value=0.5>0.5x</option>
+                        <option value=0.75>0.75x</option>
+                        <option selected value=1>1x</option>
+                        <option value=1.25>1.25x</option>
+                        <option value=1.5>1.5x</option>
+                        <option value=1.75>1.75x</option>
+                        <option value=2>2x</option>
+                    </select>
+                    <br>
+                    <label for="truncateCallsigns">Initial Call Truncation</label>
+                    <select id="truncateCallsigns">
+                        <option selected value="none" title="Use full callsign on initial call. ie: N2233W">None</option>
+                        <option value="first3" title="Use first three characters on initial call. ie: N223">First 3</option>
+                        <option value="last3" title="Use last three characters on initial call. ie: N33W">Last 3</option>
+                        <option value="rand3" title="Use random three characters on initial call. ie: N233">Random 3</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" id="consoleOutput" title="Show console logs" unchecked>Debug Mode</input>
+                </fieldset>
 
-            <fieldset id="modePanel" title="Only allow calls if checked">
-                <legend>Mode</legend>
-                <input type="checkbox" id="chkbxCallsignPractice" name="chkbxCallsignPractice" value="callsignPractice" class="parentCheckbox" unchecked>
-                <label for="chkbxCallsignPractice"> Callsign Practice</label><br>
-                
-                <input type="checkbox" id="chkbxClearanceDelivery" name="chkbxClearanceDelivery" value="clearanceDelivery" class="parentCheckbox" onclick="changeCheckInFocus('cd')" checked>
-                <label for="chkbxClearanceDelivery"> Clearance Delivery</label><br>
-                <input type="checkbox" id="chkbxClearance" name="chkbxClearance" value="clearance" class="childCheckbox" checked>
-                <label for="chkbxClearance"> Clearance</label><br>
-                <input type="checkbox" id="chkbxFlightFollowing" name="chkbxFlightFollowing" value="flightFollowing" class="childCheckbox" checked>
-                <label for="chkbxFlightFollowing"> Flight Following</label><br>
+                <fieldset id="modePanel" title="Only allow calls if checked">
+                    <legend>Mode</legend>
+                    <input type="checkbox" id="chkbxCallsignPractice" name="chkbxCallsignPractice" value="callsignPractice" class="parentCheckbox" unchecked>
+                    <label for="chkbxCallsignPractice"> Callsign Practice</label><br>
+                    
+                    <input type="checkbox" id="chkbxClearanceDelivery" name="chkbxClearanceDelivery" value="clearanceDelivery" class="parentCheckbox" onclick="changeCheckInFocus('cd')" checked>
+                    <label for="chkbxClearanceDelivery"> Clearance Delivery</label><br>
+                    <input type="checkbox" id="chkbxClearance" name="chkbxClearance" value="clearance" class="childCheckbox" checked>
+                    <label for="chkbxClearance"> Clearance</label><br>
+                    <input type="checkbox" id="chkbxFlightFollowing" name="chkbxFlightFollowing" value="flightFollowing" class="childCheckbox" checked>
+                    <label for="chkbxFlightFollowing"> Flight Following</label><br>
 
-                <input type="checkbox" id="chkbxGroundControl" name="chkbxGroundControl" value="groundControl" class="parentCheckbox" onclick="changeCheckInFocus('gc')" checked>
-                <label for="chkbxGroundControl"> Ground Control</label><br>
-                <input type="checkbox" id="chkbxArrival" name="chkbxArrival" value="arrival" class="childCheckbox" checked>
-                <label for="chkbxArrival"> Arrival</label><br>
-                <input type="checkbox" id="chkbxDeparture" name="chkbxDeparture" value="departure" class="childCheckbox" checked>
-                <label for="chkbxDeparture"> Departure</label><br>
-                <input type="checkbox" id="chkbxReposition" name="chkbxReposition" value="reposition" class="childCheckbox" checked>
-                <label for="chkbxReposition"> Reposition</label><br>
-                <input type="checkbox" id="chkbxVehicle" name="chkbxVehicle" value="vehicle" class="childCheckbox" unchecked disabled>
-                <label for="chkbxVehicle"> Vehicles</label><br>
-            </fieldset>
-        
-            <fieldset id="siaPanel">
-                <legend>SIA</legend>
-                <table>
-                    <td style="width:150px; text-align:center;">
-                        <strong><div id="currentATIS" title="The current AITS code" class="siaColorSplash" style="font-size:60px;"></div></strong>
-                        <strong><div id="currentRunway" title="The advertised runway in use" style="font-size:60px;"></div></strong>
-                    </td>
-                    <td style="mid-width:350px; text-align:center; vertical-align:top;">
-                        <div id=currentTime title="UTC time now" class="siaColorSplash" style="font-size:45px;font-family:consolas;">00:00:00</div>
-                        <div style="text-align:left;">
-                        <p id="currentMETAR" title="The current weather conditions" style="font-family:consolas"></p>
-                        </div>
-                        <button id="newMETAR" name="newMETAR" title="Generate new weather and ATIS code" class="buttonMETAR" onclick="getNewMETAR()">New METAR</button>
-                    </td>
-                </table>
-            </fieldset>
+                    <input type="checkbox" id="chkbxGroundControl" name="chkbxGroundControl" value="groundControl" class="parentCheckbox" onclick="changeCheckInFocus('gc')" checked>
+                    <label for="chkbxGroundControl"> Ground Control</label><br>
+                    <input type="checkbox" id="chkbxArrival" name="chkbxArrival" value="arrival" class="childCheckbox" checked>
+                    <label for="chkbxArrival"> Arrival</label><br>
+                    <input type="checkbox" id="chkbxDeparture" name="chkbxDeparture" value="departure" class="childCheckbox" checked>
+                    <label for="chkbxDeparture"> Departure</label><br>
+                    <input type="checkbox" id="chkbxReposition" name="chkbxReposition" value="reposition" class="childCheckbox" checked>
+                    <label for="chkbxReposition"> Reposition</label><br>
+                    <input type="checkbox" id="chkbxVehicle" name="chkbxVehicle" value="vehicle" class="childCheckbox" unchecked disabled>
+                    <label for="chkbxVehicle"> Vehicles</label><br>
+                </fieldset>
+            
+                <fieldset id="siaPanel">
+                    <legend>SIA</legend>
+                    <table>
+                        <td style="width:150px; text-align:center;">
+                            <strong><div id="currentATIS" title="The current AITS code" class="siaColorSplash" style="font-size:60px;"></div></strong>
+                            <strong><div id="currentRunway" title="The advertised runway in use" style="font-size:60px;"></div></strong>
+                        </td>
+                        <td style="mid-width:350px; text-align:center; vertical-align:top;">
+                            <div id=currentTime title="UTC time now" class="siaColorSplash" style="font-size:45px;font-family:consolas;">00:00:00</div>
+                            <div style="text-align:left;">
+                            <p id="currentMETAR" title="The current weather conditions" style="font-family:consolas"></p>
+                            </div>
+                            <button id="newMETAR" name="newMETAR" title="Generate new weather and ATIS code" class="buttonMETAR" onclick="getNewMETAR()">New METAR</button>
+                        </td>
+                    </table>
+                </fieldset>
+            </div>
+
+            <div id="buttonContainer">
+                <button id="newCheckIn" name="newCheckIn" class="item buttonNew" onclick="newCheckIn()">New Check In</button>
+                <button id="repeatInitial" name="repeatInitial" class="item buttonRepeatInitial" onclick="repeatInitial()">Repeat Initial</button>
+                <button id="sayAgain" name="sayAgain" class="item buttonRepeat" onclick="sayAgain()">Say Again</button>
+                <button id="sayCallsign" name="sayCallsign" class="item buttonRepeat" onclick="sayCallsign()">Say Callsign</button>
+                <button id="sayIntent" name="sayIntent" class="item buttonRepeat" onclick="sayIntent()">Say Intentions</button>
+                <button id="sayLocation" name="sayLocation" class="item buttonRepeat" onclick="sayLocation()">Say Location</button>
+                <button id="sayParking" name="sayParking" class="item buttonRepeat" onclick="sayParking()">Say Parking</button>
+                <button id="btnStarsEntry"  class="item buttonSTARS" onclick="noStarsEntryFlightFollowing();" style="display:none;">Show Flight Following</button>
+            </div>
+
+            <div id="flightProgressStrip" class="flightProgressStrip">
+                <div id="fps1" class="fpsItem"></div>
+                <div id="fps3" class="fpsItem"></div>
+                <div id="fps4" class="fpsItem"></div>
+                <div id="fps5" class="fpsItem"></div>
+                <div id="fps6" class="fpsItem"></div>
+                <div id="fps7" class="fpsItem"></div>
+                <div id="fps8" class="fpsItem"></div>
+                <div id="fps9" class="fpsItem"></div>
+                <div id="fps10" class="fpsItem"></div>
+                <div id="fps11" class="fpsItem"></div>
+                <div id="fps12" class="fpsItem"></div>
+                <div id="fps13" class="fpsItem"></div>
+                <div id="fps14" class="fpsItem"></div>
+                <div id="fps15" class="fpsItem"></div>
+                <div id="fps16" class="fpsItem" onclick="completeStripMarking('b16')"></div>
+                <div id="fps17" class="fpsItem"></div>
+                <div id="fps18" class="fpsItem"></div>
+            </div>
         </div>
 
-        <div id="buttonContainer">
-            <button id="newCheckIn" name="newCheckIn" class="item buttonNew" onclick="newCheckIn()">New Check In</button>
-            <button id="repeatInitial" name="repeatInitial" class="item buttonRepeatInitial" onclick="repeatInitial()">Repeat Initial</button>
-            <button id="sayAgain" name="sayAgain" class="item buttonRepeat" onclick="sayAgain()">Say Again</button>
-            <button id="sayCallsign" name="sayCallsign" class="item buttonRepeat" onclick="sayCallsign()">Say Callsign</button>
-            <button id="sayIntent" name="sayIntent" class="item buttonRepeat" onclick="sayIntent()">Say Intentions</button>
-            <button id="sayLocation" name="sayLocation" class="item buttonRepeat" onclick="sayLocation()">Say Location</button>
-            <button id="sayParking" name="sayParking" class="item buttonRepeat" onclick="sayParking()">Say Parking</button>
-            <button id="btnStarsEntry"  class="item buttonSTARS" onclick="noStarsEntryFlightFollowing();" style="display:none;">Show Flight Following</button>
-        </div>
+        <div id="starsRelated">
+            <div id="flightFollowingContainer">
+                <div id="txtStarsEntry" class="stars" style="display:none;"></div>
+                <textarea name="starsEntry" id="starsEntry" class="stars" onkeydown="if (event.key == 'Enter'){ checkFlightFollowing(); }" rows="5" cols="4" style="align:right;"></textarea>
+                <div id="starsError" class="starsError">Error, try again</div>
+            </div>
 
-        <div id="flightProgressStrip" class="flightProgressStrip">
-            <div id="fps1" class="fpsItem"></div>
-            <div id="fps3" class="fpsItem"></div>
-            <div id="fps4" class="fpsItem"></div>
-            <div id="fps5" class="fpsItem"></div>
-            <div id="fps6" class="fpsItem"></div>
-            <div id="fps7" class="fpsItem"></div>
-            <div id="fps8" class="fpsItem"></div>
-            <div id="fps9" class="fpsItem"></div>
-            <div id="fps10" class="fpsItem"></div>
-            <div id="fps11" class="fpsItem"></div>
-            <div id="fps12" class="fpsItem"></div>
-            <div id="fps13" class="fpsItem"></div>
-            <div id="fps14" class="fpsItem"></div>
-            <div id="fps15" class="fpsItem"></div>
-            <div id="fps16" class="fpsItem" onclick="completeStripMarking('b16')"></div>
-            <div id="fps17" class="fpsItem"></div>
-            <div id="fps18" class="fpsItem"></div>
-        </div>
+            <div id="starsKeyboard" style="display:none;">
+                <div class="standardRow">
+                    <button id="" class="green" onclick="starsKeyboard('')"></button>
+                    <button id="" class="green" onclick="starsKeyboard('')">CNTR</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">MAPS</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">WX</button>
+                    <button id="" class="white" onclick="starsKeyboard('core')">CORE</button>
+                    <button id="" class="white" onclick="starsKeyboard('')">SIGN<br>ON</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">BRITE</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">LDR</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">CHAR<br>SIZE</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">SHIFT</button>
+                </div>
 
-        <div id="flightFollowingContainer">
-            <div id="txtStarsEntry" class="stars" style="display:none;"></div>
-            <textarea name="starsEntry" id="starsEntry" class="stars" onkeydown="if (event.key == 'Enter'){ checkFlightFollowing(); }" rows="5" cols="4" style="align:right;"></textarea>
-            <div id="starsError" class="starsError">Error, try again</div>
+                <div class="standardRow">
+                    <button id="" class="green" onclick="starsKeyboard('')">DCB</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">RNG<br>RING</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">RANGE</button>
+                    <button id="" class="green" onclick="starsKeyboard('')"></button>
+                    <button id="" class="white" onclick="starsKeyboard('')">PREF<br>SET</button>
+                    <button id="" class="white" onclick="starsKeyboard('')"></button>
+                    <button id="" class="green" onclick="starsKeyboard('')"></button>
+                    <button id="" class="green" onclick="starsKeyboard('')"></button>
+                    <button id="" class="green" onclick="starsKeyboard('')">SITE</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">MODE</button>
+                </div>
+                    
+                <div class="nonStandardRow">
+                    <button id="clear" class="yellow" onclick="starsKeyboard('clear')">CLEAR</button>
+                    <button id="bkspc" class="yellow" onclick="starsKeyboard('bkspc')">BACK<br>SPACE</button>
+                    <button id="space" class="yellow" onclick="starsKeyboard('space')">SPACE</button>
+                    <button id="enter" class="red" onclick="starsKeyboard('enter')">ENTER</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="" class="green" onclick="starsKeyboard('')">INIT<br>CTL</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">TRK<br>RPOS</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">TRK<br>SUSP</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">TERM<br>CNTL</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">HND<br>OFF</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">FLT<br>DATA</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">MULTI<br>FUNC</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F8</button>
+                    <button id="" class="white" onclick="starsKeyboard('Δ')">Δ</button>
+                    <button id="" class="white" onclick="starsKeyboard('.')">·</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="" class="green" onclick="starsKeyboard('')">F9</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F10</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">CA</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F12</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F13</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F14</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">TGT<br>GEN</button>
+                    <button id="" class="green" onclick="starsKeyboard('')">F16</button>
+                    <button id="" class="white" onclick="starsKeyboard('+')">IFR<br>+</button>
+                    <button id="" class="white" onclick="starsKeyboard('/')">VFR<br>/</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="a" class="white" onclick="starsKeyboard('A')">A</button>
+                    <button id="b" class="white" onclick="starsKeyboard('B')">BCN<br>B</button>
+                    <button id="c" class="white" onclick="starsKeyboard('C')">CFG<br>C</button>
+                    <button id="d" class="white" onclick="starsKeyboard('D')">DIS<br>D</button>
+                    <button id="e" class="white" onclick="starsKeyboard('E')">EMG<br>E</button>
+                    <button id="f" class="white" onclick="starsKeyboard('F')">FIL<br>F</button>
+                    <button id="g" class="white" onclick="starsKeyboard('G')">G</button>
+                    <button id="1" class="blue" onclick="starsKeyboard('1')">&#8598<br>1</button>
+                    <button id="2" class="blue" onclick="starsKeyboard('2')">&#8593<br>2</button>
+                    <button id="3" class="blue" onclick="starsKeyboard('3')">&#8599<br>3</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="" class="white" onclick="starsKeyboard('H')">H</button>
+                    <button id="" class="white" onclick="starsKeyboard('I')">I</button>
+                    <button id="" class="white" onclick="starsKeyboard('J')">J</button>
+                    <button id="" class="white" onclick="starsKeyboard('K')">K</button>
+                    <button id="" class="white" onclick="starsKeyboard('L')">LDR<br>L</button>
+                    <button id="" class="white" onclick="starsKeyboard('M')">MOD<br>M</button>
+                    <button id="" class="white" onclick="starsKeyboard('N')">N</button>
+                    <button id="" class="blue" onclick="starsKeyboard('4')">4<br>&#8592</button>
+                    <button id="" class="blue" onclick="starsKeyboard('5')">5</button>
+                    <button id="" class="blue" onclick="starsKeyboard('6')">6<br>&#8594</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="" class="white" onclick="starsKeyboard('O')">OFF<br>O</button>
+                    <button id="" class="white" onclick="starsKeyboard('P')">PRE<br>P</button>
+                    <button id="" class="white" onclick="starsKeyboard('Q')">Q</button>
+                    <button id="" class="white" onclick="starsKeyboard('R')">R</button>
+                    <button id="" class="white" onclick="starsKeyboard('S')">SYS<br>S</button>
+                    <button id="" class="white" onclick="starsKeyboard('T')">TAB<br>T</button>
+                    <button id="" class="white" onclick="starsKeyboard('U')">U</button>
+                    <button id="" class="blue" onclick="starsKeyboard('7')">7<br>&#8601</button>
+                    <button id="" class="blue" onclick="starsKeyboard('8')">8<br>&#8595</button>
+                    <button id="" class="blue" onclick="starsKeyboard('9')">9<br>&#8600</button>
+                </div>
+                    
+                <div class="standardRow">
+                    <button id="" class="white" onclick="starsKeyboard('V')">V</button>
+                    <button id="" class="white" onclick="starsKeyboard('W')">W</button>
+                    <button id="" class="white" onclick="starsKeyboard('X')">X</button>
+                    <button id="" class="white" onclick="starsKeyboard('Y')">Y</button>
+                    <button id="" class="white" onclick="starsKeyboard('Z')">Z</button>
+                    <button id="" class="white" onclick="starsKeyboard('*')">*</button>
+                    <button id="" class="white" onclick="starsKeyboard('')">MIN</button>
+                    <button id="" class="white" onclick="starsKeyboard()"></button>
+                    <button id="" class="blue" onclick="starsKeyboard('0')">0</button>
+                    <button id="" class="white" onclick="starsKeyboard()"></button>
+                </div>
+            </div>
         </div>
 
         <div id="references">
@@ -164,119 +281,6 @@
                 <hr>
                 <div id="aircraftDisplay" style="font-family:consolas;white-space:pre;"></div>
             </fieldset>
-        </div>
-
-        <div id="starsKeyboard" style="display:none;">
-            <div class="standardRow">
-                <button id="" class="green" onclick="starsKeyboard('')"></button>
-                <button id="" class="green" onclick="starsKeyboard('')">CNTR</button>
-                <button id="" class="green" onclick="starsKeyboard('')">MAPS</button>
-                <button id="" class="green" onclick="starsKeyboard('')">WX</button>
-                <button id="" class="white" onclick="starsKeyboard('core')">CORE</button>
-                <button id="" class="white" onclick="starsKeyboard('')">SIGN<br>ON</button>
-                <button id="" class="green" onclick="starsKeyboard('')">BRITE</button>
-                <button id="" class="green" onclick="starsKeyboard('')">LDR</button>
-                <button id="" class="green" onclick="starsKeyboard('')">CHAR<br>SIZE</button>
-                <button id="" class="green" onclick="starsKeyboard('')">SHIFT</button>
-            </div>
-
-            <div class="standardRow">
-                <button id="" class="green" onclick="starsKeyboard('')">DCB</button>
-                <button id="" class="green" onclick="starsKeyboard('')">RNG<br>RING</button>
-                <button id="" class="green" onclick="starsKeyboard('')">RANGE</button>
-                <button id="" class="green" onclick="starsKeyboard('')"></button>
-                <button id="" class="white" onclick="starsKeyboard('')">PREF<br>SET</button>
-                <button id="" class="white" onclick="starsKeyboard('')"></button>
-                <button id="" class="green" onclick="starsKeyboard('')"></button>
-                <button id="" class="green" onclick="starsKeyboard('')"></button>
-                <button id="" class="green" onclick="starsKeyboard('')">SITE</button>
-                <button id="" class="green" onclick="starsKeyboard('')">MODE</button>
-            </div>
-                
-            <div class="nonStandardRow">
-                <button id="clear" class="yellow" onclick="starsKeyboard('clear')">CLEAR</button>
-                <button id="bkspc" class="yellow" onclick="starsKeyboard('bkspc')">BACK<br>SPACE</button>
-                <button id="space" class="yellow" onclick="starsKeyboard('space')">SPACE</button>
-                <button id="enter" class="red" onclick="starsKeyboard('enter')">ENTER</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="" class="green" onclick="starsKeyboard('')">INIT<br>CTL</button>
-                <button id="" class="green" onclick="starsKeyboard('')">TRK<br>RPOS</button>
-                <button id="" class="green" onclick="starsKeyboard('')">TRK<br>SUSP</button>
-                <button id="" class="green" onclick="starsKeyboard('')">TERM<br>CNTL</button>
-                <button id="" class="green" onclick="starsKeyboard('')">HND<br>OFF</button>
-                <button id="" class="green" onclick="starsKeyboard('')">FLT<br>DATA</button>
-                <button id="" class="green" onclick="starsKeyboard('')">MULTI<br>FUNC</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F8</button>
-                <button id="" class="white" onclick="starsKeyboard('Δ')">Δ</button>
-                <button id="" class="white" onclick="starsKeyboard('.')">·</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="" class="green" onclick="starsKeyboard('')">F9</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F10</button>
-                <button id="" class="green" onclick="starsKeyboard('')">CA</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F12</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F13</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F14</button>
-                <button id="" class="green" onclick="starsKeyboard('')">TGT<br>GEN</button>
-                <button id="" class="green" onclick="starsKeyboard('')">F16</button>
-                <button id="" class="white" onclick="starsKeyboard('+')">IFR<br>+</button>
-                <button id="" class="white" onclick="starsKeyboard('/')">VFR<br>/</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="a" class="white" onclick="starsKeyboard('A')">A</button>
-                <button id="b" class="white" onclick="starsKeyboard('B')">BCN<br>B</button>
-                <button id="c" class="white" onclick="starsKeyboard('C')">CFG<br>C</button>
-                <button id="d" class="white" onclick="starsKeyboard('D')">DIS<br>D</button>
-                <button id="e" class="white" onclick="starsKeyboard('E')">EMG<br>E</button>
-                <button id="f" class="white" onclick="starsKeyboard('F')">FIL<br>F</button>
-                <button id="g" class="white" onclick="starsKeyboard('G')">G</button>
-                <button id="1" class="blue" onclick="starsKeyboard('1')">&#8598<br>1</button>
-                <button id="2" class="blue" onclick="starsKeyboard('2')">&#8593<br>2</button>
-                <button id="3" class="blue" onclick="starsKeyboard('3')">&#8599<br>3</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="" class="white" onclick="starsKeyboard('H')">H</button>
-                <button id="" class="white" onclick="starsKeyboard('I')">I</button>
-                <button id="" class="white" onclick="starsKeyboard('J')">J</button>
-                <button id="" class="white" onclick="starsKeyboard('K')">K</button>
-                <button id="" class="white" onclick="starsKeyboard('L')">LDR<br>L</button>
-                <button id="" class="white" onclick="starsKeyboard('M')">MOD<br>M</button>
-                <button id="" class="white" onclick="starsKeyboard('N')">N</button>
-                <button id="" class="blue" onclick="starsKeyboard('4')">4<br>&#8592</button>
-                <button id="" class="blue" onclick="starsKeyboard('5')">5</button>
-                <button id="" class="blue" onclick="starsKeyboard('6')">6<br>&#8594</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="" class="white" onclick="starsKeyboard('O')">OFF<br>O</button>
-                <button id="" class="white" onclick="starsKeyboard('P')">PRE<br>P</button>
-                <button id="" class="white" onclick="starsKeyboard('Q')">Q</button>
-                <button id="" class="white" onclick="starsKeyboard('R')">R</button>
-                <button id="" class="white" onclick="starsKeyboard('S')">SYS<br>S</button>
-                <button id="" class="white" onclick="starsKeyboard('T')">TAB<br>T</button>
-                <button id="" class="white" onclick="starsKeyboard('U')">U</button>
-                <button id="" class="blue" onclick="starsKeyboard('7')">7<br>&#8601</button>
-                <button id="" class="blue" onclick="starsKeyboard('8')">8<br>&#8595</button>
-                <button id="" class="blue" onclick="starsKeyboard('9')">9<br>&#8600</button>
-            </div>
-                
-            <div class="standardRow">
-                <button id="" class="white" onclick="starsKeyboard('V')">V</button>
-                <button id="" class="white" onclick="starsKeyboard('W')">W</button>
-                <button id="" class="white" onclick="starsKeyboard('X')">X</button>
-                <button id="" class="white" onclick="starsKeyboard('Y')">Y</button>
-                <button id="" class="white" onclick="starsKeyboard('Z')">Z</button>
-                <button id="" class="white" onclick="starsKeyboard('*')">*</button>
-                <button id="" class="white" onclick="starsKeyboard('')">MIN</button>
-                <button id="" class="white" onclick="starsKeyboard()"></button>
-                <button id="" class="blue" onclick="starsKeyboard('0')">0</button>
-                <button id="" class="white" onclick="starsKeyboard()"></button>
-            </div>
         </div>
     </body>
 </html>
