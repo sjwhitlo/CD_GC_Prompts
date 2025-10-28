@@ -166,10 +166,15 @@
             "flightFollowing flightFollowing"
             "starsKeyboard   starsKeyboard";
     }
+
+    #flightProgressStrip {
+        width: 100%;
+        aspect-ratio: 8;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
         display: inline-grid;
         grid-template-areas: 
@@ -181,6 +186,11 @@
             "buttons         buttons"
             "flightFollowing flightFollowing"
             "starsKeyboard   starsKeyboard";
+    }
+
+    #flightProgressStrip {
+        width: 100%;
+        aspect-ratio: 8;
     }
 }
 
@@ -195,6 +205,11 @@
             "cheatsheet  activityLog .           flightFollowing"
             "cheatsheet  activityLog .           starsKeyboard";
     }
+
+    #flightProgressStrip {
+        width: 8in;
+        aspect-ratio: 8;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -206,6 +221,11 @@
             "settings    mode        sia         buttons"
             "flightStrip flightStrip flightStrip flightFollowing"
             "cheatsheet  activityLog .           starsKeyboard";
+    }
+
+    #flightProgressStrip {
+        width: 8in;
+        aspect-ratio: 8;
     }
 }
 
@@ -344,8 +364,6 @@ button {
 
 #flightProgressStrip {
     grid-area: flightStrip;
-    height: 1in;
-    width: 8in;
     display: grid;
     grid-template-columns: 42.6fr 16fr 26.5fr 78.2fr 11fr 11fr 17.2fr;
     grid-template-rows: 1fr 1fr 1fr;
