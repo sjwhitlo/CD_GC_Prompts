@@ -899,11 +899,7 @@ function newCheckIn() {
         currentAltitude = currentAltitude.padStart(3,"0");
         checkInList.push( new FlightFollowing( currentAircraft, currentDestination, currentAltitude ) );
         
-        if ( document.getElementById("checkKeyboardEntries").checked ) {   
-            setFocusToSTARSEntry();
-        } else {
-            showSTARSEntryButton();
-        }
+        setFocusToSTARSEntry();
 
         // after successful input: set focus to previous
 
@@ -988,13 +984,10 @@ function consoleDebug( text ) {
 
 function getATIS() {
     let currentInformation = document.getElementById( "currentATIS" ).innerHTML;
-    let chosenOption = atisOptions[ 0 ];
-    if ( document.getElementById("listenForATIS").checked ) {
-        // two randoms to skew towards more having the correct ATIS
-        let rand1 = Math.random();
-        let rand2 = Math.random();
-        chosenOption = atisOptions[ Math.floor( rand1 /** * rand2 */ * atisOptions.length ) ];
-    }
+    // two randoms to skew towards more having the correct ATIS
+    let rand1 = Math.random();
+    let rand2 = Math.random();
+    let chosenOption = atisOptions[ Math.floor( rand1 /** * rand2 */ * atisOptions.length ) ];
     if ( chosenOption == atisOptions[0] ) {
         return currentInformation;
     } else if ( chosenOption == atisOptions[2] ) {

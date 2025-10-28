@@ -158,7 +158,7 @@
         display: grid;
         grid-template-areas: 
             header          header
-            settings        checkIn
+            settings        mode
             sia             sia
             cheatsheet      activityLog
             flightStrip     flightStrip
@@ -188,7 +188,7 @@
         display: grid;
         grid-template-areas: 
             header      header      header      header
-            settings    checkIn     sia         buttons
+            settings    mode        sia         buttons
             flightStrip flightStrip flightStrip flightFollowing
             cheatsheet  activityLog .           starsKeyboard;
     }
@@ -197,7 +197,7 @@
 /**
  * header .................. header
  * settingsArea ............ settings
- * checkInPanel ............ checkIn
+ * modePanel ............... mode
  * siaPanel ................ sia
  * buttonContainer ......... buttons
  * flightProgressStrip ..... flightStrip
@@ -211,24 +211,16 @@
     grid-area: header;
 };
 
-#settingsArea {
+#settingsPanel {
     grid-area: settings;
-};
+}
 
-#checkInPanel {
-    grid-area: checkIn;
+#modePanel {
+    grid-area: mode;
 }
 
 #siaPanel {
     grid-area: sia;
-}
-
-#buttonContainer {
-    grid-area: buttons;
-}
-
-#flightProgressStrip {
-    grid-area: flightStrip;
 }
 
 #flightFollowingContainer {
@@ -241,10 +233,6 @@
 
 #activityLog {
     grid-area: activityLog;
-}
-
-#starsKeyboard {
-    grid-area: starsKeyboard;
 }
 
 body {
@@ -314,6 +302,7 @@ button {
 }
 
 #buttonContainer {
+    grid-area: buttons;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -348,7 +337,8 @@ button {
     margin-left: 20px;
 }
 
-.flightProgressStrip {
+#flightProgressStrip {
+    grid-area: flightStrip;
     height: 1in;
     width: 8in;
     display: grid;
@@ -481,6 +471,7 @@ button {
 }
 
 #starsKeyboard {
+    grid-area: starsKeyboard;
     width: 500px;
     background: black;
 
