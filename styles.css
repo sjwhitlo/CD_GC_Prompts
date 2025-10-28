@@ -259,7 +259,7 @@
     }
 
     #references {
-        flex-direction: row;
+        flex-direction: columns;
     }
 
     #flightProgressStrip {
