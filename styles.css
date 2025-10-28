@@ -196,7 +196,6 @@
 
     #flightProgressStrip {
         width: 100%;
-/*        height: auto;*/
         aspect-ratio: 8;
     }
 }
@@ -218,7 +217,7 @@
     }
 
     #flightProgressStrip {
-        width: 8in;
+        max-width: 8in;
         aspect-ratio: 8;
     }
 }
@@ -241,7 +240,7 @@
     }
 
     #flightProgressStrip {
-        width: 8in;
+        max-width: 8in;
         aspect-ratio: 8;
     }
 }
@@ -264,7 +263,7 @@
     }
 
     #flightProgressStrip {
-        width: 8in;
+        max-width: 8in;
         aspect-ratio: 8;
     }
 }
@@ -311,6 +310,7 @@ body {
 #references {
     display: flex;
     grid-area: references;
+    gap: 5px;
 }
 
 h1 {
