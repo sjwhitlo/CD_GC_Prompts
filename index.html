@@ -9,7 +9,9 @@
     </head>
     
     <body id="body">
-        <h1 id="headerText">Meacham Phraseology Prompts</h1>
+        <div id="header">
+            <h1 id="headerText">Meacham Phraseology Prompts</h1>
+        </div>
         <table>
             <tr>
                 <td style="vertical-align:top;">
@@ -65,7 +67,7 @@
                             <input type="checkbox" id="consoleOutput" title="Show console logs" unchecked>Debug Mode</input>
                         </fieldset>
 
-                        <fieldset title="Only allow calls if checked">
+                        <fieldset id="checkInPanel" title="Only allow calls if checked">
                             <legend>Check Ins</legend>
                             <input type="checkbox" id="chkbxCallsignPractice" name="chkbxCallsignPractice" value="callsignPractice" class="parentCheckbox" unchecked>
                             <label for="chkbxCallsignPractice"> Callsign Practice</label><br>
@@ -89,7 +91,7 @@
                             <label for="chkbxVehicle"> Vehicles</label><br>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset id="siaPanel">
                             <legend>SIA</legend>
                             <table>
                                 <td style="width:150px; text-align:center;">
@@ -143,9 +145,11 @@
                     </div>
 
                     <br>
-                    <div id="txtStarsEntry" class="stars" style="display:none;"></div>
-                    <textarea name="starsEntry" id="starsEntry" class="stars" onkeydown="if (event.key == 'Enter'){ checkFlightFollowing(); }" rows="5" cols="4" style="align:right;"></textarea>
-                    <div id="starsError" class="starsError">Error, try again</div>
+                    <div id="flightFollowingContainer">
+                        <div id="txtStarsEntry" class="stars" style="display:none;"></div>
+                        <textarea name="starsEntry" id="starsEntry" class="stars" onkeydown="if (event.key == 'Enter'){ checkFlightFollowing(); }" rows="5" cols="4" style="align:right;"></textarea>
+                        <div id="starsError" class="starsError">Error, try again</div>
+                    </div>
                 </td>
                 <td style="vertical-align:top; font-family:consolas;">
                     <fieldset id="localCheatsheet" class="listDisplay">

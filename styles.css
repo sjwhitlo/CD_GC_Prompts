@@ -155,7 +155,16 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        background: red;
+        display: grid;
+        grid-template-areas: 
+            header          header
+            settings        checkIn
+            sia             sia
+            cheatsheet      activityLog
+            flightStrip     flightStrip
+            buttons         buttons
+            flightFollowing flightFollowing
+            starsKeyboard   starsKeyboard;
     }
 }
 
@@ -176,8 +185,66 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        background: forestgreen;
+        display: grid;
+        grid-template-areas: 
+            header      header      header      header
+            settings    checkIn     sia         buttons
+            flightStrip flightStrip flightStrip flightFollowing
+            cheatsheet  activityLog .           starsKeyboard;
     }
+}
+
+/**
+ * header .................. header
+ * settingsArea ............ settings
+ * checkInPanel ............ checkIn
+ * siaPanel ................ sia
+ * buttonContainer ......... buttons
+ * flightProgressStrip ..... flightStrip
+ * flightFollowingContainer  flightFollowing
+ * localCheatsheet ......... cheatsheet
+ * activityLog ............. activityLog
+ * starsKeyboard ........... starsKeyboard
+ */
+
+#header {
+    grid-area: header;
+};
+
+#settingsArea {
+    grid-area: settings;
+};
+
+#checkInPanel {
+    grid-area: checkIn;
+}
+
+#siaPanel {
+    grid-area: sia;
+}
+
+#buttonContainer {
+    grid-area: buttons;
+}
+
+#flightProgressStrip {
+    grid-area: flightStrip;
+}
+
+#flightFollowingContainer {
+    grid-area: flightFollowing;
+}
+
+#localCheatsheet {
+    grid-area: cheatsheet;
+}
+
+#activityLog {
+    grid-area: activityLog;
+}
+
+#starsKeyboard {
+    grid-area: starsKeyboard;
 }
 
 body {
