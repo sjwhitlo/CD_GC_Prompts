@@ -158,14 +158,14 @@
         display: inline-grid;
 /*        grid-template-columns: auto auto;*/
         grid-template-areas: 
-            header          header
-            settings        mode
-            sia             sia
-            cheatsheet      activityLog
-            flightStrip     flightStrip
-            buttons         buttons
-            flightFollowing flightFollowing
-            starsKeyboard   starsKeyboard;
+            "header          header"
+            "settings        mode"
+            "sia             sia"
+            "cheatsheet      activityLog"
+            "flightStrip     flightStrip"
+            "buttons         buttons"
+            "flightFollowing flightFollowing"
+            "starsKeyboard   starsKeyboard";
     }
 }
 
@@ -182,11 +182,11 @@
         display: inline-grid;
 /*        grid-template-columns: auto auto auto auto;*/
         grid-template-areas: 
-            header      header      header      header
-            settings    mode        sia         buttons
-            flightStrip flightStrip flightStrip flightStrip
-            cheatsheet  activityLog .           flightFollowing
-            cheatsheet  activityLog .           starsKeyboard;
+            "header      header      header      header"
+            "settings    mode        sia         buttons"
+            "flightStrip flightStrip flightStrip flightStrip"
+            "cheatsheet  activityLog .           flightFollowing"
+            "cheatsheet  activityLog .           starsKeyboard";
     }
 }
 
@@ -196,10 +196,10 @@
         display: inline-grid;
 /*        grid-template-columns: auto auto auto auto;*/
         grid-template-areas: 
-            header      header      header      header
-            settings    mode        sia         buttons
-            flightStrip flightStrip flightStrip flightFollowing
-            cheatsheet  activityLog .           starsKeyboard;
+            "header      header      header      header"
+            "settings    mode        sia         buttons"
+            "flightStrip flightStrip flightStrip flightFollowing"
+            "cheatsheet  activityLog .           starsKeyboard";
     }
 }
 
