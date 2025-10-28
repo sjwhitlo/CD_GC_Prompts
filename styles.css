@@ -183,7 +183,8 @@
             "sia             sia"
             "cheatsheet      activityLog"
             "flightStrip     flightStrip"
-            "flightFollowing buttons"
+            "buttons         buttons"
+            "flightFollowing flightFollowing"
             "starsKeyboard   starsKeyboard";
     }
 
@@ -199,12 +200,12 @@
     body {
         display: grid;
         grid-template-areas: 
-            "header      header      header          header"
-            "settings    mode        activityLog     cheatsheet"
-            "sia         sia         activityLog     cheatsheet"
-            "buttons     buttons     activityLog     cheatsheet"
-            "flightStrip flightStrip flightFollowing flightFollowing"
-            ".           .           starsKeyboard   starsKeyboard";
+            "header      header      header"
+            "settings    mode        activityLog"
+            "sia         sia         activityLog"
+            "buttons     buttons     cheatsheet"
+            "flightStrip flightStrip cheatsheet"
+            ".           .           starsKeyboard";
     }
 
     #flightProgressStrip {
@@ -218,12 +219,13 @@
     body {
         display: grid;
         grid-template-areas: 
-            "header      header      header          header"
-            "settings    mode        activityLog     cheatsheet"
-            "sia         sia         activityLog     cheatsheet"
-            "buttons     buttons     activityLog     cheatsheet"
-            "flightStrip flightStrip flightFollowing flightFollowing"
-            ".           .           starsKeyboard   starsKeyboard";
+            "header          header          header      header"
+            "settings        mode            activityLog cheatsheet"
+            "sia             sia             activityLog cheatsheet"
+            "buttons         buttons         activityLog cheatsheet"
+            "flightStrip     flightStrip     activityLog cheatsheet"
+            "flightFollowing flightFollowing activityLog cheatsheet"
+            "starsKeyboard   starsKeyboard   activityLog cheatsheet";
     }
 
     #flightProgressStrip {
