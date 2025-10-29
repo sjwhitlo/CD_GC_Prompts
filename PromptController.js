@@ -614,7 +614,7 @@ function setFocusToSTARSEntry() {
 }
 
 function starsKeyboard( key ) {
-    if ( !document.getElementById( "starsEntry" ).value.checkVisibility() ) {
+    if ( !document.getElementById( "starsEntry" ).checkVisibility() ) {
         if ( key === "space" ) {
             document.getElementById( "starsEntry" ).value += " ";
         } else if ( key === "bkspc" ) {

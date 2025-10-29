@@ -458,6 +458,15 @@ select {
     }
 }
 
+#references {
+    select {
+          background: var(--background);
+    }
+    option {
+          background: var(--background);
+    }
+}
+
 select:hover {
   background: var(--siaColorSplash);
   color: var(--buttonText);
