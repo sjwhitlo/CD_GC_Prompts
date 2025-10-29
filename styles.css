@@ -9,7 +9,6 @@
     --siaColorSplash: goldenrod;
     --stars: limegreen;
     --starsError: red;
-    --starsKeyBorder: black;
     --starsTextLight: whitesmoke;
     --starsTextDark: black;
     --starsGreen: darkgreen;
@@ -114,7 +113,6 @@
     --siaColorSplash: limegreen;
     --stars: limegreen;
     --starsError: red;
-    --starsKeyBorder: limegreen;
     --starsTextLight: limegreen;
     --starsTextDark: limegreen;
     --starsGreen: black;
@@ -138,12 +136,11 @@
     --siaColorSplash: firebrick;
     --stars: firebrick;
     --starsError: firebrick;
-    --starsKeyBorder: firebrick;
     --starsTextLight: firebrick;
-    --starsTextDark: black;
-    --starsGreen: firebrick;
-    --starsRed: firebrick;
-    --starsBlue: firebrick;
+    --starsTextDark: firebrick;
+    --starsGreen: black;
+    --starsRed: black;
+    --starsBlue: black;
     --starsWhite: black;
     --starsYellow: black;
     --buttonText: black;
@@ -597,8 +594,6 @@ button {
         line-height: 1em;
         font-weight: bold;
         text-align: center;
-        border-style: 1px solid var(--starsKeyBorder);
-        border-color: var(--starsKeyBorder);
         border-radius: 5px;
         align-items: center;
         box-shadow: inset 0px 0px 1.5px 5px rgba(0,0,0,0.25);
