@@ -212,7 +212,7 @@
         grid-template-areas: 
             "header      header"
             "mainContent references"
-            "start       stars";
+            "stars       stars";
     }
 
     #references {
