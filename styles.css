@@ -292,6 +292,7 @@
 
 #starsContent {
     grid-area: stars;
+    display: inline-block;
 }
 
 #localCheatsheet {
@@ -376,7 +377,8 @@ legend {
 
 #currentMETAR {
 /*    min-width: 350px;*/
-    max-width: 500px;
+/*    max-width: 500px;*/
+    width: auto;
     text-wrap: wrap;
     overflow-wrap: break-word;
 }
