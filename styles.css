@@ -9,6 +9,7 @@
     --siaColorSplash: goldenrod;
     --stars: limegreen;
     --starsError: red;
+    --starsButtonBorder: none;
     --starsTextLight: whitesmoke;
     --starsTextDark: black;
     --starsGreen: darkgreen;
@@ -113,6 +114,7 @@
     --siaColorSplash: limegreen;
     --stars: limegreen;
     --starsError: red;
+    --starsButtonBorder: 1px solid limegreen;
     --starsTextLight: limegreen;
     --starsTextDark: limegreen;
     --starsGreen: black;
@@ -136,6 +138,7 @@
     --siaColorSplash: firebrick;
     --stars: firebrick;
     --starsError: firebrick;
+    --starsButtonBorder: 1px solid firebrick;
     --starsTextLight: firebrick;
     --starsTextDark: firebrick;
     --starsGreen: black;
@@ -359,9 +362,14 @@ fieldset {
 legend {
     background-color: var(--settingsForeground);
     color: var(--background);
+    font-family: Arial;
     font-weight: bold;
     border-radius: 6px;
     padding: 3px 6px;
+    
+    select, option {
+        background: var(--background);
+    }
 }
 
 /*fieldset, .flightProgressStrip, #buttonContainer button {
@@ -636,7 +644,6 @@ option:nth-of-type(odd) {
     justify-self: end;
     width: 500px;
     background: black;
-    border-style: none;
 
     .standardRow {
         display: grid;
@@ -661,6 +668,7 @@ option:nth-of-type(odd) {
         line-height: 1em;
         font-weight: bold;
         text-align: center;
+        border-style: var(--starsButtonBorder);
         border-radius: 5px;
         align-items: center;
         box-shadow: inset 0px 0px 1.5px 5px rgba(0,0,0,0.25);
