@@ -206,8 +206,8 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 819px and up) */
+@media only screen and (min-width: 819px) {
     body {
         grid-template-areas: 
             "header      header"
@@ -319,7 +319,6 @@ body {
 
 #starsContent {
     display: flex;
-/*    align-items: flex-end;*/
     grid-area: stars;
     gap: 5px;
 }
@@ -376,8 +375,8 @@ legend {
 }
 
 #currentMETAR {
-    min-width: 350px;
-/*    max-width: 500px;*/
+/*    min-width: 350px;*/
+    max-width: 500px;
     text-wrap: wrap;
     overflow-wrap: break-word;
 }
