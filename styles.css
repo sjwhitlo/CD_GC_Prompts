@@ -438,7 +438,7 @@ select {
 select {
   border: 2px solid var(--settingsForeground);
   background: var(--settingsBackground);
-  padding: 10px;
+  padding: 3px 6px;
   transition: 0.4s;
 }
 
@@ -459,23 +459,27 @@ select:open::picker-icon {
 option {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 5px;
 
   border: 2px solid var(--settingsForeground);
   background: var(--settingsBackground);
-  padding: 10px;
+  color: var(--settingsText);
+  padding: 3px 6px;
   transition: 0.4s;
 }
+option:hover{
+    background: var(--siaColorSplash);
+}
 option:first-of-type {
-  border-radius: 4px 4px 0 0;
+  border-radius: 6px 6px 0 0;
 }
 
 option:last-of-type {
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 6px 6px;
 }
 
 ::picker(select) {
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 option:not(option:last-of-type) {
