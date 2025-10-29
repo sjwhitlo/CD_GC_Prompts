@@ -660,14 +660,17 @@ select {
     justify-self: end;
     width: auto;
     background: black;
-    display: grid;
-    grid-column-gap: 2px;
-    margin: 2px;
 
     .standardRow {
+        display: grid;
+        grid-column-gap: 2px;
+        margin: 2px;
         grid-template-columns: repeat(10, 50px);
     }
     .nonStandardRow {
+        display: grid;
+        grid-column-gap: 2px;
+        margin: 2px;
 /*        grid-template-columns: 1.5fr 1fr 6fr 1.5fr;*/
         grid-template-columns: 77px 50px 310px 77px;
         margin-top: 12px;
