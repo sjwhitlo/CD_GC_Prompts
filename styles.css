@@ -198,7 +198,7 @@
     }
 
     #starsContent {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -223,7 +223,7 @@
     }
 
     #starsContent {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -247,7 +247,7 @@
     }
 
     #starsContent {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #flightProgressStrip {
@@ -277,6 +277,10 @@
     #flightProgressStrip {
         max-width: 8in;
         aspect-ratio: 8;
+    }
+
+    #currentMETAR {
+        width: calc(100vw - 966px);
     }
 }
 
@@ -378,9 +382,7 @@ legend {
 }
 
 #currentMETAR {
-/*    min-width: 350px;*/
-/*    max-width: 500px;*/
-    width: auto;
+    min-width: 350px;
     text-wrap: wrap;
     overflow-wrap: break-word;
 }
