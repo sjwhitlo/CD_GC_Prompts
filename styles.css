@@ -388,7 +388,7 @@ legend {
     overflow-wrap: break-word;
 }
 
-button {    
+#mainContent button {    
     border: none;
     color: var(--buttonText);
     width: 120px;
@@ -426,6 +426,66 @@ button {
     background-color: var(--background);
 }
 
+/** dropdown styling */
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  flex: 1;
+}
+select {
+  border: 2px solid var(--settingsForeground);
+  background: var(--settingsBackground);
+  padding: 10px;
+  transition: 0.4s;
+}
+
+select:hover,
+select:focus {
+  background: var(--siaColorSplash);
+}
+select::picker-icon {
+  color: var(--settingsForeground);
+  transition: 0.4s rotate;
+}
+select:open::picker-icon {
+  rotate: 180deg;
+}
+::picker(select) {
+  border: none;
+}
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+
+  border: 2px solid var(--settingsForeground);
+  background: var(--settingsBackground);
+  padding: 10px;
+  transition: 0.4s;
+}
+option:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+::picker(select) {
+  border-radius: 4px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+option:nth-of-type(odd) {
+/*  background: white;*/
+}
+
+/** checkbox styling */
 .parentCheckbox {
 }
 
