@@ -444,10 +444,18 @@ select {
   flex: 1;
   width: max-content;
   border: 2px solid var(--settingsForeground);
-  background: var(--settingsBackground);
   padding: 3px 6px;
   margin: 2px;
   font-size: 0.8em;
+}
+
+#mainContent {
+    select {
+          background: var(--settingsBackground);
+    }
+    option {
+          background: var(--settingsBackground);
+    }
 }
 
 select:hover {
@@ -466,13 +474,13 @@ select:open::picker-icon {
 ::picker(select) {
   border: none;
 }
+
 option {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
 
   border: 2px solid var(--settingsForeground);
-  background: var(--settingsBackground);
   color: var(--settingsText);
   padding: 3px 6px;
 }
