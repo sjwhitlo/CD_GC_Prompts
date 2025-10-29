@@ -434,21 +434,17 @@ select,
 
 select {
   flex: 1;
-}
-select {
   border: 2px solid var(--settingsForeground);
   background: var(--settingsBackground);
   padding: 3px 6px;
-  transition: 0.4s;
+  font-size: 0.8em;
 }
 
-select:hover,
-select:focus {
+select:hover {
   background: var(--siaColorSplash);
 }
 select::picker-icon {
   color: var(--settingsForeground);
-  transition: 0.4s rotate;
 }
 select:open::picker-icon {
   rotate: 180deg;
@@ -465,7 +461,6 @@ option {
   background: var(--settingsBackground);
   color: var(--settingsText);
   padding: 3px 6px;
-  transition: 0.4s;
 }
 option:hover{
     background: var(--siaColorSplash);
