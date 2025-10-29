@@ -649,7 +649,7 @@ function checkFlightFollowing() {
         document.getElementById("starsError").style.display = "none";
         document.getElementById("starsEntry").value = "";
         document.getElementById("starsEntry").style.display = "none";
-        document.getElementById("starsKeyboard").style.display = "none";
+        // document.getElementById("starsKeyboard").style.display = "none";
         // document.getElementById(lastFocusElement).focus();
         fillFlightFollowingStrip( checkInList.at(-1) );
     } else {

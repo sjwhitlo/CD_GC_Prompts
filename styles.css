@@ -443,7 +443,9 @@ select {
 }
 
 select:hover {
-  background: color-mix(in srgb-linear, var(--siaColorSplash), var(--settingsBackground));
+/*  background: color-mix(in srgb-linear, var(--siaColorSplash), var(--settingsBackground));*/
+  background: var(--siaColorSplash);
+  color: var(--buttonText);
 }
 select::picker-icon {
   color: var(--settingsForeground);
@@ -465,7 +467,8 @@ option {
   padding: 3px 6px;
 }
 option:hover{
-    background: color-mix(in srgb-linear, var(--siaColorSplash), var(--settingsBackground));
+  background: var(--siaColorSplash);
+  color: var(--buttonText);
 }
 option:first-of-type {
   border-radius: 6px 6px 0 0;
