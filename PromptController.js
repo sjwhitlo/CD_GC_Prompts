@@ -488,7 +488,7 @@ async function setFacility( airport ) {
     metarList = await fetchMetars( airport );
 
     updateHeader();
-    updateLocalAircraft( document.getElementById("localSortBy").value );
+    updateLocalAircraft( document.getElementById("sortLocalBy").value );
     getNewMETAR();
 }
 
