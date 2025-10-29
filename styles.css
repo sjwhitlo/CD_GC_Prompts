@@ -199,6 +199,7 @@
 
     #starsContent {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     #flightProgressStrip {
@@ -224,6 +225,7 @@
 
     #starsContent {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     #flightProgressStrip {
@@ -248,6 +250,7 @@
 
     #starsContent {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     #flightProgressStrip {
@@ -271,7 +274,8 @@
     }
 
     #starsContent {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #flightProgressStrip {
