@@ -467,53 +467,52 @@ select {
     }
 }
 
-select:hover {
-  background: var(--siaColorSplash);
-  color: var(--buttonText);
-}
-select::picker-icon {
-  color: var(--settingsForeground);
-}
-select::picker-icon:hover {
-  color: var(--buttonText);
-}
-select:open::picker-icon {
-  rotate: 180deg;
-}
-::picker(select) {
-  border: none;
-}
+#mainContent, #references {
+    select:hover {
+      background: var(--siaColorSplash);
+      color: var(--buttonText);
+    }
+    select::picker-icon {
+      color: var(--settingsForeground);
+    }
+    select::picker-icon:hover {
+      color: var(--buttonText);
+    }
+    select:open::picker-icon {
+      rotate: 180deg;
+    }
+    ::picker(select) {
+      border: none;
+    }
 
-option {
-  display: flex;
-  justify-content: flex-start;
-  gap: 5px;
+    option {
+      display: flex;
+      justify-content: flex-start;
+      gap: 5px;
 
-  border: 2px solid var(--settingsForeground);
-  color: var(--settingsText);
-  padding: 3px 6px;
-}
-option:hover{
-  background: var(--siaColorSplash);
-  color: var(--buttonText);
-}
-option:first-of-type {
-  border-radius: 6px 6px 0 0;
-}
+      border: 2px solid var(--settingsForeground);
+      color: var(--settingsText);
+      padding: 3px 6px;
+    }
+    option:hover{
+      background: var(--siaColorSplash);
+      color: var(--buttonText);
+    }
+    option:first-of-type {
+      border-radius: 6px 6px 0 0;
+    }
 
-option:last-of-type {
-  border-radius: 0 0 6px 6px;
-}
+    option:last-of-type {
+      border-radius: 0 0 6px 6px;
+    }
 
-::picker(select) {
-  border-radius: 6px;
-}
+    ::picker(select) {
+      border-radius: 6px;
+    }
 
-option:not(option:last-of-type) {
-  border-bottom: none;
-}
-option:nth-of-type(odd) {
-/*  background: white;*/
+    option:not(option:last-of-type) {
+      border-bottom: none;
+    }
 }
 
 /** checkbox styling */
@@ -659,20 +658,18 @@ option:nth-of-type(odd) {
     grid-area: starsKeyboard;
     align-self: end;
     justify-self: end;
-    width: 500px;
+    width: auto;
     background: black;
+    display: grid;
+    grid-column-gap: 2px;
+    margin: 2px;
 
     .standardRow {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-column-gap: 2px;
-        margin: 2px;
+        grid-template-columns: repeat(10, 50px);
     }
     .nonStandardRow {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 6fr 1.5fr;
-        grid-column-gap: 2px;
-        margin: 2px;
+/*        grid-template-columns: 1.5fr 1fr 6fr 1.5fr;*/
+        grid-template-columns: 77px 50px 310px 77px;
         margin-top: 12px;
     }
 
@@ -692,6 +689,10 @@ option:nth-of-type(odd) {
     }
     button:active {
         transform: translateY(1px);
+    }
+
+    #range {
+        letter-spacing: -0.7px;
     }
 
     .green {
