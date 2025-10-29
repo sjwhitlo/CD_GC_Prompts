@@ -256,8 +256,8 @@
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1316px and up) */
+@media only screen and (min-width: 1316px) {
     body {
         grid-template-areas: 
             "header      header"
@@ -325,7 +325,7 @@ body {
 }
 
 #starsContent {
-    display: flex;
+    display: inline-flex;
     grid-area: stars;
     gap: 5px;
 }
