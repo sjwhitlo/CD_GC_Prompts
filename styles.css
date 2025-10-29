@@ -368,6 +368,7 @@ legend {
 }
 
 #currentMETAR {
+    display: flex;
     min-width: 350px;
 /*    max-width: 500px;*/
     text-wrap: wrap;
