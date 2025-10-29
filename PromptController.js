@@ -609,21 +609,24 @@ function setFocusToSTARSEntry() {
     lastFocusElement = document.activeElement.id;
     document.getElementById("starsEntry").style.display = "block";
     document.getElementById("starsEntry").focus();
-    document.getElementById("starsKeyboard").style.display = "block";
+    document.getElementById("btnStarsEntry").style.display = "block";
+    // document.getElementById("starsKeyboard").style.display = "block";
 }
 
 function starsKeyboard( key ) {
-    if ( key === "space" ) {
-        document.getElementById( "starsEntry" ).value += " ";
-    } else if ( key === "bkspc" ) {
-        let temp = document.getElementById( "starsEntry" ).value;
-        document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length-1);
-    } else if ( key === "clear" || key === "core" ) {
-        document.getElementById( "starsEntry" ).value = "";
-    } else if ( key === "enter" ) {
-        checkFlightFollowing();
-    } else {
-        document.getElementById( "starsEntry" ).value += key;
+    if ( !document.getElementById( "starsEntry" ).value.checkVisibility() ) {
+        if ( key === "space" ) {
+            document.getElementById( "starsEntry" ).value += " ";
+        } else if ( key === "bkspc" ) {
+            let temp = document.getElementById( "starsEntry" ).value;
+            document.getElementById( "starsEntry" ).value = temp.substr(0, temp.length-1);
+        } else if ( key === "clear" || key === "core" ) {
+            document.getElementById( "starsEntry" ).value = "";
+        } else if ( key === "enter" ) {
+            checkFlightFollowing();
+        } else {
+            document.getElementById( "starsEntry" ).value += key;
+        }
     }
 }
 
