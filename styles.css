@@ -443,12 +443,14 @@ select {
 }
 
 select:hover {
-/*  background: color-mix(in srgb-linear, var(--siaColorSplash), var(--settingsBackground));*/
   background: var(--siaColorSplash);
   color: var(--buttonText);
 }
 select::picker-icon {
   color: var(--settingsForeground);
+}
+select::picker-icon:hover {
+  color: var(--buttonText);
 }
 select:open::picker-icon {
   rotate: 180deg;
@@ -634,6 +636,7 @@ option:nth-of-type(odd) {
     justify-self: end;
     width: 500px;
     background: black;
+    border-style: none;
 
     .standardRow {
         display: grid;
