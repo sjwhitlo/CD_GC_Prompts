@@ -1,5 +1,5 @@
 [
 	{"id": "FTW", "name": "Meacham International Airport"},
-	// {"id": "AAC", "name": "Academy Airport"},
+	{"id": "AAC", "name": "Academy Airport"},
 	{"id": "TEST", "name": "Test Airport"}
 ]
