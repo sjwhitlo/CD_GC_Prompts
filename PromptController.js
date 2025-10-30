@@ -226,7 +226,7 @@ class Arrival extends CallIn {
             `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )}`,
             `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} request taxi`,
             `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.parkingName}`,
-            `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.intent} ${this.parkingName}`
+            `off runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} ${this.intent} ${this.parkingName}`,
             `clearing at ${alphanumerics( this.location )}`,
             `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )}`,
             `clearing runway ${alphanumerics(runwayInUse)} at ${alphanumerics( this.location )} request taxi`,
