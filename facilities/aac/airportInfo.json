@@ -1,0 +1,67 @@
+{
+  "info": {
+    "icao": "KAAC",
+    "faa": "AAC",
+    "name": "Academy Airport",
+    "name_short": "Academy"
+  },
+  "positions": {
+    "clearance": "Academy Clearance",
+    "ground": "Academy Ground"
+  },
+  "runways": {
+    "available": [
+      {
+        "heading": 100,
+        "runways": ["10L", "10R"]
+      },
+      {
+        "heading": 280,
+        "runways": ["28L", "28R"]
+      },
+      {
+        "heading": 160,
+        "runways": ["16"]
+      },
+      {
+        "heading": 340,
+        "runways": ["34"]
+      }
+    ],
+    "calm_wind": ["28L", "28R"]
+  },
+  "taxiways": {
+    "10L": [
+      "F",
+      "16 @ B",
+      "E",
+      "D",
+      "C",
+      "A"
+    ],
+    "10R": [
+      "F",
+      "16 @ B",
+      "E",
+      "D",
+      "C",
+      "A"
+    ],
+    "28R": [
+      "G",
+      "F",
+      "16 @ B",
+      "E",
+      "D",
+      "C"
+    ],
+    "28L": [
+      "G",
+      "F",
+      "16 @ B",
+      "E",
+      "D",
+      "C"
+    ]
+  }
+}

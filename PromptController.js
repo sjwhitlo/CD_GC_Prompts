@@ -608,7 +608,7 @@ function clearFlightProgressStrip() {
 function setFocusToSTARSEntry() {
     lastFocusElement = document.activeElement.id;
     document.getElementById("starsEntry").style.display = "block";
-    document.getElementById("starsEntry").focus();
+    // document.getElementById("starsEntry").focus();
     document.getElementById("btnStarsEntry").style.display = "block";
     // document.getElementById("starsKeyboard").style.display = "block";
 }
