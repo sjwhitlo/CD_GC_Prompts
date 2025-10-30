@@ -636,6 +636,7 @@ function showSTARSEntryButton() {
 
 function noStarsEntryFlightFollowing() {
     document.getElementById("btnStarsEntry").style.display = "none";
+    document.getElementById("starsEntry").style.display = "none";
     document.getElementById("txtStarsEntry").style.display = "block";
     let starsEntryToShow = checkInList.at(-1).flightFollowingInput().toUpperCase().replace(/ /g, "<br>");
     document.getElementById("txtStarsEntry").innerHTML = starsEntryToShow;
@@ -657,7 +658,13 @@ function checkFlightFollowing() {
     }
 }
 
-
+function hideStarsElements() {
+    document.getElementById("btnStarsEntry").style.display = "none";
+    document.getElementById("txtStarsEntry").style.display = "none";
+    document.getElementById("starsEntry").style.display = "none";
+    // document.getElementById("starsKeyboard").style.display = "none";
+    document.getElementById("starsError").style.display = "none";
+}
 
 
 
@@ -856,11 +863,7 @@ function alphanumerics( characters ) {
 
 function newCheckIn() {
     clearFlightProgressStrip();
-    document.getElementById("btnStarsEntry").style.display = "none";
-    document.getElementById("txtStarsEntry").style.display = "none";
-    document.getElementById("starsEntry").style.display = "none";
-    // document.getElementById("starsKeyboard").style.display = "none";
-    document.getElementById("starsError").style.display = "none";
+    hideStarsElements();
 
     let selectedCheckInTypes = [];
     if ( document.getElementById("chkbxCallsignPractice").checked ) {

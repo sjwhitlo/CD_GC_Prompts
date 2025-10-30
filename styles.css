@@ -428,7 +428,7 @@ legend {
     background-color: var(--siaColorSplash);
 }
 
-.buttonSTARS {
+#buttonContainer .buttonSTARS {
     border: 1px solid var(--stars);
     color: var(--stars);
     background-color: var(--background);
@@ -490,7 +490,7 @@ select {
       justify-content: flex-start;
       gap: 5px;
 
-/*      border: 2px solid var(--settingsForeground);*/
+      border: 2px solid var(--settingsForeground);
       color: var(--settingsText);
       padding: 3px 6px;
     }
@@ -510,9 +510,10 @@ select {
       border-radius: 6px;
     }
 
-    /*option:not(option:last-of-type) {
+    option:not(option:last-of-type) {
+      border-top: none;
       border-bottom: none;
-    }*/
+    }
 }
 
 /** checkbox styling */
