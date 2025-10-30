@@ -1034,6 +1034,8 @@ function listToText( direction ) {
             toReturn = checkInList.toString().replaceAll(",", "\n");
         } else if ( direction === "reverse" ) {
             toReturn = checkInList.toReversed().toString().replaceAll(",", "\n");
+        } else if ( direction === "last10" ) {
+            toReturn = checkInList.slice(-10).toString().replaceAll(",", "\n");
         } else if ( direction === "current" ) {
             toReturn = checkInList.at(-1).toString();
         } else if ( direction === "previous" ) {
