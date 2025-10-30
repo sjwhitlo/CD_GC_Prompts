@@ -500,11 +500,6 @@ select {
       background: var(--siaColorSplash);
       color: var(--buttonText);
     }
-    /*option:not(option:first-of-type),
-    option:not(option:last-of-type) {
-      border-top: none;
-      border-bottom: none;
-    }*/
     option:first-of-type {
       border-radius: 6px 6px 0 0;
       border-top: 2px solid var(--settingsForeground);
