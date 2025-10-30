@@ -283,9 +283,9 @@
         aspect-ratio: 8;
     }
 
-    #currentMETAR {
+    /*#currentMETAR {
         width: calc(100vw - 966px);
-    }
+    }*/
 }
 
 #header {
@@ -299,11 +299,6 @@
     align-items: start;
     gap: 5px;
 }
-
-/*#starsContent {
-    grid-area: stars;
-    display: inline-block;
-}*/
 
 #localCheatsheet {
     font-family: Consolas, courier, monospace;
@@ -348,6 +343,13 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 5px;
+}
+
+#siaPanel {
+    width: stretch;
+    #currentMETAR {
+        width: stretch;
+    }
 }
 
 fieldset {
