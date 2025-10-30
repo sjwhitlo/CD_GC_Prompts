@@ -300,10 +300,10 @@
     gap: 5px;
 }
 
-#starsContent {
+/*#starsContent {
     grid-area: stars;
     display: inline-block;
-}
+}*/
 
 #localCheatsheet {
     font-family: Consolas, courier, monospace;
@@ -332,6 +332,7 @@ body {
     display: inline-flex;
     grid-area: stars;
     gap: 5px;
+    align-items: flex-start;
 }
 
 h1 {
@@ -347,8 +348,6 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 5px;
-/*    font-family: arial;*/
-/*    color: var(--settingsText);*/
 }
 
 fieldset {
