@@ -17,7 +17,7 @@
       },
       {
         "heading": 280,
-        "runways": ["28L", "28R"]
+        "runways": ["28R", "28L"]
       },
       {
         "heading": 160,
@@ -28,7 +28,7 @@
         "runways": ["34"]
       }
     ],
-    "calm_wind": ["28L", "28R"]
+    "calm_wind": ["28R", "28L"]
   },
   "taxiways": {
     "10L": [
