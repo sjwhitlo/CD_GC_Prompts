@@ -500,16 +500,19 @@ select {
     }
     option:first-of-type {
       border-radius: 6px 6px 0 0;
+      border-bottom: none;
     }
 
     option:last-of-type {
       border-radius: 0 0 6px 6px;
+      border-top: none;
     }
 
     ::picker(select) {
       border-radius: 6px;
     }
 
+    option:not(option:first-of-type),
     option:not(option:last-of-type) {
       border-top: none;
       border-bottom: none;
