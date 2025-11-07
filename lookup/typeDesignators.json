@@ -1,0 +1,3106 @@
+[
+ {
+   "ICAO_Code": "A10",
+   "FAA_Designator": "A10",
+   "Manufacturer": "FAIRCHILD",
+   "Model_FAA": "Fairchild A10",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "A124",
+   "FAA_Designator": "A124",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-124 Ruslan",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A19N",
+   "FAA_Designator": "A19N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A319 Neo",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A20N",
+   "FAA_Designator": "A20N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A320 Neo",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A21N",
+   "FAA_Designator": "A21N",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A321 Neo",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A306",
+   "FAA_Designator": "A306",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A300 B4-600",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "A30B",
+   "FAA_Designator": "A30B",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A300-B2",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "A310",
+   "FAA_Designator": "A310",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A310",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "A318",
+   "FAA_Designator": "A318",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A318",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A319",
+   "FAA_Designator": "A319",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A319",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A320",
+   "FAA_Designator": "A320",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A320",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A321",
+   "FAA_Designator": "A321",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A321",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "A332",
+   "FAA_Designator": "A332",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-200",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A333",
+   "FAA_Designator": "A333",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A337",
+   "FAA_Designator": "A337",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-700 - Beluga XL",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A338",
+   "FAA_Designator": "A338",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-800",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A339",
+   "FAA_Designator": "A339",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A330-900",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A342",
+   "FAA_Designator": "A342",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-200",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A343",
+   "FAA_Designator": "A343",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A345",
+   "FAA_Designator": "A345",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-500",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A346",
+   "FAA_Designator": "A346",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A340-600",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A359",
+   "FAA_Designator": "A359",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus 350-900",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A35K",
+   "FAA_Designator": "A35K",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A350-1000 XWB",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "A388",
+   "FAA_Designator": "A388",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A380-800",
+   "FAA_Weight": "Super",
+   "CWT": "A"
+ },
+ {
+   "ICAO_Code": "A400",
+   "FAA_Designator": "A400",
+   "Manufacturer": "AIRBUS",
+   "Model_FAA": "Airbus A400M Atlas",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "A5",
+   "FAA_Designator": "A5",
+   "Manufacturer": "ICON",
+   "Model_FAA": "Icon A-5",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AA1",
+   "FAA_Designator": "AA1",
+   "Manufacturer": "GRUMMAN AMERICAN",
+   "Model_FAA": "Grumman American AA1",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AA5",
+   "FAA_Designator": "AA5",
+   "Manufacturer": "GRUMMAN AMERICAN",
+   "Model_FAA": "Grumman American AA5",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC11",
+   "FAA_Designator": "AC11",
+   "Manufacturer": "ROCKWELL",
+   "Model_FAA": "Rockwell Commander 112",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC50",
+   "FAA_Designator": "AC50",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 500",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC56",
+   "FAA_Designator": "AC56",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 560",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC68",
+   "FAA_Designator": "AC68",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 680FP",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC6L",
+   "FAA_Designator": "AC6L",
+   "Manufacturer": "AERO",
+   "Model_FAA": "Aero Commander 680FL",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC80",
+   "FAA_Designator": "AC80",
+   "Manufacturer": "ROCKWELL",
+   "Model_FAA": "Rockwell Commander Turbo 680",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC90",
+   "FAA_Designator": "AC90",
+   "Manufacturer": "GULFSTREAM AEROSPACE-ROCKWELL",
+   "Model_FAA": "Gulfstream 690 Commander 690",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AC95",
+   "FAA_Designator": "AC95",
+   "Manufacturer": "GULFSTREAM AEROSPACE-ROCKWELL",
+   "Model_FAA": "Gulfstream Jetprop Commander 1000",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AEST",
+   "FAA_Designator": "AEST",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Aero Star",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AN12",
+   "FAA_Designator": "AN12",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-12",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "AN72",
+   "FAA_Designator": "AN72",
+   "Manufacturer": "ANTONOV",
+   "Model_FAA": "Antonov AN-74-100/200",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "AR11",
+   "FAA_Designator": "AR11",
+   "Manufacturer": "AERONCA",
+   "Model_FAA": "Aeronca 11 Chief",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "ASTR",
+   "FAA_Designator": "ASTR",
+   "Manufacturer": "IAI",
+   "Model_FAA": "IAI Astra 1125",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "AT3T",
+   "FAA_Designator": "AT3T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-402",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AT43",
+   "FAA_Designator": "AT43",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-300/320",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT44",
+   "FAA_Designator": "AT44",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-42-400",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT45",
+   "FAA_Designator": "AT45",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-500",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT46",
+   "FAA_Designator": "AT46",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 42-600",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT5T",
+   "FAA_Designator": "AT5T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-503",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AT6T",
+   "FAA_Designator": "AT6T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "AT-602 Air Tractor",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "AT72",
+   "FAA_Designator": "AT72",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-72-201/202",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT73",
+   "FAA_Designator": "AT73",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 72-211/212",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT75",
+   "FAA_Designator": "AT75",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR-72-500",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT76",
+   "FAA_Designator": "AT76",
+   "Manufacturer": "ATR",
+   "Model_FAA": "ATR 72-600/212A",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "AT8T",
+   "FAA_Designator": "AT8T",
+   "Manufacturer": "AIR TRACTOR",
+   "Model_FAA": "Air Tractor AT-802",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "B18T",
+   "FAA_Designator": "B18T",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 18 (Turbo)",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "B190",
+   "FAA_Designator": "B190",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 1900/C-12J",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "B2",
+   "FAA_Designator": "B2",
+   "Manufacturer": "NORTHROP",
+   "Model_FAA": "Northrop B-2 Spirit",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B350",
+   "FAA_Designator": "B350",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Super King Air 350",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "B36T",
+   "FAA_Designator": "B36T",
+   "Manufacturer": "ALLISON-BEECH",
+   "Model_FAA": "Allison 36 Turbine Bonanza",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "B37M",
+   "FAA_Designator": "B37M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 7",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B38M",
+   "FAA_Designator": "B38M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 8",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B39M",
+   "FAA_Designator": "B39M",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737 MAX 9",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B461",
+   "FAA_Designator": "B461",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 146-100",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "B462",
+   "FAA_Designator": "B462",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 146 -200",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "B52",
+   "FAA_Designator": "B52",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing B-52 Stratofortress",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B703",
+   "FAA_Designator": "B703",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 707-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B712",
+   "FAA_Designator": "B712",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 717-200",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B721",
+   "FAA_Designator": "B721",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-100 (C-22)",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B722",
+   "FAA_Designator": "B722",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-200",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B732",
+   "FAA_Designator": "B732",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-200/VC96",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B733",
+   "FAA_Designator": "B733",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-300",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B734",
+   "FAA_Designator": "B734",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-400",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B735",
+   "FAA_Designator": "B735",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-500",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B736",
+   "FAA_Designator": "B736",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-600",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B737",
+   "FAA_Designator": "B737",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-700",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B738",
+   "FAA_Designator": "B738",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-800",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B739",
+   "FAA_Designator": "B739",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 737-900",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "B741",
+   "FAA_Designator": "B741",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-100",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B742",
+   "FAA_Designator": "B742",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-200",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B743",
+   "FAA_Designator": "B743",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B744",
+   "FAA_Designator": "B744",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-400",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B748",
+   "FAA_Designator": "B748",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-8",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B752",
+   "FAA_Designator": "B752",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 757-200",
+   "FAA_Weight": "Large",
+   "CWT": "E"
+ },
+ {
+   "ICAO_Code": "B753",
+   "FAA_Designator": "B753",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 757-300",
+   "FAA_Weight": "Large",
+   "CWT": "E"
+ },
+ {
+   "ICAO_Code": "B762",
+   "FAA_Designator": "B762",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-200",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "B763",
+   "FAA_Designator": "B763",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "B764",
+   "FAA_Designator": "B764",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 767-400",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "B772",
+   "FAA_Designator": "B772",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-200",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B773",
+   "FAA_Designator": "B773",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-300",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B778",
+   "FAA_Designator": "B778",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-8 ",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B779",
+   "FAA_Designator": "B779",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-9",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "B77L",
+   "FAA_Designator": "B77L",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-200LRF/LR",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B77W",
+   "FAA_Designator": "B77W",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 777-300ER",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B788",
+   "FAA_Designator": "B788",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-8 BBJ/Dreamliner",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B789",
+   "FAA_Designator": "B789",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-9 Dreamliner",
+   "FAA_Weight": "Heavy",
+   "CWT": "B"
+ },
+ {
+   "ICAO_Code": "B78X",
+   "FAA_Designator": "B78X",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 787-10 Dreamliner",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "BA11",
+   "FAA_Designator": "BA11",
+   "Manufacturer": "BAC",
+   "Model_FAA": "BAC 111 One-Eleven",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "BCS1",
+   "FAA_Designator": "BCS1",
+   "Manufacturer": "AIRBUS-BOMBARDIER",
+   "Model_FAA": "Airbus A220-100",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "BCS3",
+   "FAA_Designator": "BCS3",
+   "Manufacturer": "AIRBUS-BOMBARDIER",
+   "Model_FAA": "Airbus A220-300",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "BE10",
+   "FAA_Designator": "BE10",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech King Air 100",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE18",
+   "FAA_Designator": "BE18",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 18",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE19",
+   "FAA_Designator": "BE19",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech B19 Musketeer",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE20",
+   "FAA_Designator": "BE20",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 200 Super King",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE23",
+   "FAA_Designator": "BE23",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 23 Sundowner",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE24",
+   "FAA_Designator": "BE24",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 24 Sierra",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE30",
+   "FAA_Designator": "BE30",
+   "Manufacturer": "RAYTHEON-BEECH",
+   "Model_FAA": "Raytheon 300 Super King Air",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE33",
+   "FAA_Designator": "BE33",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 33",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE35",
+   "FAA_Designator": "BE35",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 35",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE36",
+   "FAA_Designator": "BE36",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Bonanza 36",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE40",
+   "FAA_Designator": "BE40",
+   "Manufacturer": "RAYTHEON-BEECH-HAWKER",
+   "Model_FAA": "Raytheon/Beech Beechjet 400/T-1 Jayhawk",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "BE50",
+   "FAA_Designator": "BE50",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beechcraft 50 Twin Bonanza",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE55",
+   "FAA_Designator": "BE55",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Baron 55",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE58",
+   "FAA_Designator": "BE58",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 58 Baron",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE60",
+   "FAA_Designator": "BE60",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 60 Duke",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE65",
+   "FAA_Designator": "BE65",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 65 Queen Air",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE70",
+   "FAA_Designator": "BE70",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 70 Queen Air",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE76",
+   "FAA_Designator": "BE76",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 76 Duchess",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE77",
+   "FAA_Designator": "BE77",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 77 Skipper",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE80",
+   "FAA_Designator": "BE80",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech BE-80 Queen Air",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE95",
+   "FAA_Designator": "BE95",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beechcraft 95 Travel Air",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE99",
+   "FAA_Designator": "BE99",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech Airliner 99",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE9L",
+   "FAA_Designator": "BE9L",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech King Air 90",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BE9T",
+   "FAA_Designator": "BE9T",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech F90 King Air",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BL17",
+   "FAA_Designator": "BL17",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca Viking",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BL8",
+   "FAA_Designator": "BL8",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca 8 Scout",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "BLCF",
+   "FAA_Designator": "BLCF",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 747-400LCF Dreamlifter",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "BT36",
+   "FAA_Designator": "BT36",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech 36 Bonanza",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C120",
+   "FAA_Designator": "C120",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 120",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C130",
+   "FAA_Designator": "C130",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed 130 Hercules",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "C140",
+   "FAA_Designator": "C140",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 140",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C150",
+   "FAA_Designator": "C150",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 150",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C152",
+   "FAA_Designator": "C152",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 152",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C160",
+   "FAA_Designator": "C160",
+   "Manufacturer": "TRANSALL",
+   "Model_FAA": "Transall C-160",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "C162",
+   "FAA_Designator": "C162",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 162 Skycatcher",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C17",
+   "FAA_Designator": "C17",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing Globemaster 3",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "C170",
+   "FAA_Designator": "C170",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 170",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C172",
+   "FAA_Designator": "C172",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skyhawk 172/Cutlass",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C175",
+   "FAA_Designator": "C175",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 175",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C177",
+   "FAA_Designator": "C177",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 177 Cardinal",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C180",
+   "FAA_Designator": "C180",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 180 Skywagon",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C182",
+   "FAA_Designator": "C182",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skylane 182",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C185",
+   "FAA_Designator": "C185",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 185 Skywagon",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C188",
+   "FAA_Designator": "C188",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 188",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C195",
+   "FAA_Designator": "C195",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 195",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C206",
+   "FAA_Designator": "C206",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 206 Stationair",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C207",
+   "FAA_Designator": "C207",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 207 Stationair 7",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C208",
+   "FAA_Designator": "C208",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 208 Caravan 1",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C210",
+   "FAA_Designator": "C210",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 210 Centurion",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C212",
+   "FAA_Designator": "C212",
+   "Manufacturer": "CASA",
+   "Model_FAA": "CASA Aviocar",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C240",
+   "FAA_Designator": "C240",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna TTx Model T240",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C25A",
+   "FAA_Designator": "C25A",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ2",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C25B",
+   "FAA_Designator": "C25B",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ3",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C25C",
+   "FAA_Designator": "C25C",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation CJ4",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C25M",
+   "FAA_Designator": "C25M",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation M2",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C303",
+   "FAA_Designator": "C303",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 303 Crusader",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C30J",
+   "FAA_Designator": "C30J",
+   "Manufacturer": "LOCKHEED MARTIN",
+   "Model_FAA": "C-130J Super Hercules ; Lockheed",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "C310",
+   "FAA_Designator": "C310",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 310",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C320",
+   "FAA_Designator": "C320",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 320 Skyknight",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C335",
+   "FAA_Designator": "C335",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 335",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C340",
+   "FAA_Designator": "C340",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 340",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C402",
+   "FAA_Designator": "C402",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 401/402",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C404",
+   "FAA_Designator": "C404",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 404 Titan",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C414",
+   "FAA_Designator": "C414",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Chancellor 414",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C421",
+   "FAA_Designator": "C421",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Golden Eagle 421",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C425",
+   "FAA_Designator": "C425",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 425 Corsair",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C441",
+   "FAA_Designator": "C441",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Conquest",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C500",
+   "FAA_Designator": "C500",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 500/Citation I",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C501",
+   "FAA_Designator": "C501",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 1SP",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C510",
+   "FAA_Designator": "C510",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Mustang",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C525",
+   "FAA_Designator": "C525",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna CitationJet/CJ1",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C526",
+   "FAA_Designator": "C526",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 526 CitationJet",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C550",
+   "FAA_Designator": "C550",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation II/Bravo",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C551",
+   "FAA_Designator": "C551",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation II/SP",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C55B",
+   "FAA_Designator": "C55B",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Bravo",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C560",
+   "FAA_Designator": "C560",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation V/Ultra/Encore",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C56X",
+   "FAA_Designator": "C56X",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Excel/XLS",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C650",
+   "FAA_Designator": "C650",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna III/VI/VII",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C680",
+   "FAA_Designator": "C680",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Sovereign",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C68A",
+   "FAA_Designator": "C68A",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Latitude",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C700",
+   "FAA_Designator": "C700",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation Longitude",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C72R",
+   "FAA_Designator": "C72R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 172RG Cutlass RG",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C750",
+   "FAA_Designator": "C750",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Citation X",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "C77R",
+   "FAA_Designator": "C77R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna 177 Cardinal RG",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "C82R",
+   "FAA_Designator": "C82R",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna Skylane RG",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CH7A",
+   "FAA_Designator": "CH7A",
+   "Manufacturer": "AERONCA",
+   "Model_FAA": "Aeronca 7AC",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CH7B",
+   "FAA_Designator": "CH7B",
+   "Manufacturer": "BELLANCA",
+   "Model_FAA": "Bellanca 7GCBC Citabria",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CL30",
+   "FAA_Designator": "CL30",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier (Canadair) Challenger 300",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "CL35",
+   "FAA_Designator": "CL35",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier Challenger 350",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "CL41",
+   "FAA_Designator": "CL41",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "Canadair 41 Tutor",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CL60",
+   "FAA_Designator": "CL60",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "Canadair Challenger 600/601/604",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "CN35",
+   "FAA_Designator": "CN35",
+   "Manufacturer": "CASA",
+   "Model_FAA": "CASA CN-235",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "COL3",
+   "FAA_Designator": "COL3",
+   "Manufacturer": "LANCAIR-CESSNA",
+   "Model_FAA": "Lancair LC-40 Columbia 300",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "COL4",
+   "FAA_Designator": "COL4",
+   "Manufacturer": "LANCAIR-CESSNA",
+   "Model_FAA": "Lancair LC-41 Columbia 400",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "COUR",
+   "FAA_Designator": "COUR",
+   "Manufacturer": "HELIO",
+   "Model_FAA": "HELIO U-10 Super Courier",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CRJ1",
+   "FAA_Designator": "CRJ1",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-100",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "CRJ2",
+   "FAA_Designator": "CRJ2",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-200",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "CRJ7",
+   "FAA_Designator": "CRJ7",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-700",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "CRJ9",
+   "FAA_Designator": "CRJ9",
+   "Manufacturer": "CANADAIR",
+   "Model_FAA": "canadair CRJ-900",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "CRUZ",
+   "FAA_Designator": "CRUZ",
+   "Manufacturer": "CZAW",
+   "Model_FAA": "CZAW SportCruiser",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "CVLP",
+   "FAA_Designator": "CVLP",
+   "Manufacturer": "CONVAIR",
+   "Model_FAA": "Convair CV-440 Metropolitan",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "CVLT",
+   "FAA_Designator": "CVLT",
+   "Manufacturer": "CONVAIR-CANADAIR",
+   "Model_FAA": "Convair CV-580/600/640, C-131H",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "D328",
+   "FAA_Designator": "D328",
+   "Manufacturer": "DORNIER",
+   "Model_FAA": "Dornier 328 Series",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "DA40",
+   "FAA_Designator": "DA40",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond Star DA40",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "DA42",
+   "FAA_Designator": "DA42",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond Twin Star",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "DC10",
+   "FAA_Designator": "DC10",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) DC 10-10/30/40",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "DC3",
+   "FAA_Designator": "DC3",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 3",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "DC3S",
+   "FAA_Designator": "DC3S",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas Super DC-3",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "DC3T",
+   "FAA_Designator": "DC3T",
+   "Manufacturer": "DOUGLAS/BASLER",
+   "Model_FAA": "Basler, BT-67 Turbo 67 ",
+   "FAA_Weight": "Large",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "DC6",
+   "FAA_Designator": "DC6",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 6",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "DC87",
+   "FAA_Designator": "DC87",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC-8-70",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "DC91",
+   "FAA_Designator": "DC91",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-10",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "DC93",
+   "FAA_Designator": "DC93",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-30",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "DC95",
+   "FAA_Designator": "DC95",
+   "Manufacturer": "DOUGLAS",
+   "Model_FAA": "Douglas DC 9-50",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "DH8A",
+   "FAA_Designator": "DH8A",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC8-100",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "DH8B",
+   "FAA_Designator": "DH8B",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC8-200",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "DH8C",
+   "FAA_Designator": "DH8C",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada Dash 8/DHC8-300",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "DH8D",
+   "FAA_Designator": "DH8D",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada 8/DHC8-400",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "DHC2",
+   "FAA_Designator": "DHC2",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada 2 Mk1 Beaver",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "DHC6",
+   "FAA_Designator": "DHC6",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada Twin Otter",
+   "FAA_Weight": "Small",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "DHC7",
+   "FAA_Designator": "DHC7",
+   "Manufacturer": "DEHAVILLAND CANADA",
+   "Model_FAA": "DeHavilland Canada DHC-7",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "DV20",
+   "FAA_Designator": "DV20",
+   "Manufacturer": "DIAMOND",
+   "Model_FAA": "Diamond 20 Katana",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "E110",
+   "FAA_Designator": "E110",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer EMB110 Bandeirante",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "E120",
+   "FAA_Designator": "E120",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer Brasilia EMB 120",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "E135",
+   "FAA_Designator": "E135",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ 135/140/Legacy",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E145",
+   "FAA_Designator": "E145",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ-145",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E170",
+   "FAA_Designator": "E170",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 170",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E190",
+   "FAA_Designator": "E190",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 190",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "E195",
+   "FAA_Designator": "E195",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 195",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "E290",
+   "FAA_Designator": "E290",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 190-E2",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "E295",
+   "FAA_Designator": "E295",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 195-E2",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "E35L",
+   "FAA_Designator": "E35L",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 135BJ Legacy 600",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E45X",
+   "FAA_Designator": "E45X",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer ERJ 145 XR",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E50P",
+   "FAA_Designator": "E50P",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 500 Phenom 100",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "E545",
+   "FAA_Designator": "E545",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer EMB-545 Legacy 450",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "E550",
+   "FAA_Designator": "E550",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Legacy 500/Praetor 600",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "E55P",
+   "FAA_Designator": "E55P",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer Phenom 300",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "E75L",
+   "FAA_Designator": "E75L",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 175 long wing",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "E75S",
+   "FAA_Designator": "E75S",
+   "Manufacturer": "EMBRAER",
+   "Model_FAA": "Embraer 175 short wing",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "EA50",
+   "FAA_Designator": "EA50",
+   "Manufacturer": "ECLIPSE",
+   "Model_FAA": "Eclipse 500",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "ERCO",
+   "FAA_Designator": "ERCO",
+   "Manufacturer": "ERCO",
+   "Model_FAA": "Ercoupe 415",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "EVOT",
+   "FAA_Designator": "EVOT",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair Evolution Turbine",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "F15",
+   "FAA_Designator": "F15",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing F-15 Eagle",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "F16",
+   "FAA_Designator": "F16",
+   "Manufacturer": "LOCKHEED-GENERAL DYNAMICS",
+   "Model_FAA": "Lockheed F-16 Fighting Falcon",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "F18H",
+   "FAA_Designator": "F18H",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "F/A 18 Hornet",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "F18S",
+   "FAA_Designator": "F18S",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "FA-18E/F Super Hornet",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "F22",
+   "FAA_Designator": "F22",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed Martin L-645 Raptor",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "F2TH",
+   "FAA_Designator": "F2TH",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 2000",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "F406",
+   "FAA_Designator": "F406",
+   "Manufacturer": "REIMS-CESSNA",
+   "Model_FAA": "Reims-Cessna F406 Caravan II",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "F900",
+   "FAA_Designator": "F900",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 900",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "FA10",
+   "FAA_Designator": "FA10",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 10",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "FA20",
+   "FAA_Designator": "FA20",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 20",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "FA50",
+   "FAA_Designator": "FA50",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon/Mystère 50",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "FA7X",
+   "FAA_Designator": "FA7X",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 7X",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "FA8X",
+   "FAA_Designator": "FA8X",
+   "Manufacturer": "DASSAULT",
+   "Model_FAA": "Dassault Falcon 8X",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "FDCT",
+   "FAA_Designator": "FDCT",
+   "Manufacturer": "FLIGHT DESIGN",
+   "Model_FAA": "Flight Design CT",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "G150",
+   "FAA_Designator": "G150",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G150",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "G164",
+   "FAA_Designator": "G164",
+   "Manufacturer": "GRUMMAN AMERICAN ",
+   "Model_FAA": "Grumman American G164",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "G280",
+   "FAA_Designator": "G280",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G280",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "GA5C",
+   "FAA_Designator": "GA5C",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream Aerospace Gulfstream G7-G500",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GA6C",
+   "FAA_Designator": "GA6C",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream Aerospace Gulfstream G7-G600",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GA7",
+   "FAA_Designator": "GA7",
+   "Manufacturer": "GULFSTREAM AMERICAN - GRUMMAN AMERICAN",
+   "Model_FAA": "Gulfstream American GA7",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "GALX",
+   "FAA_Designator": "GALX",
+   "Manufacturer": "GULFSTREAM AEROSPACE-IAI",
+   "Model_FAA": "IAI 1126 Galaxy/Gulfstream G200",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "GC1",
+   "FAA_Designator": "GC1",
+   "Manufacturer": "GLOBE",
+   "Model_FAA": "Globe GC-1 Swift",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "GL5T",
+   "FAA_Designator": "GL5T",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global 5000",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GL7T",
+   "FAA_Designator": "GL7T",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global 7500",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GLEX",
+   "FAA_Designator": "GLEX",
+   "Manufacturer": "BOMBARDIER",
+   "Model_FAA": "Bombardier BD-700 Global Express",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GLF2",
+   "FAA_Designator": "GLF2",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream II",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "GLF3",
+   "FAA_Designator": "GLF3",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream III",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "GLF4",
+   "FAA_Designator": "GLF4",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream IV/G400",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "GLF5",
+   "FAA_Designator": "GLF5",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream V",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "GLF6",
+   "FAA_Designator": "GLF6",
+   "Manufacturer": "GULFSTREAM AEROSPACE",
+   "Model_FAA": "Gulfstream G650",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "H25A",
+   "FAA_Designator": "H25A",
+   "Manufacturer": "HAWKER SIDDELEY",
+   "Model_FAA": "HS 125-1/2/3/400/600",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "H25B",
+   "FAA_Designator": "H25B",
+   "Manufacturer": "BRITISH AEROSPACE - HAWKER SIDDELEY",
+   "Model_FAA": "BAe HS 125/700-800/Hawker 800",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "H25C",
+   "FAA_Designator": "H25C",
+   "Manufacturer": "BRITISH AEROSPACE RAYTHEON",
+   "Model_FAA": "BAe/Raytheon HS 125-1000",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "HA4T",
+   "FAA_Designator": "HA4T",
+   "Manufacturer": "HAWKER",
+   "Model_FAA": "Hawker 4000",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "HAWK",
+   "FAA_Designator": "HAWK",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe T-45 Goshawk",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "HDJT",
+   "FAA_Designator": "HDJT",
+   "Manufacturer": "HONDA",
+   "Model_FAA": "HONDA HA-420 HondaJet",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "HUSK",
+   "FAA_Designator": "HUSK",
+   "Manufacturer": "AVIAT",
+   "Model_FAA": "AVIAT Huskey ",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "IL76",
+   "FAA_Designator": "IL76",
+   "Manufacturer": "ILYUSHIN",
+   "Model_FAA": "Ilyushin IL 76",
+   "FAA_Weight": "Heavy",
+   "CWT": "D"
+ },
+ {
+   "ICAO_Code": "J328",
+   "FAA_Designator": "J328",
+   "Manufacturer": "FAIRCHILD DORNIER",
+   "Model_FAA": "Fairchild Dornier 328 Jet",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "JS31",
+   "FAA_Designator": "JS31",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe 3100 Jetstream 31",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "JS32",
+   "FAA_Designator": "JS32",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe Jetstream super 31",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "JS41",
+   "FAA_Designator": "JS41",
+   "Manufacturer": "BRITISH AEROSPACE",
+   "Model_FAA": "BAe Jetstream 41",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "K35R",
+   "FAA_Designator": "K35R",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing KC-135 Stratotanker",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "KODI",
+   "FAA_Designator": "KODI",
+   "Manufacturer": "QUEST",
+   "Model_FAA": "Quest Kodiak",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "L29B",
+   "FAA_Designator": "L29B",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed Jetstar 2/731",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "L5",
+   "FAA_Designator": "L5",
+   "Manufacturer": "STINSON",
+   "Model_FAA": "Stinson L5 Sentinel",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "L8",
+   "FAA_Designator": "L8",
+   "Manufacturer": "LUSCOMBE",
+   "Model_FAA": "Luscombe 8",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LA4",
+   "FAA_Designator": "LA4",
+   "Manufacturer": "LAKE",
+   "Model_FAA": "Lake LA-4",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LJ23",
+   "FAA_Designator": "LJ23",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 23",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LJ24",
+   "FAA_Designator": "LJ24",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 24",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LJ25",
+   "FAA_Designator": "LJ25",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 25",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LJ31",
+   "FAA_Designator": "LJ31",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 31",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ35",
+   "FAA_Designator": "LJ35",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 35/36",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ40",
+   "FAA_Designator": "LJ40",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 40",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ45",
+   "FAA_Designator": "LJ45",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 45",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ55",
+   "FAA_Designator": "LJ55",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 55",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ60",
+   "FAA_Designator": "LJ60",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Bombardier Learjet 60",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ70",
+   "FAA_Designator": "LJ70",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 70",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LJ75",
+   "FAA_Designator": "LJ75",
+   "Manufacturer": "LEARJET",
+   "Model_FAA": "Learjet 75",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "LNC4",
+   "FAA_Designator": "LNC4",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair IV",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "LNP4",
+   "FAA_Designator": "LNP4",
+   "Manufacturer": "LANCAIR",
+   "Model_FAA": "Lancair PropJet IV",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "M20P",
+   "FAA_Designator": "M20P",
+   "Manufacturer": "MOONEY",
+   "Model_FAA": "Mooney M-20C Ranger",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "M20T",
+   "FAA_Designator": "M20T",
+   "Manufacturer": "MOONEY",
+   "Model_FAA": "Mooney M20K Encore/M20M Bravo",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "M5",
+   "FAA_Designator": "M5",
+   "Manufacturer": "MAULE",
+   "Model_FAA": "Maule M-5",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "MD11",
+   "FAA_Designator": "MD11",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 11",
+   "FAA_Weight": "Heavy",
+   "CWT": "C"
+ },
+ {
+   "ICAO_Code": "MD81",
+   "FAA_Designator": "MD81",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 81",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MD82",
+   "FAA_Designator": "MD82",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 82",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MD83",
+   "FAA_Designator": "MD83",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 83",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MD87",
+   "FAA_Designator": "MD87",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 87",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MD88",
+   "FAA_Designator": "MD88",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 88",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MD90",
+   "FAA_Designator": "MD90",
+   "Manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "Model_FAA": "Boeing (Douglas) MD 90",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "MU2",
+   "FAA_Designator": "MU2",
+   "Manufacturer": "MITSUBISHI",
+   "Model_FAA": "Mitsubishi Marquise/Solitaire",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "MU30",
+   "FAA_Designator": "MU30",
+   "Manufacturer": "MITSUBISHI",
+   "Model_FAA": "Mitsubishi Diamond/MU300 Diamond",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "NAVI",
+   "FAA_Designator": "NAVI",
+   "Manufacturer": "NORTH AMERICAN-RYAN",
+   "Model_FAA": "North American Navion",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P180",
+   "FAA_Designator": "P180",
+   "Manufacturer": "PIAGGIO",
+   "Model_FAA": "Piaggio P-180 Avanti",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P210",
+   "FAA_Designator": "P210",
+   "Manufacturer": "RILEY-CESSNA",
+   "Model_FAA": "Riley Super P210",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P28A",
+   "FAA_Designator": "P28A",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cherokee",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P28B",
+   "FAA_Designator": "P28B",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Turbo Dakota",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P28R",
+   "FAA_Designator": "P28R",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Cherokee Arrow",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P28T",
+   "FAA_Designator": "P28T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 28T Arrow 4",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P3",
+   "FAA_Designator": "P3",
+   "Manufacturer": "LOCKHEED",
+   "Model_FAA": "Lockheed P-3 Orion",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "P32R",
+   "FAA_Designator": "P32R",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-32R Lance/ Saratoga SP",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P32T",
+   "FAA_Designator": "P32T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 32T Turbo Lance 2",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P46T",
+   "FAA_Designator": "P46T",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Malibu Meridian",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P51",
+   "FAA_Designator": "P51",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American Mustang",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P68",
+   "FAA_Designator": "P68",
+   "Manufacturer": "VULCAN- PARTEVANIA",
+   "Model_FAA": "Vulcan Air P68",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P750",
+   "FAA_Designator": "P750",
+   "Manufacturer": "PACIFIC AEROSPACE",
+   "Model_FAA": "Pacific Aerospace P-750 Xstol",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "P8",
+   "FAA_Designator": "P8",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing P-8 Poseidon",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "PA11",
+   "FAA_Designator": "PA11",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-11 Cub Special",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA12",
+   "FAA_Designator": "PA12",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 12 Supercruiser",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA16",
+   "FAA_Designator": "PA16",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-16 Clipper",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA18",
+   "FAA_Designator": "PA18",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 18 Super Cub",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA20",
+   "FAA_Designator": "PA20",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-20 Pacer",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA22",
+   "FAA_Designator": "PA22",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper 22 Tri-Pacer",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA23",
+   "FAA_Designator": "PA23",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-23-150/160 Apache",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA24",
+   "FAA_Designator": "PA24",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-24 Comanche",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA25",
+   "FAA_Designator": "PA25",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-25 Pawnee",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA27",
+   "FAA_Designator": "PA27",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Aztec",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA30",
+   "FAA_Designator": "PA30",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-30 Turbo Twin Comanche/Turbo Twin Comanche",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA31",
+   "FAA_Designator": "PA31",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Navajo PA-31",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA32",
+   "FAA_Designator": "PA32",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cherokee Six",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA34",
+   "FAA_Designator": "PA34",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-34 Seneca",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA36",
+   "FAA_Designator": "PA36",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-36 Pawnee Brave",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA38",
+   "FAA_Designator": "PA38",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Tomahawk PA38",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA44",
+   "FAA_Designator": "PA44",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Seminole",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PA46",
+   "FAA_Designator": "PA46",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Malibu",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PAT4",
+   "FAA_Designator": "PAT4",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-31T3-500 T-1040",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PAY1",
+   "FAA_Designator": "PAY1",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 1",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PAY2",
+   "FAA_Designator": "PAY2",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 2",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PAY3",
+   "FAA_Designator": "PAY3",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper PA-42-720 Cheyenne 3",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PAY4",
+   "FAA_Designator": "PAY4",
+   "Manufacturer": "PIPER",
+   "Model_FAA": "Piper Cheyenne 400",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PC12",
+   "FAA_Designator": "PC12",
+   "Manufacturer": "PILATUS",
+   "Model_FAA": "Pilatus PC-12",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "PC24",
+   "FAA_Designator": "PC24",
+   "Manufacturer": "PILATUS",
+   "Model_FAA": "Pilatus PC-24",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "PRM1",
+   "FAA_Designator": "PRM1",
+   "Manufacturer": "RAYTHEON- HAWKER BEECHCRAFT",
+   "Model_FAA": "Raytheon Premier 1/390 Premier 1",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "R721",
+   "FAA_Designator": "R721",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-100RE Super 27",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "R722",
+   "FAA_Designator": "R722",
+   "Manufacturer": "BOEING",
+   "Model_FAA": "Boeing 727-200RE Super 27",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "RJ1H",
+   "FAA_Designator": "RJ1H",
+   "Manufacturer": "AVRO",
+   "Model_FAA": "Avro RJ-100 Avroliner",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "RJ85",
+   "FAA_Designator": "RJ85",
+   "Manufacturer": "AVRO",
+   "Model_FAA": "Avro RJ-85 Avroliner",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "RV12",
+   "FAA_Designator": "RV12",
+   "Manufacturer": "VAN'S ",
+   "Model_FAA": "Van's RV-12",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "S108",
+   "FAA_Designator": "S108",
+   "Manufacturer": "STINSON",
+   "Model_FAA": "Stinson 108 Voyager",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "S22T",
+   "FAA_Designator": "S22T",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR-22 Turbo",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SB20",
+   "FAA_Designator": "SB20",
+   "Manufacturer": "SAAB",
+   "Model_FAA": "Saab 2000",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SBR1",
+   "FAA_Designator": "SBR1",
+   "Manufacturer": "NORTH AMERICAN ROCKWELL",
+   "Model_FAA": "North American Rockwell Sabre 40/60",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "SBR2",
+   "FAA_Designator": "SBR2",
+   "Manufacturer": "NORTH AMERICAN ROCKWELL",
+   "Model_FAA": "North American Rockwell Sabre 75",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "SC7",
+   "FAA_Designator": "SC7",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Short Skyvan SC7",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SF34",
+   "FAA_Designator": "SF34",
+   "Manufacturer": "SAAB",
+   "Model_FAA": "Saab SF 340",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "SF50",
+   "FAA_Designator": "SF50",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus Vision SF50",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SH33",
+   "FAA_Designator": "SH33",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Shorts 330",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "SH36",
+   "FAA_Designator": "SH36",
+   "Manufacturer": "SHORT",
+   "Model_FAA": "Shorts 360",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "SR20",
+   "FAA_Designator": "SR20",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR-20",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SR22",
+   "FAA_Designator": "SR22",
+   "Manufacturer": "CIRRUS",
+   "Model_FAA": "Cirrus SR 22",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SU95",
+   "FAA_Designator": "SU95",
+   "Manufacturer": "SUKHOI",
+   "Model_FAA": "SUKHOI Superjet 100-95",
+   "FAA_Weight": "Large",
+   "CWT": "F"
+ },
+ {
+   "ICAO_Code": "SW3",
+   "FAA_Designator": "SW3",
+   "Manufacturer": "FAIRCHILD SWEARINGEN",
+   "Model_FAA": "Fairchild Swearingen SA-226T/TB Merlin 3",
+   "FAA_Weight": "Small+",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "SW4",
+   "FAA_Designator": "SW4",
+   "Manufacturer": "FAIRCHILD SWEARINGEN",
+   "Model_FAA": "Swearingen SA-227AT Merlin 4",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ },
+ {
+   "ICAO_Code": "T210",
+   "FAA_Designator": "T210",
+   "Manufacturer": "CESSNA",
+   "Model_FAA": "Cessna T210 Turbo Centurion",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "T28",
+   "FAA_Designator": "T28",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American T-28 Trojan",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "T34P",
+   "FAA_Designator": "T34P",
+   "Manufacturer": "BEECH",
+   "Model_FAA": "Beech T-34/45 Mentor",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "T38",
+   "FAA_Designator": "T38",
+   "Manufacturer": "NORTHROP",
+   "Model_FAA": "Northrop T-38 Talon",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "T6",
+   "FAA_Designator": "T6",
+   "Manufacturer": "NORTH AMERICAN",
+   "Model_FAA": "North American T-6 Texan",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TAYB",
+   "FAA_Designator": "TAYB",
+   "Manufacturer": "TAYLORCRAFT",
+   "Model_FAA": "Taylorcraft BC",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TB20",
+   "FAA_Designator": "TB20",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TB-20 Trinidad",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TBM7",
+   "FAA_Designator": "TBM7",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-700/700A",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TBM8",
+   "FAA_Designator": "TBM8",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-850",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TBM9",
+   "FAA_Designator": "TBM9",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TBM-900",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TEX2",
+   "FAA_Designator": "TEX2",
+   "Manufacturer": "RAYTHEON",
+   "Model_FAA": "Raytheon Texan 2",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "TOBA",
+   "FAA_Designator": "TOBA",
+   "Manufacturer": "SOCATA",
+   "Model_FAA": "Socata TB-10 Tobago",
+   "FAA_Weight": "Small",
+   "CWT": "I"
+ },
+ {
+   "ICAO_Code": "V22",
+   "FAA_Designator": "V22",
+   "Manufacturer": "BELL-BOEING",
+   "Model_FAA": "Bell V-22 Osprey",
+   "FAA_Weight": "Large",
+   "CWT": "G"
+ },
+ {
+   "ICAO_Code": "WW24",
+   "FAA_Designator": "WW24",
+   "Manufacturer": "IAI",
+   "Model_FAA": "IAI 1124 Westwind",
+   "FAA_Weight": "Small+",
+   "CWT": "H"
+ }
+]
