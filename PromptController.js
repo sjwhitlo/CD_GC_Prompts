@@ -577,7 +577,7 @@ function completeStripMarking( box ) {
 }
 
 function fillFlightFollowingStrip( ffObj ) {
-    fillFlightProgressStrip( ffObj.getAcftIdForOutput(), ffObj.aircraft.type, "", ffObj.getSquawk(), "", "VFR/" + (ffObj.altitude.startsWith('0') ? ffObj.altitude.slice(-2) : ffObj.altitude), "FTW " + ffObj.destination.airportFAA, "FTW " + ffObj.destination.airportFAA, "", "", "", "", "", "", "", "", "" );
+    fillFlightProgressStrip( ffObj.getAcftIdForOutput(), ffObj.aircraft.type + "/G", "", ffObj.getSquawk(), "", "VFR/" + (ffObj.altitude.startsWith('0') ? ffObj.altitude.slice(-2) : ffObj.altitude), "FTW " + ffObj.destination.airportFAA, "FTW " + ffObj.destination.airportFAA, "", "", "", "", "", "", "", "", "" );
 }
 
 function fillIFRFlightProgressStrip( ifrObj ) {
