@@ -389,34 +389,50 @@ function updateAvailablePrompts() {
     // if list is empty, set to unchecked and disabled
     // Clearance
     if ( ifrFlightPlans.length == 0 || aircraft.filter( acft => acft.ifr ).length == 0 ) {
-        document.getElementById("chkbxClearance").checked = false;
-        document.getElementById("chkbxClearance").disabled = true;
+        disablePromptOption( document.getElementById("chkbxClearance") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxClearance") );
     }
     // Flight Following
     if ( airports.length == 0 || aircraft.filter( acft => !acft.ifr ).length == 0 ) {
-        document.getElementById("chkbxFlightFollowing").checked = false;
-        document.getElementById("chkbxFlightFollowing").disabled = true;
+        disablePromptOption( document.getElementById("chkbxFlightFollowing") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxFlightFollowing") );
     }
     // Arrival
     if ( aircraft.length == 0 ) {
-        document.getElementById("chkbxArrival").checked = false;
-        document.getElementById("chkbxArrival").disabled = true;
+        disablePromptOption( document.getElementById("chkbxArrival") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxArrival") );
     }
     // Departure
     if ( aircraft.length == 0 ) {
-        document.getElementById("chkbxDeparture").checked = false;
-        document.getElementById("chkbxDeparture").disabled = true;
+        disablePromptOption( document.getElementById("chkbxDeparture") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxDeparture") );
     }
     // Repositon
     if ( aircraft.filter( acft => acft.repositionName != null ).length == 0 ) {
-        document.getElementById("chkbxReposition").checked = false;
-        document.getElementById("chkbxReposition").disabled = true;
+        disablePromptOption( document.getElementById("chkbxReposition") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxReposition") );
     }
     // Callsign
     if ( aircraft.filter( acft => acft.flightSchool != null ).length == 0 ) {
-        document.getElementById("chkbxCallsignPractice").checked = false;
-        document.getElementById("chkbxCallsignPractice").disabled = true;
+        disablePromptOption( document.getElementById("chkbxCallsignPractice") );
+    } else {
+        enablePromptOption( document.getElementById("chkbxCallsignPractice") );
     }
+}
+
+function disablePromptOption( checkbox ) {
+    checkbox.checked = false;
+    checkbox.disabled = true;
+}
+
+function enablePromptOption( checkbox ) {
+    checkbox.checked = true;
+    checkbox.disabled = false;
 }
 
 function updateHeader() {
