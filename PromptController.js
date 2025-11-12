@@ -5,127 +5,19 @@ const airportsUrl = 'flightFollowingAirports.json';
 const flightPlansUrl = 'flightPlans.json';
 const metarsUrl = 'metars.json';
 
-let airportInfo = {
-    "info": {
-        "icao": "KDMO",
-        "faa": "DMO",
-        "name": "Demonstration Airport",
-        "name_short": "Demo"
-    },
-    "positions": {
-        "clearance": "Clearance",
-        "ground": "Ground"
-    },
-    "runways": {
-        "available": [
-            {
-                "heading": 180,
-                "runways": ["18"]
-            },
-            {
-                "heading": 360,
-                "runways": ["36"]
-            }
-        ],
-        "calm_wind": ["18"]
-    },
-    "taxiways": {
-        "18": ["A", "B", "C", "D", "E", "F"],
-        "36": ["A", "B", "C", "D", "E", "F"]
-    }
-};
-
-let metarList = [ 
-        "00000KT 10SM CLR 19/14 A3015 RMK AO2 SLP203 T01940139 $",
-        "00000KT 10SM CLR 29/22 A3003 RMK AO2 SLP159 T02890217 10289 20228 58007 $",
-        "01004KT 10SM CLR 22/17 A3011 RMK AO2 SLP189 T02170167 53016 $",
-        "01006KT 10SM -RA BKN008 BKN120 21/19 A3001 RMK AO2 P0000 T02110194 $",
-        "01008KT 10SM CLR 25/16 A3006 RMK AO2 SLP172 T02500156 10267 20200 55005 $"
-    ];
-
 const checkInTypes = [ 'arrival', 'departure', 'flightFollowing', 'reposition', 'clearance', 'callsign' ];
+
+let airportInfo = {};
+
+let metarList = [];
 
 // parking == where they stay for the night
 // reposition == where they park temporarily before parking for the night
-let aircraft = [
-    {"type": "C152", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Aerobat",  "registration": "152TM", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "553RA", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "733WG", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": "Modern", "reposition": "MOD", "flightSchool": "Flying Club",       "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "1041Q", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "3744L", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "5437J", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "5437J", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "7296Q", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "7487G", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "46550", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "C172", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cessna",   "registration": "63332", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": "Modern", "reposition": "MOD", "flightSchool": "Flying Club",       "ifr": false },
-    {"type": "C177", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cardinal", "registration": "2083Q", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "154FT", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "1914H", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2135B", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2202W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2233W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "2236W", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "5120S", "parkingName": "Rich Aviation", "parking": "25N", "repositionName": null,     "reposition": null,  "flightSchool": "Rich Aviation",     "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "6281C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8097H", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8135G", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8137U", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "8405B", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9062K", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9358C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "9717C", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "42998", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "42998", "parkingName": "Flying Club",   "parking": "2S",  "repositionName": null,     "reposition": null,  "flightSchool": "Flying Club",       "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "43408", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "47615", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "81981", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "P28A", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Cherokee", "registration": "82075", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "44AE",  "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "777JR", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "969WA", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "977LB", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false },
-    {"type": "PA34", "medevac": false, "callsign": null, "callsignSpoken": null, "name": "Seneca",   "registration": "8691E", "parkingName": "4 North",       "parking": "4N",  "repositionName": null,     "reposition": null,  "flightSchool": "Delta Qualiflight", "ifr": false }
-];
+let aircraft = [];
 
-let airports = [
-    {"airportFAA": "WEA", "airportICAO": "KWEA", "airportName": "Parker County"},
-    {"airportFAA": "TKI", "airportICAO": "KTKI", "airportName": "Mckinney"},
-    {"airportFAA": "ADS", "airportICAO": "KADS", "airportName": "Addison"},
-    {"airportFAA": "DTO", "airportICAO": "KDTO", "airportName": "Denton"},
-    {"airportFAA": "RBD", "airportICAO": "KRBD", "airportName": "Dallas Executive"},
-    {"airportFAA": "DAL", "airportICAO": "KDAL", "airportName": "Dallas Love"},
-    {"airportFAA": "GPM", "airportICAO": "KGPM", "airportName": "Grand Prairie "},
-    {"airportFAA": "GKY", "airportICAO": "KGKY", "airportName": "Arlington"},
-    {"airportFAA": "HQZ", "airportICAO": "KHQZ", "airportName": "Mesquite"},
-    {"airportFAA": "LNC", "airportICAO": "KLNC", "airportName": "Lancaster"},
-    {"airportFAA": "FWS", "airportICAO": "KFWS", "airportName": "Spinks"},
-    {"airportFAA": "MWL", "airportICAO": "KMWL", "airportName": "Mineral Wells"},
-    {"airportFAA": "SEP", "airportICAO": "KSEP", "airportName": "Stephenville"},
-    {"airportFAA": "CPT", "airportICAO": "KCPT", "airportName": "Cleburne"},
-    {"airportFAA": "CRS", "airportICAO": "KCRS", "airportName": "Corsicana"},
-    {"airportFAA": "GVT", "airportICAO": "KGVT", "airportName": "Majors Field"},
-    {"airportFAA": "GLE", "airportICAO": "KGLE", "airportName": "Gainesville Municipal"},
-    {"airportFAA": "GDJ", "airportICAO": "KGDJ", "airportName": "Granbury"},
-    {"airportFAA": "LUD", "airportICAO": "KLUD", "airportName": "Decatur"},
-    {"airportFAA": "0F2", "airportICAO": "0F2",  "airportName": "Bowie Municipal"},
-    {"airportFAA": "TYR", "airportICAO": "KTYR", "airportName": "Tyler"},
-    {"airportFAA": "PRX", "airportICAO": "KPRX", "airportName": "Cox Field"}
-];
+let airports = [];
 
-let ifrFlightPlans = [
-    { "destination": "KAUS", "destinationName": "Austin",            "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU SEWZY6 KAUS" },
-    { "destination": "KCFD", "destinationName": "Bryan",             "minAlt": 5, "maxAlt": 60, "route": "KFTW TTT JASPA KCFD" },
-    { "destination": "KCLL", "destinationName": "College Station",   "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 CLL KCLL" },
-    { "destination": "KEDC", "destinationName": "Austin Executive",  "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU BLEWE5 KEDC" },
-    { "destination": "KHOU", "destinationName": "Houston Hobby",     "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR KIDDZ5<br>KHOU" },
-    { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "+TEX5 EAKER MLC+<br>KFTW MLC KSAT" },
-    { "destination": "KSAT", "destinationName": "San Antonio",       "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 WINDU QERVO1<br>KSAT" },
-    { "destination": "KSGR", "destinationName": "Sugarland",         "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR SNDAY1<br>KSGR" },
-    { "destination": "KSJT", "destinationName": "San Angelo",        "minAlt": 5, "maxAlt": 60, "route": "+KING5 MQP KSJT+<br>KFTW KSJT" },
-    { "destination": "KTME", "destinationName": "Houston Executive", "minAlt": 5, "maxAlt": 60, "route": "KFTW JPOOL8 ELLVR SNDAY1<br>KTME" },
-    { "destination": "KTYR", "destinationName": "Tyler",             "minAlt": 5, "maxAlt": 60, "route": "KFTW GARL6 TYR KTYR" }
-]; 
+let ifrFlightPlans = []; 
 
 const taxiwayList = [ "A1",
                    "A2",
