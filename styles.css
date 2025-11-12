@@ -507,6 +507,10 @@ select {
     }
 }
 
+input[type="checkbox"] {
+    accent-color: var(--siaColorSplash);
+}
+
 /** checkbox styling */
 .parentCheckbox {
 }

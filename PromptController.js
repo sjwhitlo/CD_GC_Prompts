@@ -421,7 +421,7 @@ function updateAvailablePrompts() {
     if ( aircraft.filter( acft => acft.flightSchool != null ).length == 0 ) {
         disablePromptOption( document.getElementById("chkbxCallsignPractice") );
     } else {
-        enablePromptOption( document.getElementById("chkbxCallsignPractice") );
+        document.getElementById("chkbxCallsignPractice").disabled = false;
     }
 }
 
