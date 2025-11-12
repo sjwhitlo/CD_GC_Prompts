@@ -382,6 +382,41 @@ async function setFacility( airport ) {
     updateHeader();
     updateLocalAircraft( document.getElementById("sortLocalBy").value );
     getNewMETAR();
+    updateAvailablePrompts();
+}
+
+function updateAvailablePrompts() {
+    // if list is empty, set to unchecked and disabled
+    // Clearance
+    if ( ifrFlightPlans.length == 0 || aircraft.filter( acft => acft.ifr ).length == 0 ) {
+        document.getElementById("chkbxClearance").checked = false;
+        document.getElementById("chkbxClearance").disabled = true;
+    }
+    // Flight Following
+    if ( airports.length == 0 || aircraft.filter( acft => !acft.ifr ).length == 0 ) {
+        document.getElementById("chkbxFlightFollowing").checked = false;
+        document.getElementById("chkbxFlightFollowing").disabled = true;
+    }
+    // Arrival
+    if ( aircraft.length == 0 ) {
+        document.getElementById("chkbxArrival").checked = false;
+        document.getElementById("chkbxArrival").disabled = true;
+    }
+    // Departure
+    if ( aircraft.length == 0 ) {
+        document.getElementById("chkbxDeparture").checked = false;
+        document.getElementById("chkbxDeparture").disabled = true;
+    }
+    // Repositon
+    if ( aircraft.filter( acft => acft.repositionName != null ).length == 0 ) {
+        document.getElementById("chkbxReposition").checked = false;
+        document.getElementById("chkbxReposition").disabled = true;
+    }
+    // Callsign
+    if ( aircraft.filter( acft => acft.flightSchool != null ).length == 0 ) {
+        document.getElementById("chkbxCallsignPractice").checked = false;
+        document.getElementById("chkbxCallsignPractice").disabled = true;
+    }
 }
 
 function updateHeader() {
@@ -779,17 +814,17 @@ function newCheckIn() {
     
     let checkInType = selectedCheckInTypes[ Math.floor( Math.random() * selectedCheckInTypes.length ) ];
 
-    if ( checkInType === checkInTypes[0] ) {
+    if ( checkInType === 'arrival' ) {
         // Arrival
         let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
         let availableTaxiways = airportInfo.taxiways.runwayInUse;
         let currentTaxiway = taxiwayList[ Math.floor( Math.random() * taxiwayList.length ) ];
         checkInList.push( new Arrival( currentAircraft, currentTaxiway ) );
-    } else if ( checkInType === checkInTypes[1] ) {
+    } else if ( checkInType === 'departure' ) {
         // Departure
         let currentAircraft = aircraft[ Math.floor( Math.random() * aircraft.length ) ];
         checkInList.push( new Departure( currentAircraft, getATIS() ) );
-    } else if ( checkInType === checkInTypes[2] ) {
+    } else if ( checkInType === 'flightFollowing' ) {
         // Flight Following
         // FTW GC, ACFT, FF to LOC at ALT
         let ffAircraft = aircraft.filter( acft => !acft.ifr );
@@ -804,18 +839,18 @@ function newCheckIn() {
         // after successful input: set focus to previous
 
         // bonus if next call is FF acft to taxi
-    } else if ( checkInType === checkInTypes[3] ) {
+    } else if ( checkInType === 'reposition' ) {
         // Reposition
         let repositionAircraft = aircraft.filter( acft => acft.repositionName != null );
         checkInList.push( new Reposition( repositionAircraft[ Math.floor( Math.random() * repositionAircraft.length ) ] ) );
-    } else if ( checkInType === checkInTypes[4] ) {
+    } else if ( checkInType === 'clearance' ) {
         // Clearance
         let ifrCapableAircraft = aircraft.filter( acft => acft.ifr );
         let currentAircraft = ifrCapableAircraft[ Math.floor( Math.random() * ifrCapableAircraft.length ) ];
         let currentFlightPlan = ifrFlightPlans[ Math.floor( Math.random() * ifrFlightPlans.length ) ];
         checkInList.push( new Clearance( currentAircraft, currentFlightPlan ) );
         fillIFRFlightProgressStrip( checkInList.at(-1) );
-    } else if ( checkInType === checkInTypes[5] ) {
+    } else if ( checkInType === 'callsign' ) {
         // Callsign
         let localAircraft = aircraft.filter( acft => acft.flightSchool != null );
         let currentAircraft = localAircraft[ Math.floor( Math.random() * localAircraft.length ) ];
