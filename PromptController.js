@@ -974,6 +974,7 @@ function changeCheckInFocus( whichType ) {
         document.getElementById('chkbxArrival').checked = state;
         document.getElementById('chkbxDeparture').checked = state;
         document.getElementById('chkbxReposition').checked = state;
+        document.getElementById('chkbxVehicle').checked = state;
     }
 }
 
