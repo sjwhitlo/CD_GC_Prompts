@@ -4,8 +4,9 @@ const aircraftUrl = 'aircraft.json';
 const airportsUrl = 'flightFollowingAirports.json';
 const flightPlansUrl = 'flightPlans.json';
 const metarsUrl = 'metars.json';
+const vehiclesUrl = 'vehicles.json';
 
-const checkInTypes = [ 'arrival', 'departure', 'flightFollowing', 'reposition', 'clearance', 'callsign' ];
+const checkInTypes = [ 'arrival', 'departure', 'flightFollowing', 'reposition', 'clearance', 'callsign', 'vehicle' ];
 
 let airportInfo = {};
 
@@ -14,6 +15,7 @@ let metarList = [];
 // parking == where they stay for the night
 // reposition == where they park temporarily before parking for the night
 let aircraft = [];
+let vehicles = [];
 
 let airports = [];
 
@@ -332,6 +334,36 @@ class Callsign extends CallIn {
     }
 }
 
+class Vehicle {
+    constructor( vehicle ) {
+        this.vehicle = vehicle;
+    }
+    
+    initialCall() {
+        return `${airportInfo.positions.ground}, ${this.ident} at ${this.position} ${this.request}}`;
+    }
+
+    requestAgain() {
+        return `${this.ident} at ${this.position} ${this.request}`;
+    }
+
+    requestParking() {
+        return `${this.position}, ${this.ident}`;
+    }
+
+    requestPosition() {
+        return `${this.position}, ${this.ident}`;
+    }
+
+    requestIntent() {
+        return `${this.request}, ${this.ident}`;
+    }
+
+    toString() {
+        return `     ${this.identAbbv} VEH  ${this.positionAbbv} → ${this.requestShort}`;
+    }
+}
+
 // Controller
 async function fetchFacilities() {
     const response = await fetch( './facilityList.json' );
@@ -372,12 +404,18 @@ async function fetchMetars( airport ) {
     return await response.json();
 }
 
+async function fetchVehicles( airport ) {
+    const response = await fetch( `./facilities/${airport}/${vehiclesUrl}` );
+    return await response.json();
+}
+
 async function setFacility( airport ) {
     airportInfo = await fetchAirportInfo( airport );
     aircraft = await fetchAircraft( airport );
     airports = await fetchAirports( airport );
     ifrFlightPlans = await fetchFlightPlans( airport );
     metarList = await fetchMetars( airport );
+    vehicles = await fetchVehicles( airport );
 
     updateHeader();
     updateLocalAircraft( document.getElementById("sortLocalBy").value );
@@ -388,40 +426,46 @@ async function setFacility( airport ) {
 function updateAvailablePrompts() {
     // if list is empty, set to unchecked and disabled
     // Clearance
-    if ( ifrFlightPlans.length == 0 || aircraft.filter( acft => acft.ifr ).length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxClearance") );
-    } else {
+    if ( ifrFlightPlans.length || aircraft.filter( acft => acft.ifr ).length ) {
         enablePromptOption( document.getElementById("chkbxClearance") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxClearance") );
     }
     // Flight Following
-    if ( airports.length == 0 || aircraft.filter( acft => !acft.ifr ).length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxFlightFollowing") );
-    } else {
+    if ( airports.length || aircraft.filter( acft => !acft.ifr ).length ) {
         enablePromptOption( document.getElementById("chkbxFlightFollowing") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxFlightFollowing") );
     }
     // Arrival
-    if ( aircraft.length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxArrival") );
-    } else {
+    if ( aircraft.length ) {
         enablePromptOption( document.getElementById("chkbxArrival") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxArrival") );
     }
     // Departure
-    if ( aircraft.length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxDeparture") );
-    } else {
+    if ( aircraft.length ) {
         enablePromptOption( document.getElementById("chkbxDeparture") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxDeparture") );
     }
     // Repositon
-    if ( aircraft.filter( acft => acft.repositionName != null ).length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxReposition") );
-    } else {
+    if ( aircraft.filter( acft => acft.repositionName != null ).length ) {
         enablePromptOption( document.getElementById("chkbxReposition") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxReposition") );
     }
     // Callsign
-    if ( aircraft.filter( acft => acft.flightSchool != null ).length == 0 ) {
-        disablePromptOption( document.getElementById("chkbxCallsignPractice") );
-    } else {
+    if ( aircraft.filter( acft => acft.flightSchool != null ).length ) {
         document.getElementById("chkbxCallsignPractice").disabled = false;
+    } else {
+        disablePromptOption( document.getElementById("chkbxCallsignPractice") );
+    }
+    // Vehicles
+    if ( vehicles.length ) {
+        enablePromptOption( document.getElementById("chkbxVehicle") );
+    } else {
+        disablePromptOption( document.getElementById("chkbxVehicle") );
     }
 }
 
@@ -827,6 +871,9 @@ function newCheckIn() {
     if ( document.getElementById("chkbxReposition").checked ) {
         selectedCheckInTypes.push( 'reposition' );
     }
+    if ( document.getElementById("chkbxVehicle").checked ) {
+        selectedCheckInTypes.push( 'vehicle' );
+    }
     
     let checkInType = selectedCheckInTypes[ Math.floor( Math.random() * selectedCheckInTypes.length ) ];
 
@@ -871,6 +918,9 @@ function newCheckIn() {
         let localAircraft = aircraft.filter( acft => acft.flightSchool != null );
         let currentAircraft = localAircraft[ Math.floor( Math.random() * localAircraft.length ) ];
         checkInList.push( new Callsign( currentAircraft ) );
+    } else if ( checkInType === 'vehicle' ) {
+        // Vehicle
+        checkInList.push( new Vehicle( vehicles[ Math.floor( Math.random() * vehicles.length ) ] ) );
     }
     
     speakText( checkInList.at(-1).initialCall() );
