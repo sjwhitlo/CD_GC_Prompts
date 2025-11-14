@@ -417,6 +417,7 @@ async function setFacility( airport ) {
     metarList = await fetchMetars( airport );
     vehicles = await fetchVehicles( airport );
 
+    console.table( vehicles );
     updateHeader();
     updateLocalAircraft( document.getElementById("sortLocalBy").value );
     getNewMETAR();
