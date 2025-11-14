@@ -1,6 +1,6 @@
 [
-  { "ident": "Airport 1 7",     "identAbbv": "AP 17",  "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
-  { "ident": "Airport 1",       "identAbbv": "AP 1",   "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
-  { "ident": "Rescue 1 5",      "identAbbv": "RES 15", "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
-  { "ident": "Rescue 1 6",      "identAbbv": "RES 16", "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" }
+  { "ident": "Airport 1 7",     "identAbbv": "AP17",  "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Airport 1",       "identAbbv": "AP1",   "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Rescue 1 5",      "identAbbv": "RES15", "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Rescue 1 6",      "identAbbv": "RES16", "positionAbbv": "", "position": "",  "requestShort": "",     "request": "" }
 ]
