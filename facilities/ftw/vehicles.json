@@ -1,0 +1,13 @@
+[
+  MT 24
+  OPS 8
+
+  { "ident": "Ops 5",                 "identAbbv": "OPS 5",  "position": "N", "requestShort": "ES TWY",   "request": "requesting East Side taxiways" },
+  { "ident": "T J Tug",               "identAbbv": "TJ TUG", "position": "H", "requestShort": "H-A-E",    "request": "requesting Hotel Alpha Echo" },
+  { "ident": "T J Tug",               "identAbbv": "TJ TUG", "position": "L", "requestShort": "L-A-E",    "request": "requesting Lima Alpha Echo" },
+  { "ident": "Modern Tug and Tow",    "identAbbv": "M TUG",  "position": "N", "requestShort": "N-A-H",    "request": "requesting November Alpha Hotel" },
+  { "ident": "Broadie's Tug and Tow", "identAbbv": "BR TUG", "position": "N", "requestShort": "N-A-H",    "request": "requesting November Alpha Hotel" },
+  { "ident": "Rescue 44",             "identAbbv": "RES 44", "position": "-", "requestShort": "on Radio", "request": "will be on radio" },
+  { "ident": "Tractor 7 7",           "identAbbv": "TR 77",  "position": "-", "requestShort": "on Radio", "request": "will be on radio" },
+  { "ident": "Maintenance 2 4",       "identAbbv": "MT 24",  "position": "",  "requestShort": "",         "request": "" }
+]
