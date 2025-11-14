@@ -1,7 +1,6 @@
 [
-
-  AP 17, 1
-  RESC 15, 16
-  
-  {}
+  { "ident": "Airport 1 7",     "identAbbv": "AP 17",  "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Airport 1",       "identAbbv": "AP 1",   "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Rescue 1 5",      "identAbbv": "RES 15", "position": "",  "requestShort": "",     "request": "" },
+  { "ident": "Rescue 1 6",      "identAbbv": "RES 16", "position": "",  "requestShort": "",     "request": "" }
 ]
