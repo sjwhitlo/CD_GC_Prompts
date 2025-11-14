@@ -340,27 +340,27 @@ class Vehicle {
     }
     
     initialCall() {
-        return `${airportInfo.positions.ground}, ${this.ident} at ${this.position} ${this.request}}`;
+        return `${airportInfo.positions.ground}, ${this.vehicle.ident} at ${this.vehicle.position} ${this.vehicle.request}`;
     }
 
     requestAgain() {
-        return `${this.ident} at ${this.position} ${this.request}`;
+        return `${this.vehicle.ident} at ${this.vehicle.position} ${this.vehicle.request}`;
     }
 
     requestParking() {
-        return `${this.position}, ${this.ident}`;
+        return `${this.vehicle.position}, ${this.vehicle.ident}`;
     }
 
     requestPosition() {
-        return `${this.position}, ${this.ident}`;
+        return `${this.vehicle.position}, ${this.vehicle.ident}`;
     }
 
     requestIntent() {
-        return `${this.request}, ${this.ident}`;
+        return `${this.vehicle.request}, ${this.vehicle.ident}`;
     }
 
     toString() {
-        return `     ${this.identAbbv} VEH  ${this.positionAbbv} → ${this.requestShort}`;
+        return `     ${this.vehicle.identAbbv} VEH  ${this.vehicle.positionAbbv.padEnd(6," ")} → ${this.vehicle.requestShort}`;
     }
 }
 
