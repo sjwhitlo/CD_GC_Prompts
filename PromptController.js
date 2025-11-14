@@ -35,6 +35,17 @@ var lastFocusElement = "";
 
 var checkInList = [];
 
+// printing:
+// E55P  N12ZW   ARR   A6 →  TJ
+// E55P LN917TL  DEP   TJ → RWY 16 Z
+// E55P  AAL1234 DEP   TJ → RWY 28R WX
+// PA34  N676PS  DEP      → RWY 10L WX
+// C172  N3744L  FF   HOU @ 105
+// C172  N63332  RPOS MOD →  2S
+// C750  KOW998  CLNC KTME
+// P28A  N81981  Delta Qualiflight
+//       MT24    VEH    N → MOW A2-A3
+
 // Check In Types
 class CallIn {
     constructor( aircraft ) {
@@ -181,7 +192,7 @@ class Departure extends CallIn {
     }
 
     toString() {
-        return `${this.aircraft.type} ${this.getAcftIdForOutput()} DEP  ${this.aircraft.parking.padStart(3," ")} → RWY ${runwayInUse} ${this.atis}`;
+        return `${this.aircraft.type} ${this.getAcftIdForOutput()} DEP  ${this.aircraft.parking.padStart(3," ")} → RWY ${runwayInUse.padEnd(3, " ")} ${this.atis}`;
     }
 }
 
@@ -360,7 +371,7 @@ class Vehicle {
     }
 
     toString() {
-        return `     ${this.vehicle.identAbbv} VEH  ${this.vehicle.positionAbbv.padEnd(6," ")} → ${this.vehicle.requestShort}`;
+        return `      ${this.vehicle.identAbbv.padEnd(8," ")} VEH  ${this.vehicle.positionAbbv.padStart(3," ")} → ${this.vehicle.requestShort}`;
     }
 }
 
