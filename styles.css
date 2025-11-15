@@ -322,7 +322,7 @@ body {
     grid-area: references;
     gap: 5px;
     height: 80vh;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 #starsContent {
@@ -374,7 +374,7 @@ legend {
 
 .listDisplay {
     width: 320px;
-    flex: 0 1 auto;
+/*    flex: 0 1 auto;*/
     background: var(--background);
     color: var(--settingsForeground);
     hr {
