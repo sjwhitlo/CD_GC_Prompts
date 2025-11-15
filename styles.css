@@ -321,8 +321,6 @@ body {
     display: flex;
     grid-area: references;
     gap: 5px;
-    height: 80vh;
-/*    overflow: hidden;*/
 }
 
 #starsContent {
@@ -374,11 +372,6 @@ legend {
 
 .listDisplay {
     width: 320px;
-
-    max-height: 50%;
-    overflow: scroll;
-
-/*    flex: 0 1 auto;*/
     background: var(--background);
     color: var(--settingsForeground);
     hr {
@@ -726,4 +719,9 @@ input[type="checkbox"] {
     padding: 2px;
     width: fit-content;
     height: fit-content;
+}
+
+#aircraftDisplay {
+    max-height: 80vh;
+    overflow: scroll;
 }
