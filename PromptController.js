@@ -371,7 +371,8 @@ class Vehicle {
     }
 
     toString() {
-        return `${"-".padEnd(4,"-")} ${(" " + this.vehicle.identAbbv).padEnd(8," ")} VEH  ${this.vehicle.positionAbbv.padStart(3," ")} → ${this.vehicle.requestShort}`;
+        let blankSpace = "";
+        return `${blankSpace.padEnd(4," ")} ${(" " + this.vehicle.identAbbv).padEnd(8," ")} VEH  ${this.vehicle.positionAbbv.padStart(3," ")} → ${this.vehicle.requestShort}`;
     }
 }
 
