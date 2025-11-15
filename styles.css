@@ -321,6 +321,7 @@ body {
     display: flex;
     grid-area: references;
     gap: 5px;
+    height: 80vh;
     overflow: hidden;
 }
 
