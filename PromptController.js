@@ -160,7 +160,7 @@ class Arrival extends CallIn {
     }
 
     toString() {
-        return `${this.aircraft.type} ${this.getAcftIdForOutput()} ARR  ${this.location.padStart(3," ")} → ${this.parking.padStart(3," ")}`;
+        return `${this.aircraft.type} ${this.getAcftIdForOutput()} ARR  ${this.location.padStart(3," ")} → ${this.parking}`;
     }
 }
 
@@ -192,7 +192,7 @@ class Departure extends CallIn {
     }
 
     toString() {
-        return `${this.aircraft.type} ${this.getAcftIdForOutput()} DEP  ${this.aircraft.parking.padStart(3," ")} → RWY ${runwayInUse.padEnd(3, " ")} ${this.atis}`;
+        return `${this.aircraft.type} ${this.getAcftIdForOutput()} DEP  ${this.aircraft.parking.padStart(3," ")} → RWY ${runwayInUse} ${this.atis}`;
     }
 }
 
@@ -260,7 +260,7 @@ class Reposition extends CallIn {
     }
 
     toString() {
-        return `${this.aircraft.type} ${this.getAcftIdForOutput()} RPOS ${this.aircraft.reposition.padStart(3," ")} → ${this.aircraft.parking.padStart(3," ")}`;
+        return `${this.aircraft.type} ${this.getAcftIdForOutput()} RPOS ${this.aircraft.reposition.padStart(3," ")} → ${this.aircraft.parking}`;
     }
 }
 

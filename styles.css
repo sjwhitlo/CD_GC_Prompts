@@ -284,7 +284,7 @@
     }
 
     #currentMETAR {
-        width: calc(100vw - 966px);
+        width: calc(100vw - 986px);
     }
 }
 
@@ -371,7 +371,7 @@ legend {
 }*/
 
 .listDisplay {
-    width: 300px;
+    width: 320px;
     background: var(--background);
     color: var(--settingsForeground);
     hr {
