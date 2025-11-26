@@ -319,6 +319,7 @@ body {
 
 #references {
     display: flex;
+    height: 85vh;
     grid-area: references;
     gap: 5px;
 }
